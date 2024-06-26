@@ -1,0 +1,388 @@
+.projet__container {
+  position: relative;
+  margin: 0 2rem 0 5rem;
+  height: 8rem;
+  padding-top: 2rem;
+}
+
+.projet__num-content {
+  position: relative;
+  display: inline-block; /* Pour que la taille soit ajustée au contenu */
+}
+
+.projet__num-titre {
+  font-family: "Monument Extended";
+  font-size: 1.125rem;
+  color: $title;
+  margin: 0.8rem;
+}
+
+.projet__border {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  pointer-events: none; /* Pour que les bordures ne bloquent pas les événements de clic */
+  box-sizing: border-box;
+}
+
+.projet__border-top-left {
+  top: 0;
+  left: 0;
+  border-top: 2px solid $borders;
+  border-left: 2px solid $borders;
+}
+
+.projet__border-top-right {
+  top: 0;
+  right: 0;
+  border-top: 2px solid $borders;
+  border-right: 2px solid $borders;
+}
+
+.projet__border-bottom-left {
+  bottom: 0;
+  left: 0;
+  border-bottom: 2px solid $borders;
+  border-left: 2px solid $borders;
+}
+
+.projet__border-bottom-right {
+  bottom: 0;
+  right: 0;
+  border-bottom: 2px solid $borders;
+  border-right: 2px solid $borders;
+}
+
+.projet-texte__container {
+  position: relative;
+  margin-left: 2rem;
+  margin-bottom: 5rem;
+  padding-top: 2rem;
+}
+
+.projet-texte__num-content {
+  position: relative;
+  display: inline-block;
+}
+
+.projet-texte__num-titre {
+  font-family: "Monument Extended";
+  font-size: 1.125rem;
+  color: $title;
+  margin: 0.8rem;
+}
+
+.projet-texte__border {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  pointer-events: none; /* Pour que les bordures ne bloquent pas les événements de clic */
+  box-sizing: border-box;
+}
+
+.projet-texte__border-top-left {
+  top: 0;
+  left: 0;
+  border-top: 2px solid $borders;
+  border-left: 2px solid $borders;
+}
+
+.projet-texte__border-top-right {
+  top: 0;
+  right: 0;
+  border-top: 2px solid $borders;
+  border-right: 2px solid $borders;
+}
+
+.projet-texte__border-bottom-left {
+  bottom: 0;
+  left: 0;
+  border-bottom: 2px solid $borders;
+  border-left: 2px solid $borders;
+}
+
+.projet-texte__border-bottom-right {
+  bottom: 0;
+  right: 0;
+  border-bottom: 2px solid $borders;
+  border-right: 2px solid $borders;
+}
+
+.projet__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.carrousel__container {
+  //   position: relative;
+  //   margin-left: 2rem;
+  //   margin-bottom: 5rem;
+  padding-top: 2rem;
+  margin: 0 5rem 0 5rem;
+}
+
+.carrousel__num-content {
+  position: relative;
+  //   display: inline-block;
+  height: 50rem;
+  padding: 3rem;
+}
+
+.carrousel__num {
+  font-family: "Ethnocentric Rg";
+  font-size: 4rem;
+  color: $title;
+  margin: 0.8rem;
+}
+
+.carrousel__border {
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  pointer-events: none; /* Pour que les bordures ne bloquent pas les événements de clic */
+  box-sizing: border-box;
+}
+
+.carrousel__border-top-left {
+  top: 0;
+  left: 0;
+  border-top: 2px solid $borders;
+  border-left: 2px solid $borders;
+}
+
+.carrousel__border-top-right {
+  top: 0;
+  right: 0;
+  border-top: 2px solid $borders;
+  border-right: 2px solid $borders;
+}
+
+.carrousel__border-bottom-left {
+  bottom: 0;
+  left: 0;
+  border-bottom: 2px solid $borders;
+  border-left: 2px solid $borders;
+}
+
+.carrousel__border-bottom-right {
+  bottom: 0;
+  right: 0;
+  border-bottom: 2px solid $borders;
+  border-right: 2px solid $borders;
+}
+
+.carrousel__titre {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #46484f;
+}
+.carrousel__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+  margin-bottom: 8rem;
+}
+.carrousel__content-p {
+  font-size: 0.8rem;
+  font-family: "Monument Extended";
+  color: $title;
+  //   margin: 0.8rem;
+  width: 50%;
+  height: 50%;
+}
+.carrousel__arrow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.carrousel__arrow > p {
+  font-size: 1rem;
+  font-family: "Monument Extended";
+  color: $title;
+}
+.carrousel__arrow svg {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.carrousel__arrow svg:hover {
+  transform: scale(1.1);
+}
+
+.carrousel__num-titre {
+  font-family: "Ethnocentric Rg";
+  font-size: 10rem;
+  color: $title;
+  // margin: 0.8rem;
+}
+
+.carrousel__gay {
+  display: flex;
+  width: 18.75rem;
+  overflow: hidden;
+}
+.carrousel__inner {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+// @keyframes slide-in-right {
+//   0% {
+//     transform: translateX(100%);
+//     opacity: 0;
+//   }
+//   100% {
+//     transform: translateX(0);
+//     opacity: 1;
+//   }
+// }
+
+// .carrousel__titre {
+//   display: flex;
+//   align-items: center;
+// }
+
+// .carrousel__num-titre {
+//   display: flex;
+//   position: relative;
+// }
+
+// .gay-container {
+//   display: flex;
+//   align-items: center;
+// }
+
+.gay {
+  overflow: hidden;
+  width: 200px;
+  border: 1px solid #ccc;
+  margin: 0 10px;
+  position: relative;
+}
+
+.gay-inner {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.gay-item {
+  min-width: 200px;
+  text-align: center;
+  line-height: 50px;
+  background-color: #fff;
+  border-right: 1px solid #ccc;
+}
+
+button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.gay-item h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gay-item span {
+  display: inline-block;
+}
+
+.tourniquet {
+  transform-origin: center bottom;
+  animation: tourniquet 0.5s forwards;
+}
+
+@keyframes tourniquet {
+  from {
+    transform: rotateX(90deg);
+  }
+  to {
+    transform: rotateX(0);
+  }
+}
+.carrousel__num-titre {
+  width: 300px; /* Vous pouvez ajuster cette valeur selon vos besoins */
+  text-align: center;
+  display: inline-block;
+}
+
+.carrousel__num-titre span {
+  display: inline-block;
+  // width: 50%;
+  text-align: center;
+}
+.carrousel__num-titre2 {
+  font-family: "Ethnocentric Rg";
+  font-size: 10rem;
+  color: $title;
+  position: absolute;
+  left: -3rem; /* Ajustez cette valeur pour le placer à côté du titre */
+  font-family: "Ethnocentric Rg";
+  font-size: 10rem;
+  color: $title;
+}
+.slide-in-left {
+  transform: translateX(-18.75rem);
+}
+// .gay1 {
+//   position: relative;
+// }
+// .carrousel__num-titre span:first-child {
+//   display: inline-block;
+//   // Ajoutez ici d'autres styles si nécessaire
+// }
+
+// // Classe pour le deuxième span qui recevra l'animation
+// .carrousel__num-titre span:last-child {
+//   display: inline-block;
+//   animation: slide-in 0.5s forwards; // Utilisez l'animation souhaitée
+// }
+
+// // Définition de l'animation slide-in
+// @keyframes slide-in {
+//   from {
+//     transform: translateX(0);
+//   }
+//   to {
+//     transform: translateX(
+//       -18.75rem
+//     ); // Ajustez cette valeur selon le besoin de l'animation
+//   }
+// }
+
+.carrousel__num-titre1 {
+  font-family: "Ethnocentric Rg";
+  font-size: 10rem;
+  color: #d0e2ff;
+}
+.carrousel__num-titre1 span {
+  display: inline-block;
+}
+
+// .carrousel__num-titre1 span.slide-animation {
+//   animation: slide-in 0.5s forwards;
+// }
+
+// @keyframes slide-in {
+//   from {
+//     transform: translateX(0);
+//   }
+//   to {
+//     transform: translateX(-18.75rem);
+//   }
+// }
+.slide-fixed {
+  background: $background;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}

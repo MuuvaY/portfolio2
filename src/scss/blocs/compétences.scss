@@ -1,0 +1,610 @@
+.competences__titre-container {
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  border-bottom: 1px solid $borders;
+}
+
+.competences__inner {
+  display: flex;
+  animation: scroll 20s linear infinite;
+}
+
+.competences__titre,
+.competences__titre2 {
+  font-family: "Ethnocentric Rg";
+  font-size: 8rem;
+  margin-right: 2rem;
+  white-space: nowrap;
+}
+
+.competences__titre {
+  color: $title;
+}
+
+.competences__titre2 {
+  color: $background;
+  -webkit-text-fill-color: $background;
+  -webkit-text-stroke: 2px $secondaryTitle;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.competences__titre-container:hover .competences__inner {
+  animation-play-state: paused;
+}
+
+// .competences {
+//   display: grid;
+//   grid-template-columns: 0.7fr 1.3fr 1fr;
+//   grid-template-rows: 0.3fr 1.6fr 1.1fr;
+//   gap: 28px 28px;
+//   grid-auto-flow: row;
+//   grid-template-areas:
+//     "competences--header competences--header competences--header"
+//     "competences__info-gauche competences__skills competences__design"
+//     "competences__text competences__skills competences__design";
+//   border-top: 1px solid $borders;
+// }
+
+// .competences__header {
+//   grid-area: competences--header;
+// }
+
+// .competences__skills {
+//   grid-area: competences__skills;
+// }
+
+// .competences__design {
+//   display: grid;
+//   grid-template-columns: 1fr 1fr 1fr;
+//   grid-template-rows: 1fr 1fr 1fr;
+//   gap: 0px 0px;
+//   grid-auto-flow: row;
+//   grid-template-areas:
+//     ". . ."
+//     ". . ."
+//     "comptences__logo comptences__logo comptences__logo";
+//   grid-area: competences__design;
+// }
+
+// .comptences__logo {
+//   grid-area: comptences__logo;
+// }
+
+// .comptences__logo {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   border-left: 1px solid $borders;
+//   border-top: 1px solid $borders;
+//   height: 300px;
+//   width: 300px;
+// }
+
+.competences {
+  display: grid;
+  // grid-template-columns: 0.7fr 1.3fr 1fr;
+  // grid-template-rows: 0.3fr 2.2fr 0.5fr;
+  grid-template-columns: 0.6fr 1.8fr 0.6fr;
+  grid-template-rows: 1fr;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "competences__header competences__header competences__header"
+    "competences__gauche competences__skills competences__design"
+    "competences__gauche competences__skills competences__design";
+  border-top: 1px solid $borders;
+  // height: 100vh;
+}
+
+.competences__header {
+  grid-area: competences__header;
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 5rem;
+}
+
+.competences__skills {
+  grid-area: competences__skills;
+  display: grid;
+  grid-auto-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  // grid-template-rows: 1fr 1fr;
+  grid-template-rows: 0.5fr;
+  grid-template-areas:
+    "competences__react competences__js competences__css"
+    "competences__backend competences__backend competences__cms";
+  // width: 60vw;
+  gap: 2rem;
+  padding: 2rem;
+  padding-top: 8rem;
+}
+
+.competences__react {
+  grid-area: competences__react;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.competences__titre-skills {
+  font-family: "Ethnocentric Rg";
+  font-size: 1.5rem;
+  color: $title;
+  margin: 0.65rem 0;
+}
+.competences__p {
+  font-family: "Monument Extended";
+  color: $text;
+  text-align: justify;
+  font-size: 0.8rem;
+}
+.competences__icon {
+  color: white;
+  height: 1.8rem;
+  margin-top: 1.2rem;
+}
+.competences__img {
+  // object-fit: cover;
+  // height: auto;
+  // width: 8vh;
+  // margin-top: 0.8rem;
+  object-fit: cover;
+  height: auto;
+  width: 8vh;
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.backend__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+  margin-top: 0.8rem;
+}
+.competences__img-container {
+  height: 8vh;
+}
+.competences__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0.8rem;
+}
+
+.competences__react,
+.competences__js,
+.competences__css,
+.competences__backend,
+.competences__cms {
+  display: flex;
+  // justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.competences__js {
+  grid-area: competences__js;
+}
+
+.competences__css {
+  grid-area: competences__css;
+}
+
+.competences__backend {
+  grid-area: competences__backend;
+}
+
+.competences__cms {
+  grid-area: competences__cms;
+}
+
+.competences__design {
+  // display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . ."
+    ". . ."
+    "comptences__logo comptences__logo comptences__logo";
+  grid-area: competences__design;
+  border-left: 1px solid $borders;
+  width: 20vw;
+}
+
+.comptences__logo {
+  grid-area: comptences__logo;
+}
+
+.competences__gauche {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  // grid-template-areas:
+  //   "competences__info"
+  //   "competences__info"
+  //   "competences__text";
+  grid-area: competences__gauche;
+  // width: 30vw;
+  // align-items: center;
+  // justify-items: center;
+  border-right: 1px solid $borders;
+}
+
+.competences__info {
+  grid-area: competences__info;
+  color: $text;
+  font-family: "Monument Extended";
+  font-size: 10px;
+  margin-bottom: 8rem;
+  width: 20vw;
+}
+.competences__table {
+  // height: 100%;
+  // width: 25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+// .competences__text {
+//   grid-area: competences__text;
+//   //   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   height: 100%;
+//   transform: rotate(-90deg);
+//   width: 300px;
+//   width: calc(10px + 100%);
+// }
+
+// .competences__text {
+//   grid-area: competences__text;
+//   width: 300px;
+//   display: flex;
+//   align-items: center; /* Centrer verticalement */
+//   justify-content: center; /* Centrer horizontalement */
+//   transform: rotate(-90deg);
+//   transform-origin: right top;
+//   white-space: nowrap;
+//   height: 100%;
+// }
+.competences__text {
+  // grid-area: competences__text;
+  // // width: 500px;
+  // display: flex;
+  // align-items: center; /* Centrer verticalement */
+  // justify-content: center; /* Centrer horizontalement */
+  // transform: rotate(-90deg);
+  // transform-origin: center center;
+  // white-space: nowrap;
+  // height: 100%;
+  // overflow: hidden;
+  overflow: hidden;
+  writing-mode: vertical-rl;
+  text-orientation: sideways;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50vh;
+}
+// .competences__text {
+//   grid-area: competences__text;
+//   align-items: center;
+//   justify-content: center;
+//   height: auto;
+//   transform: rotate(-90deg) translateY(-150%);
+//   transform-origin: right top;
+//   white-space: nowrap;
+// }
+
+.competences__text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  height: 100%; /* Hauteur de la div */
+  width: 100%;
+  // overflow: hidden;
+  // white-space: nowrap;
+  // position: relative;
+  // height: 100%;
+  // width: 100%;
+  // width: 100%;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  // transform: rotate(-90deg);
+}
+
+.competences__inner2 {
+  display: flex;
+  animation: scroll 20s linear infinite;
+}
+.competences__text-container:hover .competences__inner2 {
+  animation-play-state: paused;
+}
+
+.competences__ligne-svg {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.competences__react {
+  position: relative; /* Pour permettre le positionnement absolu des éléments enfants */
+}
+
+.competences__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // justify-content: center;
+  height: 21rem;
+}
+.design {
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  // background-color: white;
+}
+
+.design-top-left {
+  top: 0;
+  left: 0;
+  border-top: 2px solid $borders;
+  border-left: 2px solid $borders;
+}
+
+.design-top-right {
+  top: 0;
+  right: 0;
+  border-top: 2px solid $borders;
+  border-right: 2px solid $borders;
+}
+
+.design-bottom-left {
+  bottom: 0;
+  left: 0;
+  border-bottom: 2px solid $borders;
+  border-left: 2px solid $borders;
+}
+
+.design-bottom-right {
+  bottom: 0;
+  right: 0;
+  border-bottom: 2px solid $borders;
+  border-right: 2px solid $borders;
+}
+.testdesign {
+  font-size: 2rem;
+  color: $title;
+}
+
+.design__num-content {
+  position: relative;
+}
+
+// .design__border {
+//   position: absolute;
+//   width: 10px;
+//   height: 10px;
+//   // background-color: white;
+// }
+// .design__num-titre {
+//   font-family: "Monument Extended";
+//   font-size: 1.125rem;
+//   color: $title;
+// }
+// .design__border-top-left {
+//   top: 0;
+//   left: 0;
+//   border-top: 2px solid $borders;
+//   border-left: 2px solid $borders;
+// }
+
+// .design__border-top-right {
+//   top: 0;
+//   right: 0;
+//   border-top: 2px solid $borders;
+//   border-right: 2px solid $borders;
+// }
+
+// .design__border-bottom-left {
+//   bottom: 0;
+//   left: 0;
+//   border-bottom: 2px solid $borders;
+//   border-left: 2px solid $borders;
+// }
+
+// .design__border-bottom-right {
+//   bottom: 0;
+//   right: 0;
+//   border-bottom: 2px solid $borders;
+//   border-right: 2px solid $borders;
+// }
+// .design__num {
+//   margin: 0.5rem;
+// }
+// .design__container {
+//   position: relative;
+//   display: flex;
+//   justify-content: center;
+//   flex-direction: column;
+//   align-items: flex-start;
+//   height: auto;
+//   padding: 2rem 2rem 2rem 5rem;
+// }
+.design__container {
+  position: relative;
+  // margin: 2rem 2rem 2rem 5rem;
+  margin: 0 2rem 0 5rem;
+  height: 8rem;
+  padding-top: 2rem;
+}
+
+.design__num-content {
+  position: relative;
+  display: inline-block; /* Pour que la taille soit ajustée au contenu */
+}
+
+.design__num-titre {
+  font-family: "Monument Extended";
+  font-size: 1.125rem;
+  color: $title;
+  margin: 0.8rem;
+}
+
+.design__border {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  pointer-events: none; /* Pour que les bordures ne bloquent pas les événements de clic */
+  box-sizing: border-box;
+}
+
+.design__border-top-left {
+  top: 0;
+  left: 0;
+  border-top: 2px solid $borders;
+  border-left: 2px solid $borders;
+}
+
+.design__border-top-right {
+  top: 0;
+  right: 0;
+  border-top: 2px solid $borders;
+  border-right: 2px solid $borders;
+}
+
+.design__border-bottom-left {
+  bottom: 0;
+  left: 0;
+  border-bottom: 2px solid $borders;
+  border-left: 2px solid $borders;
+}
+
+.design__border-bottom-right {
+  bottom: 0;
+  right: 0;
+  border-bottom: 2px solid $borders;
+  border-right: 2px solid $borders;
+}
+
+.custom__container {
+  position: relative;
+  // margin-left: 2rem;
+  // margin-top: 2rem;
+  // margin-bottom: 2rem;
+  margin-left: 2rem;
+  margin-bottom: 5rem;
+  padding-top: 2rem;
+}
+
+.custom__num-content {
+  position: relative;
+  display: inline-block;
+}
+
+.custom__num-titre {
+  font-family: "Monument Extended";
+  font-size: 1.125rem;
+  color: $title;
+  margin: 0.8rem;
+}
+
+.custom__border {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  pointer-events: none; /* Pour que les bordures ne bloquent pas les événements de clic */
+  box-sizing: border-box;
+}
+
+.custom__border-top-left {
+  top: 0;
+  left: 0;
+  border-top: 2px solid $borders;
+  border-left: 2px solid $borders;
+}
+
+.custom__border-top-right {
+  top: 0;
+  right: 0;
+  border-top: 2px solid $borders;
+  border-right: 2px solid $borders;
+}
+
+.custom__border-bottom-left {
+  bottom: 0;
+  left: 0;
+  border-bottom: 2px solid $borders;
+  border-left: 2px solid $borders;
+}
+
+.custom__border-bottom-right {
+  bottom: 0;
+  right: 0;
+  border-bottom: 2px solid $borders;
+  border-right: 2px solid $borders;
+}
+.competences__grid {
+  display: flex;
+  justify-content: center;
+  height: 30%;
+  border-bottom: 1px solid #2556d4;
+}
+.competences__logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+.competences__logo img {
+  object-fit: cover;
+  height: auto;
+  width: 15vh;
+}
+
+.zizi {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-90deg);
+  transform-origin: center center;
+  white-space: nowrap;
+  height: 60vh;
+  // writing-mode: vertical-rl;
+  overflow: hidden;
+}
+#reactlogo {
+  animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg); /* Début de l'animation à 0 degrés */
+  }
+  to {
+    transform: rotate(
+      360deg
+    ); /* Fin de l'animation à 360 degrés (une rotation complète) */
+  }
+}

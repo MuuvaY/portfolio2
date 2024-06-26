@@ -1,0 +1,34 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 2rem;
+  height: 6rem;
+}
+
+.header__title {
+  font-size: 4rem;
+  font-family: "Ethnocentric Rg";
+  font-weight: normal;
+  font-style: normal;
+  color: $title;
+}
+
+.header__logo-container {
+  flex: 1;
+}
+
+.header__logo {
+  // max-width: 6vh;
+  height: 5vh;
+}
+
+// .header__buttons {
+//   margin-left: auto;
+// }
+
+.header__border {
+  width: 100%;
+
+  border-top: 1px solid $borders; /* Assurez-vous que $borders est défini correctement */
+}
