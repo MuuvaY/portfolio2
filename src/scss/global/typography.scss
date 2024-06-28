@@ -1,31 +1,38 @@
+// @font-face {
+//   font-family: "Monument Extended";
+//   src: url("./../../../public/assets/font/MonumentExtended-Regular.woff2")
+//       format("woff2"),
+//     url("./../../../public/assets/font/MonumentExtended-Regular.woff")
+//       format("woff");
+//   font-weight: normal;
+//   font-style: normal;
+//   font-display: swap;
+// }
+// @font-face {
+//   font-family: "Ethnocentric Rg";
+//   src: url("./../../../public/assets/font/EthnocentricRg-Regular.woff2")
+//       format("woff2"),
+//     url("./../../../public/assets/font/EthnocentricRg-Regular.woff")
+//       format("woff");
+//   font-weight: normal;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
 @font-face {
   font-family: "Monument Extended";
-  src: url("./../../../public/assets/font/MonumentExtended-Regular.woff2")
-      format("woff2"),
-    url("./../../../public/assets/font/MonumentExtended-Regular.woff")
-      format("woff");
+  src: url("/assets/font/MonumentExtended-Regular.woff2") format("woff2"),
+    url("/assets/font/MonumentExtended-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: "Ethnocentric Rg";
-  src: url("./../../../public/assets/font/EthnocentricRg-Regular.woff2")
-      format("woff2"),
-    url("./../../../public/assets/font/EthnocentricRg-Regular.woff")
-      format("woff");
+  src: url("/assets/font/EthnocentricRg-Regular.woff2") format("woff2"),
+    url("/assets/font/EthnocentricRg-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-}
-@font-face {
-  font-family: "MonumentExtended";
-  src: url("/fonts/MonumentExtended-Regular.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "EthnocentricRg";
-
-  src: url("./../../../public/assets/font/EthnocentricRg-Regular.woff2")
-    format("woff2");
 }
