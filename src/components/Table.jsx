@@ -46,9 +46,9 @@ function Table() {
           </td>
         </tr>
       </table>
-      <div className="competences__text">
+      {/* <div className="competences__text">
         <h1 className="competences__titre">Compétences</h1>
-      </div>
+      </div> */}
     </>
   );
 }

@@ -342,38 +342,38 @@ function App() {
             <h1 className="competences__titre2">Projet</h1>
           </div>
         </div>
-        <div className="projet__container">
-          <div className="projet__header">
-            <div className="projet__container">
-              <div className="projet__num-content">
-                <div className="projet__num">
-                  <h1 className="projet__num-titre">03</h1>
-                </div>
-                <div className="projet__border projet__border-top-left"></div>
-                <div className="projet__border projet__border-top-right"></div>
-                <div className="projet__border projet__border-bottom-left"></div>
-                <div className="projet__border projet__border-bottom-right"></div>
+        {/* <div className="projet__container"> */}
+        <div className="projet__header">
+          <div className="projet__container">
+            <div className="projet__num-content">
+              <div className="projet__num">
+                <h1 className="projet__num-titre">03</h1>
               </div>
+              <div className="projet__border projet__border-top-left"></div>
+              <div className="projet__border projet__border-top-right"></div>
+              <div className="projet__border projet__border-bottom-left"></div>
+              <div className="projet__border projet__border-bottom-right"></div>
             </div>
-            <div className="projet-texte__container">
-              <div className="projet-texte__num-content">
-                <div className="projet-texte__num">
-                  <h1 className="projet-texte__num-titre">Marius YVART</h1>
-                  <h1 className="projet-texte__num-titre">Portfolio 2024©</h1>
-                </div>
-                <div className="projet-texte__border projet-texte__border-top-left"></div>
-                <div className="projet-texte__border projet-texte__border-top-right"></div>
-                <div className="projet-texte__border projet-texte__border-bottom-left"></div>
-                <div className="projet-texte__border projet-texte__border-bottom-right"></div>
+          </div>
+          <div className="projet-texte__container">
+            <div className="projet-texte__num-content">
+              <div className="projet-texte__num">
+                <h1 className="projet-texte__num-titre">Marius YVART</h1>
+                <h1 className="projet-texte__num-titre">Portfolio 2024©</h1>
               </div>
+              <div className="projet-texte__border projet-texte__border-top-left"></div>
+              <div className="projet-texte__border projet-texte__border-top-right"></div>
+              <div className="projet-texte__border projet-texte__border-bottom-left"></div>
+              <div className="projet-texte__border projet-texte__border-bottom-right"></div>
             </div>
           </div>
         </div>
-
         <Testslide />
-        {/* <Number /> */}
-        {/* <Test /> */}
       </div>
+
+      {/* <Number /> */}
+      {/* <Test /> */}
+      {/* </div> */}
     </>
   );
 }
