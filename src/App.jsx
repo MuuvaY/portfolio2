@@ -13,6 +13,7 @@ import logo from "./assets/img/logo.webp";
 import Table from "./components/Table";
 import Skills from "./components/Skills";
 import Grid from "./components/Grid";
+import Footer from "./components/Footer";
 
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import { motion, AnimatePresence } from "framer-motion";
@@ -370,7 +371,9 @@ function App() {
         </div>
         <Testslide />
       </div>
-
+      <div className="footer">
+        <Footer />
+      </div>
       {/* <Number /> */}
       {/* <Test /> */}
       {/* </div> */}
