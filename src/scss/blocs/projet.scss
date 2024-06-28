@@ -1,147 +1,777 @@
-.projet__container {
-  position: relative;
-  margin: 0 2rem 0 5rem;
-  height: 8rem;
-  padding-top: 2rem;
+// .projet__container {
+//   position: relative;
+//   margin: 0 2rem 0 5rem;
+//   height: 8rem;
+//   padding-top: 2rem;
+// }
+
+// .projet__num-content {
+//   position: relative;
+//   display: inline-block; /* Pour que la taille soit ajustée au contenu */
+// }
+
+// .projet__num-titre {
+//   font-family: "Monument Extended";
+//   font-size: 1.125rem;
+//   color: $title;
+//   margin: 0.8rem;
+// }
+
+// .projet__border {
+//   position: absolute;
+//   width: 10px;
+//   height: 10px;
+//   pointer-events: none; /* Pour que les bordures ne bloquent pas les événements de clic */
+//   box-sizing: border-box;
+// }
+
+// .projet__border-top-left {
+//   top: 0;
+//   left: 0;
+//   border-top: 2px solid $borders;
+//   border-left: 2px solid $borders;
+// }
+
+// .projet__border-top-right {
+//   top: 0;
+//   right: 0;
+//   border-top: 2px solid $borders;
+//   border-right: 2px solid $borders;
+// }
+
+// .projet__border-bottom-left {
+//   bottom: 0;
+//   left: 0;
+//   border-bottom: 2px solid $borders;
+//   border-left: 2px solid $borders;
+// }
+
+// .projet__border-bottom-right {
+//   bottom: 0;
+//   right: 0;
+//   border-bottom: 2px solid $borders;
+//   border-right: 2px solid $borders;
+// }
+
+// .projet-texte__container {
+//   position: relative;
+//   margin-left: 2rem;
+//   margin-bottom: 5rem;
+//   padding-top: 2rem;
+// }
+
+// .projet-texte__num-content {
+//   position: relative;
+//   display: inline-block;
+// }
+
+// .projet-texte__num-titre {
+//   font-family: "Monument Extended";
+//   font-size: 1.125rem;
+//   color: $title;
+//   margin: 0.8rem;
+// }
+
+// .projet-texte__border {
+//   position: absolute;
+//   width: 15px;
+//   height: 15px;
+//   pointer-events: none; /* Pour que les bordures ne bloquent pas les événements de clic */
+//   box-sizing: border-box;
+// }
+
+// .projet-texte__border-top-left {
+//   top: 0;
+//   left: 0;
+//   border-top: 2px solid $borders;
+//   border-left: 2px solid $borders;
+// }
+
+// .projet-texte__border-top-right {
+//   top: 0;
+//   right: 0;
+//   border-top: 2px solid $borders;
+//   border-right: 2px solid $borders;
+// }
+
+// .projet-texte__border-bottom-left {
+//   bottom: 0;
+//   left: 0;
+//   border-bottom: 2px solid $borders;
+//   border-left: 2px solid $borders;
+// }
+
+// .projet-texte__border-bottom-right {
+//   bottom: 0;
+//   right: 0;
+//   border-bottom: 2px solid $borders;
+//   border-right: 2px solid $borders;
+// }
+
+// .projet__header {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+// }
+// .carrousel__container {
+//   //   position: relative;
+//   //   margin-left: 2rem;
+//   //   margin-bottom: 5rem;
+//   padding-top: 2rem;
+//   margin: 0 5rem 0 5rem;
+// }
+
+// .carrousel__num-content {
+//   position: relative;
+//   //   display: inline-block;
+//   height: 50rem;
+//   padding: 3rem;
+// }
+
+// .carrousel__num-nom {
+//   font-family: "Ethnocentric Rg";
+//   font-size: 4rem;
+//   color: $title;
+//   margin-bottom: 1rem;
+//   // margin: 0.8rem;
+//   transition: color 0.3s;
+// }
+
+// .carrousel__border {
+//   position: absolute;
+//   width: 10rem;
+//   height: 10rem;
+//   pointer-events: none; /* Pour que les bordures ne bloquent pas les événements de clic */
+//   box-sizing: border-box;
+// }
+
+// .carrousel__border-top-left {
+//   top: 0;
+//   left: 0;
+//   border-top: 2px solid $borders;
+//   border-left: 2px solid $borders;
+// }
+
+// .carrousel__border-top-right {
+//   top: 0;
+//   right: 0;
+//   border-top: 2px solid $borders;
+//   border-right: 2px solid $borders;
+// }
+
+// .carrousel__border-bottom-left {
+//   bottom: 0;
+//   left: 0;
+//   border-bottom: 2px solid $borders;
+//   border-left: 2px solid $borders;
+// }
+
+// .carrousel__border-bottom-right {
+//   bottom: 0;
+//   right: 0;
+//   border-bottom: 2px solid $borders;
+//   border-right: 2px solid $borders;
+// }
+
+// .carrousel__titre {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   border-bottom: 2px solid #46484f;
+// }
+// .carrousel__content {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   margin-top: 2rem;
+//   margin-bottom: 8rem;
+// }
+// .carrousel__content-p {
+//   font-size: 1rem;
+//   font-family: "Monument Extended";
+//   color: $title;
+//   //   margin: 0.8rem;
+//   width: 50%;
+//   height: 50%;
+// }
+// .carrousel__arrow {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+// }
+// .carrousel__arrow > p {
+//   font-size: 1rem;
+//   font-family: "Monument Extended";
+//   color: $title;
+// }
+// .carrousel__arrow svg {
+//   cursor: pointer;
+//   transition: transform 0.3s ease;
+// }
+// .carrousel__arrow svg:hover {
+//   transform: scale(1.1);
+// }
+
+// .carrousel__num-titre {
+//   font-family: "Ethnocentric Rg";
+//   font-size: 10rem;
+//   color: $title;
+//   // margin: 0.8rem;
+// }
+
+// .carrousel__gay {
+//   display: flex;
+//   width: 18.75rem;
+//   overflow: hidden;
+// }
+// .carrousel__inner {
+//   display: flex;
+//   transition: transform 0.5s ease;
+// }
+
+// .gay {
+//   overflow: hidden;
+//   width: 200px;
+//   border: 1px solid #ccc;
+//   margin: 0 10px;
+//   position: relative;
+// }
+
+// .gay-inner {
+//   display: flex;
+//   transition: transform 0.5s ease;
+// }
+
+// .gay-item {
+//   min-width: 200px;
+//   text-align: center;
+//   line-height: 50px;
+//   background-color: #fff;
+//   border-right: 1px solid #ccc;
+// }
+
+// button {
+//   background-color: #007bff;
+//   border: none;
+//   color: white;
+//   padding: 10px;
+//   cursor: pointer;
+// }
+
+// button:hover {
+//   background-color: #0056b3;
+// }
+
+// .gay-item h1 {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+// .gay-item span {
+//   display: inline-block;
+// }
+
+// .tourniquet {
+//   transform-origin: center bottom;
+//   animation: tourniquet 0.5s forwards;
+// }
+
+// @keyframes tourniquet {
+//   from {
+//     transform: rotateX(90deg);
+//   }
+//   to {
+//     transform: rotateX(0);
+//   }
+// }
+// .carrousel__num-titre {
+//   width: 300px; /* Vous pouvez ajuster cette valeur selon vos besoins */
+//   text-align: center;
+//   display: inline-block;
+// }
+
+// .carrousel__num-titre span {
+//   display: inline-block;
+//   // width: 50%;
+//   text-align: center;
+// }
+// .carrousel__num-titre2 {
+//   font-family: "Ethnocentric Rg";
+//   font-size: 10rem;
+//   color: $title;
+//   position: absolute;
+//   left: -3rem; /* Ajustez cette valeur pour le placer à côté du titre */
+//   font-family: "Ethnocentric Rg";
+//   font-size: 10rem;
+//   color: $title;
+// }
+// .slide-in-left {
+//   transform: translateX(-18.75rem);
+// }
+
+// .carrousel__num-titre1 {
+//   font-family: "Ethnocentric Rg";
+//   font-size: 10rem;
+//   color: #d0e2ff;
+// }
+// .carrousel__num-titre1 span {
+//   display: inline-block;
+// }
+
+// .carrousel__num-titre1 span.slide-animation {
+//   animation: slide-in 0.5s forwards;
+// }
+
+// // @keyframes slide-in {
+// //   from {
+// //     transform: translateX(0);
+// //   }
+// //   to {
+// //     transform: translateX(-18.75rem);
+// //   }
+// // }
+// .slide-fixed {
+//   background: $background;
+//   display: inline-block;
+//   position: relative;
+//   z-index: 1;
+// }
+// .projet__btn {
+//   display: flex;
+//   align-items: center;
+//   width: fit-content;
+//   border: 2px solid $button;
+//   border-radius: 5px;
+//   gap: 0.5rem;
+//   padding: 0.2rem;
+// }
+// .projet__icon {
+//   height: 1.5rem;
+//   // color: #ffffff;
+// }
+// .projet__text {
+//   font-family: "Ethnocentric Rg";
+//   font-size: 1rem;
+//   color: $title;
+//   // margin: 0.8rem;
+// }
+// .btn__container {
+//   display: flex;
+//   gap: 1rem;
+//   justify-content: flex-end;
+// }
+// .projet__containerimg {
+//   width: 300px;
+//   flex-shrink: 0;
+//   height: 40vh;
+//   transform: translateX(-80px);
+//   overflow: hidden;
+// }
+
+// .projet__img {
+//   width: 100%;
+//   height: 100%;
+//   object-fit: cover;
+//   display: block;
+//   transition: all 0.3s;
+// }
+// .projet__img:hover {
+//   transform: scale(1.1);
+// }
+// .projet__img-container:hover {
+//   content: "";
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   background-color: rgba(
+//     0,
+//     0,
+//     0,
+//     0.5
+//   ); /* Couleur grise avec une opacité de 50% */
+//   z-index: 1;
+// }
+// .projet__lien {
+//   text-decoration: none;
+//   color: $title;
+//   // margin-right: 2rem;
+// }
+// .projet__arrow {
+//   // color: $title;
+//   margin-left: 2rem;
+// }
+// .carrousel__num-nom:hover,
+// .carrousel__num-nom a:hover {
+//   color: $button; /* Changez la couleur selon vos besoins */
+//   transition: color 0.3s ease;
+// }
+// .projet__année {
+//   color: white;
+// }
+
+// .scroll-text span {
+//   display: inline-block;
+//   font-size: 24px; /* Ajustez la taille de la police selon vos besoins */
+//   font-weight: bold;
+//   padding-right: 100%; /* Ajoutez de l'espace entre les répétitions de texte */
+//   color: white;
+// }
+// .projet__lien {
+//   position: relative;
+//   text-decoration: none;
+//   color: $title;
+//   transition: color 0.3s;
+// }
+
+// .projet__lien:hover {
+//   color: $button; /* Changez la couleur selon vos besoins */
+// }
+
+// .projet__lien::after {
+//   content: "";
+//   position: absolute;
+//   width: 100%;
+//   height: 2px;
+//   bottom: -2px;
+//   left: 0;
+//   background-color: $button; /* Couleur de l'animation */
+//   visibility: hidden;
+//   transform: scaleX(0);
+//   transition: all 0.3s ease-in-out 0s;
+// }
+
+// .projet__lien:hover::after {
+//   visibility: visible;
+//   transform: scaleX(1);
+// }
+
+// Mixins pour les media queries
+@mixin for-phone-only {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) {
+    @content;
+  }
+}
+@mixin for-desktop-up {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) {
+    @content;
+  }
 }
 
-.projet__num-content {
-  position: relative;
-  display: inline-block; /* Pour que la taille soit ajustée au contenu */
-}
-
-.projet__num-titre {
-  font-family: "Monument Extended";
-  font-size: 1.125rem;
-  color: $title;
-  margin: 0.8rem;
-}
-
-.projet__border {
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  pointer-events: none; /* Pour que les bordures ne bloquent pas les événements de clic */
+// Styles du carrousel
+.projet__content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: 80vh;
+  // height: 80vh;
   box-sizing: border-box;
+
+  @include for-phone-only {
+    padding: 1rem;
+  }
 }
 
-.projet__border-top-left {
-  top: 0;
-  left: 0;
-  border-top: 2px solid $borders;
-  border-left: 2px solid $borders;
-}
-
-.projet__border-top-right {
-  top: 0;
-  right: 0;
-  border-top: 2px solid $borders;
-  border-right: 2px solid $borders;
-}
-
-.projet__border-bottom-left {
-  bottom: 0;
-  left: 0;
-  border-bottom: 2px solid $borders;
-  border-left: 2px solid $borders;
-}
-
-.projet__border-bottom-right {
-  bottom: 0;
-  right: 0;
-  border-bottom: 2px solid $borders;
-  border-right: 2px solid $borders;
-}
-
-.projet-texte__container {
-  position: relative;
-  margin-left: 2rem;
-  margin-bottom: 5rem;
-  padding-top: 2rem;
-}
-
-.projet-texte__num-content {
-  position: relative;
-  display: inline-block;
-}
-
-.projet-texte__num-titre {
-  font-family: "Monument Extended";
-  font-size: 1.125rem;
-  color: $title;
-  margin: 0.8rem;
-}
-
-.projet-texte__border {
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  pointer-events: none; /* Pour que les bordures ne bloquent pas les événements de clic */
-  box-sizing: border-box;
-}
-
-.projet-texte__border-top-left {
-  top: 0;
-  left: 0;
-  border-top: 2px solid $borders;
-  border-left: 2px solid $borders;
-}
-
-.projet-texte__border-top-right {
-  top: 0;
-  right: 0;
-  border-top: 2px solid $borders;
-  border-right: 2px solid $borders;
-}
-
-.projet-texte__border-bottom-left {
-  bottom: 0;
-  left: 0;
-  border-bottom: 2px solid $borders;
-  border-left: 2px solid $borders;
-}
-
-.projet-texte__border-bottom-right {
-  bottom: 0;
-  right: 0;
-  border-bottom: 2px solid $borders;
-  border-right: 2px solid $borders;
-}
-
-.projet__header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 .carrousel__container {
-  //   position: relative;
-  //   margin-left: 2rem;
-  //   margin-bottom: 5rem;
-  padding-top: 2rem;
-  margin: 0 5rem 0 5rem;
+  position: relative;
+  // margin-bottom: 5rem;
 }
 
 .carrousel__num-content {
   position: relative;
-  //   display: inline-block;
-  height: 50rem;
-  padding: 3rem;
+  padding: 2rem;
+
+  @include for-phone-only {
+    padding: 1rem;
+  }
+}
+
+.carrousel__titre {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid $borders;
+}
+
+// .carrousel__num-titre1 {
+//   font-family: "Ethnocentric Rg", sans-serif;
+//   font-size: 10rem;
+//   color: $title;
+
+// }
+.carrousel__num-titre1 {
+  font-family: "Ethnocentric Rg";
+  font-size: 10rem;
+  color: #d0e2ff;
+  @include for-phone-only {
+    font-size: 3rem;
+  }
+}
+.carrousel__num-titre1 span {
+  display: inline-block;
+}
+.slide-fixed {
+  background: $background;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+.projet__année {
+  font-size: 1rem;
+  color: $text;
 }
 
 .carrousel__num-nom {
-  font-family: "Ethnocentric Rg";
-  font-size: 4rem;
+  font-family: "Ethnocentric Rg", sans-serif;
+  font-size: 3rem;
   color: $title;
   margin-bottom: 1rem;
-  // margin: 0.8rem;
+  transition: color 0.3s;
+
+  @include for-phone-only {
+    font-size: 2rem;
+  }
+
+  &:hover {
+    color: $button;
+  }
 }
 
+.btn__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+
+  @include for-phone-only {
+    margin-bottom: 1rem;
+  }
+}
+
+.projet__btn {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border: 2px solid $button;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: rgba($button, 0.1);
+  }
+}
+
+.projet__icon {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.carrousel__content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  @include for-tablet-landscape-up {
+    flex-direction: row;
+  }
+}
+
+.carrousel__content-p {
+  font-size: 1rem;
+  color: $text;
+  -webkit-line-clamp: 3;
+
+  @include for-tablet-landscape-up {
+    width: 50%;
+  }
+}
+.carrousel__content-p {
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Nombre de lignes que vous souhaitez afficher */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: calc(1.2em * 3); /* Ajustez selon la hauteur de ligne */
+}
+// .carrousel__content-p {
+//   font-size: 1rem;
+//   font-family: "Monument Extended";
+//   color: $title;
+//   //   margin: 0.8rem;
+//   // width: 50%;
+//   // height: 50%;
+// }
+
+.projet__containerimg {
+  width: 100%;
+  // height: 40vh;
+  height: 200px;
+  overflow: hidden;
+
+  @include for-tablet-landscape-up {
+    width: 50%;
+  }
+}
+
+.projet__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.carrousel__arrow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.carrousel__arrow svg {
+  // width: 3rem;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+  @include for-phone-only {
+    width: 5rem;
+  }
+}
+
+.carrousel__arrow p {
+  font-size: 1rem;
+  color: $text;
+  font-family: "Monument Extended";
+}
+// .carrousel__arrow {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+// }
+// .carrousel__arrow > p {
+//   font-size: 1rem;
+//   font-family: "Monument Extended";
+//   color: $title;
+// }
+
+// Styles pour le texte défilant
+.scroll-container {
+  overflow: hidden;
+  white-space: nowrap;
+  margin-top: 2rem;
+}
+
+.scroll-text {
+  display: inline-block;
+  animation: scroll 20s linear infinite;
+}
+
+.scroll-text span {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-right: 2rem;
+  color: $text;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+// Styles pour les liens
+.projet__lien {
+  text-decoration: none;
+  color: $title;
+  position: relative;
+  transition: color 0.3s;
+
+  &:hover {
+    color: $button;
+
+    .projet__arrow {
+      transform: translateX(5px);
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: $button;
+    transform: scaleX(0);
+    transition: transform 0.3s;
+  }
+
+  &:hover::after {
+    transform: scaleX(1);
+  }
+}
+
+.projet__arrow {
+  margin-left: 1rem;
+  transition: transform 0.3s;
+
+  @include for-phone-only {
+    width: 1.2rem;
+  }
+}
+.projet__text {
+  font-family: "Ethnocentric Rg";
+  font-size: 1rem;
+  color: $title;
+  // margin: 0.8rem;
+  @include for-phone-only {
+    font-size: 0.8rem;
+  }
+}
 .carrousel__border {
   position: absolute;
   width: 10rem;
   height: 10rem;
   pointer-events: none; /* Pour que les bordures ne bloquent pas les événements de clic */
   box-sizing: border-box;
+
+  @include for-phone-only {
+    width: 5rem;
+    height: 5rem;
+  }
 }
 
 .carrousel__border-top-left {
@@ -172,275 +802,304 @@
   border-right: 2px solid $borders;
 }
 
-.carrousel__titre {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 2px solid #46484f;
-}
-.carrousel__content {
+.projet__header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 2rem;
-  margin-bottom: 8rem;
-}
-.carrousel__content-p {
-  font-size: 1rem;
-  font-family: "Monument Extended";
-  color: $title;
-  //   margin: 0.8rem;
-  width: 50%;
-  height: 50%;
-}
-.carrousel__arrow {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.carrousel__arrow > p {
-  font-size: 1rem;
-  font-family: "Monument Extended";
-  color: $title;
-}
-.carrousel__arrow svg {
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-.carrousel__arrow svg:hover {
-  transform: scale(1.1);
-}
+  flex-wrap: wrap;
 
-.carrousel__num-titre {
-  font-family: "Ethnocentric Rg";
-  font-size: 10rem;
-  color: $title;
-  // margin: 0.8rem;
-}
-
-.carrousel__gay {
-  display: flex;
-  width: 18.75rem;
-  overflow: hidden;
-}
-.carrousel__inner {
-  display: flex;
-  transition: transform 0.5s ease;
-}
-
-// @keyframes slide-in-right {
-//   0% {
-//     transform: translateX(100%);
-//     opacity: 0;
-//   }
-//   100% {
-//     transform: translateX(0);
-//     opacity: 1;
-//   }
-// }
-
-// .carrousel__titre {
-//   display: flex;
-//   align-items: center;
-// }
-
-// .carrousel__num-titre {
-//   display: flex;
-//   position: relative;
-// }
-
-// .gay-container {
-//   display: flex;
-//   align-items: center;
-// }
-
-.gay {
-  overflow: hidden;
-  width: 200px;
-  border: 1px solid #ccc;
-  margin: 0 10px;
-  position: relative;
-}
-
-.gay-inner {
-  display: flex;
-  transition: transform 0.5s ease;
-}
-
-.gay-item {
-  min-width: 200px;
-  text-align: center;
-  line-height: 50px;
-  background-color: #fff;
-  border-right: 1px solid #ccc;
-}
-
-button {
-  background-color: #007bff;
-  border: none;
-  color: white;
-  padding: 10px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #0056b3;
-}
-
-.gay-item h1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.gay-item span {
-  display: inline-block;
-}
-
-.tourniquet {
-  transform-origin: center bottom;
-  animation: tourniquet 0.5s forwards;
-}
-
-@keyframes tourniquet {
-  from {
-    transform: rotateX(90deg);
-  }
-  to {
-    transform: rotateX(0);
+  @include for-phone-only {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
-.carrousel__num-titre {
-  width: 300px; /* Vous pouvez ajuster cette valeur selon vos besoins */
-  text-align: center;
-  display: inline-block;
-}
 
-.carrousel__num-titre span {
-  display: inline-block;
-  // width: 50%;
-  text-align: center;
-}
-.carrousel__num-titre2 {
-  font-family: "Ethnocentric Rg";
-  font-size: 10rem;
-  color: $title;
-  position: absolute;
-  left: -3rem; /* Ajustez cette valeur pour le placer à côté du titre */
-  font-family: "Ethnocentric Rg";
-  font-size: 10rem;
-  color: $title;
-}
-.slide-in-left {
-  transform: translateX(-18.75rem);
-}
-// .gay1 {
-//   position: relative;
-// }
-// .carrousel__num-titre span:first-child {
-//   display: inline-block;
-//   // Ajoutez ici d'autres styles si nécessaire
-// }
-
-// // Classe pour le deuxième span qui recevra l'animation
-// .carrousel__num-titre span:last-child {
-//   display: inline-block;
-//   animation: slide-in 0.5s forwards; // Utilisez l'animation souhaitée
-// }
-
-// // Définition de l'animation slide-in
-// @keyframes slide-in {
-//   from {
-//     transform: translateX(0);
-//   }
-//   to {
-//     transform: translateX(
-//       -18.75rem
-//     ); // Ajustez cette valeur selon le besoin de l'animation
-//   }
-// }
-
-.carrousel__num-titre1 {
-  font-family: "Ethnocentric Rg";
-  font-size: 10rem;
-  color: #d0e2ff;
-}
-.carrousel__num-titre1 span {
-  display: inline-block;
-}
-
-// .carrousel__num-titre1 span.slide-animation {
-//   animation: slide-in 0.5s forwards;
-// }
-
-// @keyframes slide-in {
-//   from {
-//     transform: translateX(0);
-//   }
-//   to {
-//     transform: translateX(-18.75rem);
-//   }
-// }
-.slide-fixed {
-  background: $background;
-  display: inline-block;
+.projet__container {
   position: relative;
-  z-index: 1;
+  margin: 0 1rem;
+  height: auto;
+  padding-top: 1rem;
+
+  @include for-tablet-portrait-up {
+    margin: 0 2rem 0 3rem;
+    height: 6rem;
+    padding-top: 1.5rem;
+  }
+
+  @include for-desktop-up {
+    margin: 0 2rem 0 5rem;
+    height: 8rem;
+    padding-top: 2rem;
+  }
 }
-.projet__btn {
-  display: flex;
-  align-items: center;
-  width: fit-content;
-  border: 2px solid $button;
-  border-radius: 5px;
-  gap: 0.5rem;
-  padding: 0.2rem;
+
+.projet__num-content {
+  position: relative;
+  display: inline-block;
 }
-.projet__icon {
-  height: 1.5rem;
-  color: #ffffff;
-}
-.projet__text {
-  font-family: "Ethnocentric Rg";
+
+.projet__num-titre {
+  font-family: "Monument Extended", sans-serif;
   font-size: 1rem;
   color: $title;
-  // margin: 0.8rem;
-}
-.btn__container {
-  display: flex;
-  gap: 1rem;
-  justify-content: flex-end;
-}
-.projet__containerimg {
-  width: 300px;
-  flex-shrink: 0;
-  height: 40vh;
-  transform: translateX(-80px);
-  overflow: hidden;
+  margin: 0.5rem;
+
+  @include for-tablet-portrait-up {
+    font-size: 1.125rem;
+    margin: 0.8rem;
+  }
 }
 
-.projet__img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  transition: all 0.3s;
-}
-.projet__img:hover {
-  transform: scale(1.1);
-}
-.projet__img-container:hover {
-  content: "";
+.projet__border {
   position: absolute;
+  width: 8px;
+  height: 8px;
+  pointer-events: none;
+  box-sizing: border-box;
+
+  @include for-tablet-portrait-up {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+.projet__border-top-left,
+.projet__border-top-right,
+.projet__border-bottom-left,
+.projet__border-bottom-right {
+  border-width: 1px;
+
+  @include for-tablet-portrait-up {
+    border-width: 2px;
+  }
+}
+
+.projet__border-top-left {
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.5
-  ); /* Couleur grise avec une opacité de 50% */
-  z-index: 1;
+  border-top: solid $borders;
+  border-left: solid $borders;
 }
+
+.projet__border-top-right {
+  top: 0;
+  right: 0;
+  border-top: solid $borders;
+  border-right: solid $borders;
+}
+
+.projet__border-bottom-left {
+  bottom: 0;
+  left: 0;
+  border-bottom: solid $borders;
+  border-left: solid $borders;
+}
+
+.projet__border-bottom-right {
+  bottom: 0;
+  right: 0;
+  border-bottom: solid $borders;
+  border-right: solid $borders;
+}
+
+.projet-texte__container {
+  position: relative;
+  margin-left: 1rem;
+  margin-bottom: 3rem;
+  padding-top: 1rem;
+
+  @include for-tablet-portrait-up {
+    margin-left: 2rem;
+    margin-bottom: 4rem;
+    padding-top: 1.5rem;
+  }
+
+  @include for-desktop-up {
+    margin-bottom: 5rem;
+    padding-top: 2rem;
+  }
+}
+
+.projet-texte__num-content {
+  position: relative;
+  display: inline-block;
+}
+
+.projet-texte__num-titre {
+  font-family: "Monument Extended", sans-serif;
+  font-size: 1rem;
+  color: $title;
+  margin: 0.5rem;
+
+  @include for-tablet-portrait-up {
+    font-size: 1.125rem;
+    margin: 0.8rem;
+  }
+}
+
+.projet-texte__border {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  pointer-events: none;
+  box-sizing: border-box;
+
+  @include for-tablet-portrait-up {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+.projet-texte__border-top-left,
+.projet-texte__border-top-right,
+.projet-texte__border-bottom-left,
+.projet-texte__border-bottom-right {
+  border-width: 1px;
+
+  @include for-tablet-portrait-up {
+    border-width: 2px;
+  }
+}
+
+.projet-texte__border-top-left {
+  top: 0;
+  left: 0;
+  border-top: solid $borders;
+  border-left: solid $borders;
+}
+
+.projet-texte__border-top-right {
+  top: 0;
+  right: 0;
+  border-top: solid $borders;
+  border-right: solid $borders;
+}
+
+.projet-texte__border-bottom-left {
+  bottom: 0;
+  left: 0;
+  border-bottom: solid $borders;
+  border-left: solid $borders;
+}
+
+.projet-texte__border-bottom-right {
+  bottom: 0;
+  right: 0;
+  border-bottom: solid $borders;
+  border-right: solid $borders;
+}
+
+// .projet__header {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+// }
+// .projet__container {
+//   position: relative;
+//   margin: 0 2rem 0 5rem;
+//   height: 8rem;
+//   padding-top: 2rem;
+// }
+
+// .projet__num-content {
+//   position: relative;
+//   display: inline-block; /* Pour que la taille soit ajustée au contenu */
+// }
+
+// .projet__num-titre {
+//   font-family: "Monument Extended";
+//   font-size: 1.125rem;
+//   color: $title;
+//   margin: 0.8rem;
+// }
+
+// .projet__border {
+//   position: absolute;
+//   width: 10px;
+//   height: 10px;
+//   pointer-events: none; /* Pour que les bordures ne bloquent pas les événements de clic */
+//   box-sizing: border-box;
+// }
+
+// .projet__border-top-left {
+//   top: 0;
+//   left: 0;
+//   border-top: 2px solid $borders;
+//   border-left: 2px solid $borders;
+// }
+
+// .projet__border-top-right {
+//   top: 0;
+//   right: 0;
+//   border-top: 2px solid $borders;
+//   border-right: 2px solid $borders;
+// }
+
+// .projet__border-bottom-left {
+//   bottom: 0;
+//   left: 0;
+//   border-bottom: 2px solid $borders;
+//   border-left: 2px solid $borders;
+// }
+
+// .projet__border-bottom-right {
+//   bottom: 0;
+//   right: 0;
+//   border-bottom: 2px solid $borders;
+//   border-right: 2px solid $borders;
+// }
+
+// .projet-texte__container {
+//   position: relative;
+//   margin-left: 2rem;
+//   margin-bottom: 5rem;
+//   padding-top: 2rem;
+// }
+
+// .projet-texte__num-content {
+//   position: relative;
+//   display: inline-block;
+// }
+
+// .projet-texte__num-titre {
+//   font-family: "Monument Extended";
+//   font-size: 1.125rem;
+//   color: $title;
+//   margin: 0.8rem;
+// }
+
+// .projet-texte__border {
+//   position: absolute;
+//   width: 15px;
+//   height: 15px;
+//   pointer-events: none; /* Pour que les bordures ne bloquent pas les événements de clic */
+//   box-sizing: border-box;
+// }
+
+// .projet-texte__border-top-left {
+//   top: 0;
+//   left: 0;
+//   border-top: 2px solid $borders;
+//   border-left: 2px solid $borders;
+// }
+
+// .projet-texte__border-top-right {
+//   top: 0;
+//   right: 0;
+//   border-top: 2px solid $borders;
+//   border-right: 2px solid $borders;
+// }
+
+// .projet-texte__border-bottom-left {
+//   bottom: 0;
+//   left: 0;
+//   border-bottom: 2px solid $borders;
+//   border-left: 2px solid $borders;
+// }
+
+// .projet-texte__border-bottom-right {
+//   bottom: 0;
+//   right: 0;
+//   border-bottom: 2px solid $borders;
+//   border-right: 2px solid $borders;
+// }

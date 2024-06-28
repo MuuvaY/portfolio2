@@ -371,7 +371,7 @@ function App() {
         </div>
 
         <Testslide />
-        <Number />
+        {/* <Number /> */}
         {/* <Test /> */}
       </div>
     </>
