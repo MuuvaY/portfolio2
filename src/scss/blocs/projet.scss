@@ -1079,21 +1079,279 @@
 //   border-bottom: 2px solid $borders;
 //   border-right: 2px solid $borders;
 // }
+// .accueil {
+//   margin: 10rem 5rem 0 5rem;
+//   height: 100vh;
+
+//   &__titre {
+//     font-size: 130px;
+//     color: $title;
+//     font-family: "Neue Montreal";
+//     display: flex;
+//     flex-direction: column;
+//     align-items: flex-start;
+//     font-weight: 500;
+//     text-transform: uppercase;
+//     border-left: solid 2px $principal;
+//     margin-bottom: 2rem;
+
+//     span {
+//       margin-left: 1rem;
+//     }
+//   }
+
+//   &__titre2 {
+//     font-size: 130px;
+//     color: $title;
+//     font-family: "Neue Montreal";
+//     display: flex;
+//     flex-direction: column;
+//     align-items: flex-end;
+//     font-weight: 500;
+//     text-transform: uppercase;
+//     border-right: solid 2px #0339f9;
+
+//     span {
+//       margin-right: 1rem;
+//     }
+//   }
+
+//   &__img {
+//     min-height: 270px;
+//     height: 500px;
+//   }
+
+//   &__description {
+//     font-family: "Neue Montreal";
+//     font-weight: 500;
+//     color: $text;
+//     line-height: 1.18;
+//     text-transform: uppercase;
+//     width: 30rem;
+//     border-left: solid 2px $principal;
+//     text-align: justify;
+//     display: flex;
+
+//     span {
+//       margin-left: 0.5rem;
+//     }
+//   }
+
+//   &__fleche {
+//     color: $title;
+//     font-size: 126px;
+//   }
+
+//   &__content {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//   }
+//   &__link {
+//     display: flex;
+//     align-items: flex-start;
+//     justify-content: space-between;
+//     color: $principal;
+//   }
+//   &__list {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: flex-end;
+//   }
+
+//   &__item {
+//     font-family: "Neue Montreal";
+//     font-weight: 500;
+//     font-size: 1.5rem;
+//     text-transform: uppercase;
+//     line-height: 1.18;
+//   }
+// }
+// .accueil {
+//   margin: 10rem 5rem 0 5rem;
+//   height: 100vh;
+
+//   @include for-phone-only {
+//     margin: 15rem 2rem 0 2rem;
+//     height: auto;
+//   }
+
+//   &__titre,
+//   &__titre2 {
+//     font-size: 130px;
+//     color: $title;
+//     font-family: "Neue Montreal";
+//     display: flex;
+//     flex-direction: column;
+//     font-weight: 500;
+//     text-transform: uppercase;
+//     margin-bottom: 2rem;
+
+//     @include for-phone-only {
+//       font-size: 60px;
+//     }
+
+//     @include for-tablet-portrait-up {
+//       font-size: 80px;
+//     }
+
+//     @include for-tablet-landscape-up {
+//       font-size: 100px;
+//     }
+//   }
+
+//   &__titre {
+//     align-items: flex-start;
+//     border-left: solid 2px $principal;
+
+//     span {
+//       margin-left: 1rem;
+//     }
+//   }
+
+//   &__titre2 {
+//     align-items: flex-end;
+//     border-right: solid 2px #0339f9;
+
+//     span {
+//       margin-right: 1rem;
+//     }
+
+//     @include for-phone-only {
+//       margin-top: 2rem;
+//     }
+//   }
+
+//   &__img {
+//     min-height: 270px;
+//     height: 500px;
+
+//     @include for-phone-only {
+//       height: auto;
+//       max-width: 100%;
+//     }
+//   }
+
+//   &__description {
+//     font-family: "Neue Montreal";
+//     font-weight: 500;
+//     color: $text;
+//     line-height: 1.18;
+//     text-transform: uppercase;
+//     width: 30rem;
+//     border-left: solid 2px $principal;
+//     text-align: justify;
+//     display: flex;
+
+//     span {
+//       margin-left: 0.5rem;
+//     }
+
+//     @include for-phone-only {
+//       width: 100%;
+//       margin-top: 2rem;
+//     }
+//   }
+
+//   &__fleche {
+//     color: $title;
+//     font-size: 126px;
+
+//     @include for-phone-only {
+//       font-size: 80px;
+//     }
+//   }
+
+//   &__content {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+
+//     @include for-phone-only {
+//       flex-direction: column;
+//       align-items: flex-start;
+//     }
+//   }
+
+//   &__link {
+//     display: flex;
+//     align-items: flex-start;
+//     justify-content: space-between;
+//     color: $principal;
+
+//     @include for-phone-only {
+//       flex-direction: column;
+//       align-items: center;
+//       width: 100%;
+//     }
+//   }
+
+//   &__list {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: flex-end;
+
+//     @include for-phone-only {
+//       flex-direction: row;
+//       justify-content: space-around;
+//       width: 100%;
+//       margin-top: 1rem;
+//     }
+//   }
+
+//   &__item {
+//     font-family: "Neue Montreal";
+//     font-weight: 500;
+//     font-size: 1.5rem;
+//     text-transform: uppercase;
+//     line-height: 1.18;
+
+//     @include for-phone-only {
+//       font-size: 1.2rem;
+//       margin: 0.5rem 0;
+//     }
+//   }
+// }
+
 .accueil {
   margin: 10rem 5rem 0 5rem;
   height: 100vh;
 
-  &__titre {
-    font-size: 130px;
+  @include for-phone-only {
+    margin: 10rem 2rem 0 2rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  &__titre,
+  &__titre2 {
+    font-size: 8.125rem;
     color: $title;
     font-family: "Neue Montreal";
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     font-weight: 500;
     text-transform: uppercase;
-    border-left: solid 2px $principal;
     margin-bottom: 2rem;
+
+    @include for-phone-only {
+      font-size: 3.5rem;
+    }
+
+    @include for-tablet-portrait-up {
+      font-size: 5rem;
+    }
+
+    @include for-tablet-landscape-up {
+      font-size: 6.25rem;
+    }
+  }
+
+  &__titre {
+    align-items: flex-start;
+    border-left: solid 2px $principal;
 
     span {
       margin-left: 1rem;
@@ -1101,24 +1359,31 @@
   }
 
   &__titre2 {
-    font-size: 130px;
-    color: $title;
-    font-family: "Neue Montreal";
-    display: flex;
-    flex-direction: column;
     align-items: flex-end;
-    font-weight: 500;
-    text-transform: uppercase;
     border-right: solid 2px #0339f9;
 
     span {
       margin-right: 1rem;
+    }
+
+    @include for-phone-only {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      border-right: none;
+      margin-top: 2rem;
     }
   }
 
   &__img {
     min-height: 270px;
     height: 500px;
+
+    @include for-phone-only {
+      height: auto;
+      max-width: 100%;
+    }
   }
 
   &__description {
@@ -1134,29 +1399,63 @@
 
     span {
       margin-left: 0.5rem;
+
+      @include for-phone-only {
+        margin-left: 1rem;
+      }
+    }
+
+    @include for-phone-only {
+      width: 100%;
+      margin-bottom: 2rem;
     }
   }
 
   &__fleche {
     color: $title;
     font-size: 126px;
+
+    @include for-phone-only {
+      font-size: 60px;
+    }
   }
 
   &__content {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include for-phone-only {
+      flex-direction: column;
+      align-items: flex-start;
+      order: 5;
+    }
   }
+
   &__link {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     color: $principal;
+
+    @include for-phone-only {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
   }
+
   &__list {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+
+    @include for-phone-only {
+      flex-direction: row;
+      justify-content: space-around;
+      width: 100%;
+      margin-top: 1rem;
+    }
   }
 
   &__item {
@@ -1165,6 +1464,52 @@
     font-size: 1.5rem;
     text-transform: uppercase;
     line-height: 1.18;
+
+    @include for-phone-only {
+      font-size: 1.2rem;
+      margin: 0.5rem 0;
+    }
+  }
+
+  @include for-phone-only {
+    &__content {
+      display: contents; // Cela permet aux enfants d'être réorganisés indépendamment
+    }
+
+    &__description {
+      order: -5; // Un nombre négatif élevé pour s'assurer qu'il apparaît en premier
+    }
+
+    &__titre {
+      order: -4;
+    }
+
+    &__link {
+      order: -3;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
+    &__img {
+      order: -2;
+    }
+
+    &__list {
+      order: -1;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 100%;
+      margin-top: 1rem;
+    }
+
+    &__titre2 {
+      order: 1;
+    }
+
+    &__fleche {
+      order: 2;
+    }
   }
 }
 

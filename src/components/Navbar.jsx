@@ -1,11 +1,15 @@
-import React from "react";
-import { useState, useContext } from "react";
+import React, { useState, useContext } from "react";
 import { LanguageContext } from "./LanguageContext";
 import { translations } from "./../translations";
-
 import LanguageToggle from "./LanguageToggle";
+
 function Navbar() {
   const { language } = useContext(LanguageContext);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   return (
     <nav className="navbar">
@@ -16,19 +20,20 @@ function Navbar() {
         </span>
       </a>
       <LanguageToggle />
-      <ul className="navbar__menu">
+      <button className="navbar__toggle" onClick={toggleMenu}>
+        <span className="navbar__toggle-icon"></span>
+      </button>
+      <ul className={`navbar__menu ${isMenuOpen ? "navbar__menu--open" : ""}`}>
         <li className="navbar__menu-item">
           <a href="" className="navbar__menu-link">
             {translations[language].competences}{" "}
           </a>
-          ,&nbsp;{" "}
         </li>
         <li className="navbar__menu-item">
           <a href="" className="navbar__menu-link">
             {translations[language].projets}{" "}
           </a>
         </li>
-        ,&nbsp;{" "}
         <li className="navbar__menu-item">
           <a href="" className="navbar__menu-link">
             {translations[language].contact}{" "}
