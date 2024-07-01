@@ -1,0 +1,61 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3rem 5rem 3rem;
+  font-size: 1.5rem;
+  color: $text;
+  font-family: "Neue Montreal";
+
+  position: fixed;
+  top: 5rem;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+
+  a {
+    font-family: "Neue Montreal";
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: $text;
+    transition: color 0.3s ease; // Ajout d'une transition pour un effet plus doux
+
+    &:hover {
+      color: darken($text, 20%); // Assombrit la couleur du texte au survol
+    }
+  }
+
+  &__brand {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+
+    &-item {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: -5px;
+        left: 0;
+        background-color: $text;
+        transition: width 0.5s ease;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+    }
+
+    &-link {
+      //   padding: 5px 10px; // Ajout d'un peu d'espace autour du texte
+    }
+  }
+}

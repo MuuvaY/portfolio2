@@ -448,33 +448,6 @@
 //   transform: scaleX(1);
 // }
 
-// Mixins pour les media queries
-// @mixin for-phone-only {
-//   @media (max-width: 599px) {
-//     @content;
-//   }
-// }
-// @mixin for-tablet-portrait-up {
-//   @media (min-width: 600px) {
-//     @content;
-//   }
-// }
-// @mixin for-tablet-landscape-up {
-//   @media (min-width: 900px) {
-//     @content;
-//   }
-// }
-// @mixin for-desktop-up {
-//   @media (min-width: 1200px) {
-//     @content;
-//   }
-// }
-// @mixin for-big-desktop-up {
-//   @media (min-width: 1800px) {
-//     @content;
-//   }
-// }
-
 // Styles du carrousel
 .projet__content {
   max-width: 1200px;
@@ -1106,3 +1079,108 @@
 //   border-bottom: 2px solid $borders;
 //   border-right: 2px solid $borders;
 // }
+.accueil {
+  margin: 10rem 5rem 0 5rem;
+  height: 100vh;
+
+  &__titre {
+    font-size: 130px;
+    color: $title;
+    font-family: "Neue Montreal";
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-left: solid 2px $principal;
+    margin-bottom: 2rem;
+
+    span {
+      margin-left: 1rem;
+    }
+  }
+
+  &__titre2 {
+    font-size: 130px;
+    color: $title;
+    font-family: "Neue Montreal";
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-right: solid 2px #0339f9;
+
+    span {
+      margin-right: 1rem;
+    }
+  }
+
+  &__img {
+    min-height: 270px;
+    height: 500px;
+  }
+
+  &__description {
+    font-family: "Neue Montreal";
+    font-weight: 500;
+    color: $text;
+    line-height: 1.18;
+    text-transform: uppercase;
+    width: 30rem;
+    border-left: solid 2px $principal;
+    text-align: justify;
+    display: flex;
+
+    span {
+      margin-left: 0.5rem;
+    }
+  }
+
+  &__fleche {
+    color: $title;
+    font-size: 126px;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__link {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    color: $principal;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  &__item {
+    font-family: "Neue Montreal";
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    line-height: 1.18;
+  }
+}
+
+.language-toggle {
+  // position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 5px 10px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.language-toggle:hover {
+  background-color: red;
+  color: #fff;
+}
