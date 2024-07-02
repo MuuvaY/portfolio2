@@ -399,13 +399,19 @@ import { LanguageProvider } from "./components/LanguageContext";
 import Skills from "./components/Skills";
 import Accueil from "./components/Accueil";
 import Navbar from "./components/Navbar";
+import Compétences from "./components/Compétences";
+import Technologies from "./components/Technologies";
+import Projets from "./components/Projets";
 
 function App() {
   return (
     <LanguageProvider>
-      <Navbar />
+      {/* <Navbar /> */}
       <Accueil />
-      <Skills />
+      <Compétences />
+      <Technologies />
+      {/* <Skills /> */}
+      <Projets />
     </LanguageProvider>
   );
 }

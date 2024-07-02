@@ -4,6 +4,7 @@ import { translations } from "./../translations";
 import marius from "./../assets/img/marius.webp";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Navbar from "./Navbar";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -91,174 +92,131 @@ function Accueil() {
   }, []);
 
   return (
-    // <div className="accueil" ref={componentRef}>
-    //   <h1 className="accueil__titre" ref={titleRef}>
-    //     <span>{translations[language].developpeur}</span>{" "}
-    //     <span>{translations[language].web}</span>
-    //   </h1>
-    //   <div className="accueil__link">
-    //     <img src={marius} alt="Photo" className="accueil__img" ref={imgRef} />
-    // <ul className="accueil__list" ref={linksRef}>
-    // <li className="accueil__item">
-    //   <a
-    //     href="https://github.com/MuuvaY"
-    //     target="_blank"
-    //     className="accueil__link"
-    //   >
-    //     Github
-    //   </a>
-    // </li>
-    // <li className="accueil__item">
-    //   <a
-    //     href="https://linkedin.com/in/mariusyvart"
-    //     target="_blank"
-    //     className="accueil__link"
-    //   >
-    //     Linkedin
-    //   </a>
-    // </li>
-    // <li className="accueil__item">
-    //   <a
-    //     href="mailto:mariusyvt@gmail.com"
-    //     target="_blank"
-    //     className="accueil__link"
-    //   >
-    //     Mail
-    //   </a>
-    // </li>
-    // <li className="accueil__item">
-    //   <a
-    //     href="https://github.com/MuuvaY"
-    //     target="_blank"
-    //     className="accueil__link"
-    //   >
-    //     CV
-    //   </a>
-    // </li>
-    // </ul>
-    //   </div>
-    //   <div className="accueil__content" ref={contentRef}>
-    //     <svg
-    //       width="123"
-    //       height="123"
-    //       viewBox="0 0 123 123"
-    //       fill="none"
-    //       xmlns="http://www.w3.org/2000/svg"
-    //       ref={arrowRef}
-    //     >
-    // <g clipPath="url(#clip0_263_453)">
-    //   <path
-    //     fillRule="evenodd"
-    //     clipRule="evenodd"
-    //     d="M66.625 111.694L98.5794 73.1133L102.5 76.4189L63.9549 122.544L25.625 76.4189L29.5405 73.1081L61.5 111.699L61.5 -0.456119L66.625 -0.456118L66.625 111.694Z"
-    //     fill="#0339F9"
-    //   />
-    // </g>
-    // <defs>
-    //   <clipPath id="clip0_263_453">
-    //     <rect
-    //       width="123"
-    //       height="123"
-    //       fill="white"
-    //       transform="translate(123 123) rotate(-180)"
-    //     />
-    //   </clipPath>
-    // </defs>
-    // </svg>
-    //     <p className="accueil__description" ref={descriptionRef}>
-    //       <span>{translations[language].description}</span>
-    //     </p>
-    //     <h1 className="accueil__titre2" ref={title2Ref}>
-    //       <span>Marius</span>
-    //       <span>YVART</span>
-    //     </h1>
-    //   </div>
-    // </div>
-
-    <div className="accueil" ref={componentRef}>
-      <h1 className="accueil__titre" ref={titleRef}>
-        <span>{translations[language].developpeur}</span>{" "}
-        <span>{translations[language].web}</span>
-      </h1>
-      <div className="accueil__link">
-        <img src={marius} alt="Photo" className="accueil__img" ref={imgRef} />
-        <ul className="accueil__list" ref={linksRef}>
-          <li className="accueil__item">
-            <a
-              href="https://github.com/MuuvaY"
-              target="_blank"
-              className="accueil__link"
-            >
-              Github
-            </a>
-          </li>
-          <li className="accueil__item">
-            <a
-              href="https://linkedin.com/in/mariusyvart"
-              target="_blank"
-              className="accueil__link"
-            >
-              Linkedin
-            </a>
-          </li>
-          <li className="accueil__item">
-            <a
-              href="mailto:mariusyvt@gmail.com"
-              target="_blank"
-              className="accueil__link"
-            >
-              Mail
-            </a>
-          </li>
-          <li className="accueil__item">
-            <a
-              href="https://github.com/MuuvaY"
-              target="_blank"
-              className="accueil__link"
-            >
-              CV
-            </a>
-          </li>{" "}
-        </ul>
-      </div>
-      <div className="accueil__content" ref={contentRef}>
-        <svg
-          width="123"
-          height="123"
-          viewBox="0 0 123 123"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          ref={arrowRef}
-          className="accueil__fleche"
-        >
-          <g clipPath="url(#clip0_263_453)">
-            <path
-              fillRule="evenodd"
-              clipRule="evenodd"
-              d="M66.625 111.694L98.5794 73.1133L102.5 76.4189L63.9549 122.544L25.625 76.4189L29.5405 73.1081L61.5 111.699L61.5 -0.456119L66.625 -0.456118L66.625 111.694Z"
-              fill="#0339F9"
-            />
-          </g>
-          <defs>
-            <clipPath id="clip0_263_453">
-              <rect
-                width="123"
-                height="123"
-                fill="white"
-                transform="translate(123 123) rotate(-180)"
+    <>
+      <Navbar />
+      <section className="accueil" ref={componentRef}>
+        <h1 className="accueil__titre" ref={titleRef}>
+          <span>{translations[language].developpeur}</span>{" "}
+          <span>{translations[language].web}</span>
+        </h1>
+        <div className="accueil__link">
+          <img src={marius} alt="Photo" className="accueil__img" ref={imgRef} />
+          <ul className="accueil__list" ref={linksRef}>
+            <li className="accueil__item">
+              <a
+                href="https://github.com/MuuvaY"
+                target="_blank"
+                className="accueil__link"
+              >
+                Github
+              </a>
+            </li>
+            <li className="accueil__item">
+              <a
+                href="https://linkedin.com/in/mariusyvart"
+                target="_blank"
+                className="accueil__link"
+              >
+                Linkedin
+              </a>
+            </li>
+            <li className="accueil__item">
+              <a
+                href="mailto:mariusyvt@gmail.com"
+                target="_blank"
+                className="accueil__link"
+              >
+                Mail
+              </a>
+            </li>
+            <li className="accueil__item">
+              <a
+                href="https://github.com/MuuvaY"
+                target="_blank"
+                className="accueil__link"
+              >
+                CV
+              </a>
+            </li>{" "}
+          </ul>
+        </div>
+        <div className="accueil__content" ref={contentRef}>
+          <svg
+            width="123"
+            height="123"
+            viewBox="0 0 123 123"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            ref={arrowRef}
+            className="accueil__fleche"
+          >
+            <g clipPath="url(#clip0_263_453)">
+              <path
+                fillRule="evenodd"
+                clipRule="evenodd"
+                d="M66.625 111.694L98.5794 73.1133L102.5 76.4189L63.9549 122.544L25.625 76.4189L29.5405 73.1081L61.5 111.699L61.5 -0.456119L66.625 -0.456118L66.625 111.694Z"
+                fill="#0339F9"
               />
-            </clipPath>
-          </defs>{" "}
-        </svg>
-        <p className="accueil__description" ref={descriptionRef}>
+            </g>
+            <defs>
+              <clipPath id="clip0_263_453">
+                <rect
+                  width="123"
+                  height="123"
+                  fill="white"
+                  transform="translate(123 123) rotate(-180)"
+                />
+              </clipPath>
+            </defs>{" "}
+          </svg>
+          <p className="accueil__description" ref={descriptionRef}>
+            <span>{translations[language].descriptionperso}</span>
+          </p>
+          <h1 className="accueil__titre2" ref={title2Ref}>
+            <span>Marius</span>
+            <span>YVART</span>
+          </h1>
+        </div>
+        {/* <p className="accueil__description" ref={descriptionRef}>
           <span>{translations[language].description}</span>
         </p>
-        <h1 className="accueil__titre2" ref={title2Ref}>
-          <span>Marius</span>
-          <span>YVART</span>
-        </h1>
-      </div>
-    </div>
+        <div className="accueil__titre2-container">
+          <svg
+            width="123"
+            height="123"
+            viewBox="0 0 123 123"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            ref={arrowRef}
+            className="accueil__fleche"
+          >
+            <g clipPath="url(#clip0_263_453)">
+              <path
+                fillRule="evenodd"
+                clipRule="evenodd"
+                d="M66.625 111.694L98.5794 73.1133L102.5 76.4189L63.9549 122.544L25.625 76.4189L29.5405 73.1081L61.5 111.699L61.5 -0.456119L66.625 -0.456118L66.625 111.694Z"
+                fill="#0339F9"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_263_453">
+                <rect
+                  width="123"
+                  height="123"
+                  fill="white"
+                  transform="translate(123 123) rotate(-180)"
+                />
+              </clipPath>
+            </defs>{" "}
+          </svg>
+          <h1 className="accueil__titre2" ref={title2Ref}>
+            <span>Marius</span>
+            <span>YVART</span>
+          </h1>
+        </div>
+      </div> */}
+      </section>
+    </>
   );
 }
 

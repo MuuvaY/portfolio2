@@ -1,0 +1,237 @@
+// .technologies {
+//   &__title {
+//     font-family: "Neue Montreal";
+//     font-size: 2.5rem;
+//     font-weight: 500;
+//     text-transform: uppercase;
+//     color: $title;
+//   }
+//   &__icon {
+//     color: white;
+//     height: 1.8rem;
+//     margin-top: 1.2rem;
+//   }
+//   &__description {
+//     font-family: "Neue Montreal";
+//     font-size: 1.5rem;
+//     font-weight: 500;
+//     color: $title;
+//   }
+//   &__image {
+//     object-fit: cover;
+//     height: auto;
+//     width: 8vh;
+//     margin-top: 0.8rem;
+//     margin-bottom: 1rem;
+//   }
+
+//   &__separator {
+//     border-left: solid 2px $principal;
+//     margin-right: 10rem;
+//   }
+//   &__wrapper {
+//     margin-left: 1rem;
+//   }
+
+//   &__item {
+//     display: flex;
+//     margin-bottom: 2rem;
+//   }
+// }
+
+// .technologies2 {
+//   &__item {
+//     display: flex;
+//   }
+//   &__separator {
+//     border-right: solid 2px #0339f9;
+//     margin-left: 10rem;
+//   }
+//   &__wrapper {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: flex-end;
+//     margin-right: 1rem;
+//   }
+// }
+
+// .technologies {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   height: 100vh;
+//   &__title {
+//     font-family: "Neue Montreal";
+//     font-size: 2.5rem;
+//     font-weight: 500;
+//     text-transform: uppercase;
+//     color: $title;
+//   }
+//   &__icon {
+//     color: white;
+//     height: 1.8rem;
+//     margin-top: 1.2rem;
+//   }
+//   &__description {
+//     font-family: "Neue Montreal";
+//     font-size: 1.5rem;
+//     font-weight: 500;
+//     color: $title;
+//   }
+//   &__image {
+//     object-fit: cover;
+//     height: auto;
+//     width: 8vh;
+//     margin-top: 0.8rem;
+//     margin-bottom: 1rem;
+//   }
+//   &__separator {
+//     border-left: solid 2px $principal;
+//     margin-right: 10rem;
+//   }
+//   &__wrapper {
+//     margin-left: 1rem;
+//   }
+//   &__item {
+//     display: flex;
+//     align-items: center;
+//     margin-bottom: 2rem;
+//   }
+// }
+
+// .technologies2 {
+//   &__item {
+//     display: flex;
+//     align-items: center;
+//   }
+//   &__separator {
+//     border-right: solid 2px #0339f9;
+//     margin-left: 10rem;
+//   }
+//   &__wrapper {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: flex-end;
+//     margin-right: 1rem;
+//   }
+// }
+
+.technologies {
+  font-family: "Neue Montreal";
+  font-weight: 500;
+  position: relative;
+  margin-bottom: 10rem;
+
+  &__container {
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem 2rem;
+    grid-template-areas:
+      "technologies__container-react technologies__container-js technologies__container-php"
+      "technologies__container-backend technologies__container-backend technologies__container-scss";
+    margin: 0 15rem 0 15rem;
+  }
+  &__container-react,
+  &__container-js,
+  &__container-php,
+  &__container-backend,
+  &__container-scss {
+    display: flex;
+    flex-direction: column;
+    // width: 30rem;
+    border-left: 2px solid $principal;
+    // margin: 2rem 0 2rem 0;
+    justify-content: center;
+  }
+  &__header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10rem;
+  }
+  &__header-title {
+    font-size: 5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: $title;
+    // margin: 1rem 0 1rem 0;
+  }
+  &__number {
+    color: $text;
+    font-size: 1.25rem;
+    margin: 0 0 5rem 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &__separator {
+    color: $principal;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    margin-left: 1rem;
+  }
+  &__image-wrapper {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  &__image {
+    object-fit: cover;
+    height: 8vh;
+    width: auto;
+  }
+  &__image-express {
+    object-fit: cover;
+    height: 8vh;
+    width: auto;
+    background-color: white;
+  }
+  &__content {
+    margin-left: 1rem;
+  }
+
+  &__icon {
+    color: white;
+    height: 1.8rem;
+    margin-top: 1.2rem;
+  }
+  &__title {
+    font-family: "Neue Montreal";
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: $title;
+    margin: 1rem 0 1rem 0;
+  }
+  &__description {
+    font-family: "Neue Montreal";
+    // font-size: 1.5rem;
+    font-weight: 500;
+    color: $title;
+    text-align: justify;
+  }
+
+  &__container-react {
+    grid-area: technologies__container-react;
+  }
+  &__container-js {
+    grid-area: technologies__container-js;
+  }
+  &__container-php {
+    grid-area: technologies__container-php;
+  }
+  &__container-backend {
+    grid-area: technologies__container-backend;
+  }
+  &__container-scss {
+    grid-area: technologies__container-scss;
+  }
+}
+#technologies__image {
+  animation: rotate 5s linear infinite;
+}

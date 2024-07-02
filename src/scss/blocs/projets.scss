@@ -1,0 +1,73 @@
+.projets {
+  font-family: "Neue Montreal";
+  font-weight: 500;
+  position: relative;
+
+  &__number {
+    color: $text;
+    font-size: 1.25rem;
+    margin: 0 0 5rem 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &__separator {
+    color: $principal;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    margin-bottom: 10rem;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 80rem;
+  }
+  &__title {
+    color: $title;
+    font-size: 8rem;
+    text-transform: uppercase;
+    margin-bottom: 25rem;
+  }
+  &__subtitle {
+    color: $text;
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+  &__description {
+    color: $text;
+    line-height: 1.18;
+    text-transform: uppercase;
+    width: 30rem;
+    border-left: solid 2px $principal;
+    text-align: justify;
+    display: flex;
+
+    span {
+      margin-left: 0.5rem;
+    }
+  }
+  &__link {
+    font-size: 1.25rem;
+    color: $principal;
+    text-transform: uppercase;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__fleche {
+    margin-left: 8rem;
+    position: absolute;
+    bottom: 0;
+    @include for-phone-only {
+      height: 3.75rem;
+    }
+  }
+}

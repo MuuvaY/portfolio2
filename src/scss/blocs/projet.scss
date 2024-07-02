@@ -1313,16 +1313,421 @@
 //   }
 // }
 
+// .accueil {
+//   margin: 10rem 5rem 0 5rem;
+//   // height: 100vh;
+//   min-height: 100vh;
+
+//   @include for-phone-only {
+//     margin: 10rem 2rem 0 2rem;
+//     // height: auto;
+//     display: flex;
+//     flex-direction: column;
+//     width: 100%;
+//   }
+
+//   &__titre,
+//   &__titre2 {
+//     font-size: 8.125rem;
+//     color: $title;
+//     font-family: "Neue Montreal";
+//     display: flex;
+//     flex-direction: column;
+//     font-weight: 500;
+//     text-transform: uppercase;
+//     margin-bottom: 2rem;
+
+//     @include for-phone-only {
+//       font-size: 3.5rem;
+//     }
+
+//     @include for-tablet-portrait-up {
+//       font-size: 5rem;
+//     }
+
+//     @include for-tablet-landscape-up {
+//       font-size: 6.25rem;
+//     }
+//   }
+
+//   &__titre {
+//     align-items: flex-start;
+//     border-left: solid 2px $principal;
+
+//     span {
+//       margin-left: 1rem;
+//     }
+//   }
+
+//   &__titre2 {
+//     align-items: flex-end;
+//     border-right: solid 2px #0339f9;
+
+//     span {
+//       margin-right: 1rem;
+//     }
+
+//     @include for-phone-only {
+//       flex-direction: row;
+//       align-items: center;
+//       justify-content: space-between;
+//       width: 100%;
+//       border-right: none;
+//       margin-top: 2rem;
+//     }
+//   }
+
+//   &__img {
+//     min-height: 270px;
+//     height: 500px;
+
+//     @include for-phone-only {
+//       height: auto;
+//       max-width: 100%;
+//     }
+//   }
+
+//   &__description {
+//     font-family: "Neue Montreal";
+//     font-weight: 500;
+//     color: $text;
+//     line-height: 1.18;
+//     text-transform: uppercase;
+//     width: 30rem;
+//     border-left: solid 2px $principal;
+//     text-align: justify;
+//     display: flex;
+
+//     span {
+//       margin-left: 0.5rem;
+
+//       @include for-phone-only {
+//         margin-left: 1rem;
+//       }
+//     }
+
+//     @include for-phone-only {
+//       width: 100%;
+//       margin-bottom: 2rem;
+//     }
+//   }
+
+//   &__fleche {
+//     color: $title;
+//     font-size: 126px;
+
+//     @include for-phone-only {
+//       font-size: 60px;
+//     }
+//   }
+
+//   &__content {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+
+//     @include for-phone-only {
+//       flex-direction: column;
+//       align-items: flex-start;
+//       order: 5;
+//     }
+//   }
+
+//   &__link {
+//     display: flex;
+//     align-items: flex-start;
+//     justify-content: space-between;
+//     color: $principal;
+
+//     @include for-phone-only {
+//       flex-direction: column;
+//       align-items: center;
+//       width: 100%;
+//     }
+//   }
+
+//   &__list {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: flex-end;
+
+//     @include for-phone-only {
+//       flex-direction: row;
+//       justify-content: space-around;
+//       width: 100%;
+//       margin-top: 1rem;
+//     }
+//   }
+
+//   &__item {
+//     font-family: "Neue Montreal";
+//     font-weight: 500;
+//     font-size: 1.5rem;
+//     text-transform: uppercase;
+//     line-height: 1.18;
+
+//     @include for-phone-only {
+//       font-size: 1.2rem;
+//       margin: 0.5rem 0;
+//     }
+//   }
+
+//   @include for-phone-only {
+//     &__content {
+//       display: contents; // Cela permet aux enfants d'être réorganisés indépendamment
+//     }
+
+//     &__description {
+//       order: -5; // Un nombre négatif élevé pour s'assurer qu'il apparaît en premier
+//     }
+
+//     &__titre {
+//       order: -4;
+//     }
+
+//     &__link {
+//       order: -3;
+//       flex-direction: column;
+//       align-items: center;
+//       width: 100%;
+//     }
+
+//     &__img {
+//       order: -2;
+//     }
+
+//     &__list {
+//       order: -1;
+//       flex-direction: row;
+//       justify-content: space-around;
+//       width: 100%;
+//       margin-top: 1rem;
+//     }
+
+//     &__titre2 {
+//       order: 1;
+//     }
+
+//     &__fleche {
+//       order: 2;
+//     }
+//   }
+// }
+// .accueil {
+//   margin: 10rem 5rem 0 5rem;
+//   height: 100vh;
+//   box-sizing: border-box; /* Inclure le padding et la bordure dans la hauteur totale */
+//   overflow: hidden; /* Empêcher le débordement */
+
+//   @include for-phone-only {
+//     margin: 7rem 2rem 0 2rem;
+//     display: flex;
+//     flex-direction: column;
+//     width: 100%;
+//     height: auto; /* Ajuster la hauteur pour le mobile */
+//   }
+
+//   &__titre,
+//   &__titre2 {
+//     font-size: 8.125rem;
+//     color: $title;
+//     font-family: "Neue Montreal";
+//     display: flex;
+//     flex-direction: column;
+//     font-weight: 500;
+//     text-transform: uppercase;
+//     margin-bottom: 2rem;
+
+//     @include for-phone-only {
+//       font-size: 3rem;
+//     }
+
+//     @include for-tablet-portrait-up {
+//       font-size: 5rem;
+//     }
+
+//     @include for-tablet-landscape-up {
+//       font-size: 6.25rem;
+//     }
+//   }
+
+//   &__titre {
+//     align-items: flex-start;
+//     border-left: solid 2px $principal;
+
+//     span {
+//       margin-left: 1rem;
+//     }
+//   }
+
+//   &__titre2 {
+//     align-items: flex-end;
+//     border-right: solid 2px #0339f9;
+
+//     span {
+//       margin-right: 1rem;
+//     }
+
+//     @include for-phone-only {
+//       // flex-direction: row;
+//       // align-items: center;
+//       justify-content: space-between;
+//       width: 100%;
+//       border-right: none;
+//       margin-top: 2rem;
+//     }
+//   }
+
+//   &__img {
+//     min-height: 270px;
+//     height: 500px;
+
+//     @include for-phone-only {
+//       height: auto;
+//       max-width: 100%;
+//     }
+//   }
+
+//   &__description {
+//     font-family: "Neue Montreal";
+//     font-weight: 500;
+//     color: $text;
+//     line-height: 1.18;
+//     text-transform: uppercase;
+//     width: 30rem;
+//     border-left: solid 2px $principal;
+//     text-align: justify;
+//     display: flex;
+
+//     span {
+//       margin-left: 0.5rem;
+
+//       @include for-phone-only {
+//         margin-left: 1rem;
+//       }
+//     }
+
+//     @include for-phone-only {
+//       width: 100%;
+//       margin-bottom: 2rem;
+//     }
+//   }
+
+//   &__fleche {
+//     color: $title;
+//     font-size: 126px;
+
+//     @include for-phone-only {
+//       height: 3.75rem;
+//     }
+//   }
+
+//   &__content {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     flex-wrap: wrap; /* Pour permettre le wrapping des enfants */
+
+//     @include for-phone-only {
+//       flex-direction: column;
+//       align-items: flex-start;
+//       order: 5;
+//     }
+//   }
+
+//   &__link {
+//     display: flex;
+//     align-items: flex-start;
+//     justify-content: space-between;
+//     color: $principal;
+
+//     @include for-phone-only {
+//       flex-direction: column;
+//       align-items: center;
+//       width: 100%;
+//     }
+//   }
+
+//   &__list {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: flex-end;
+
+//     @include for-phone-only {
+//       flex-direction: row;
+//       justify-content: space-around;
+//       width: 100%;
+//       margin-top: 1rem;
+//     }
+//   }
+
+//   &__item {
+//     font-family: "Neue Montreal";
+//     font-weight: 500;
+//     font-size: 1.5rem;
+//     text-transform: uppercase;
+//     line-height: 1.18;
+
+//     @include for-phone-only {
+//       font-size: 1.2rem;
+//       margin: 0.5rem 0;
+//     }
+//   }
+
+//   @include for-phone-only {
+//     &__content {
+//       display: contents; // Cela permet aux enfants d'être réorganisés indépendamment
+//     }
+
+//     &__description {
+//       order: -5; // Un nombre négatif élevé pour s'assurer qu'il apparaît en premier
+//     }
+
+//     &__titre {
+//       order: -4;
+//     }
+
+//     &__link {
+//       order: -3;
+//       flex-direction: column;
+//       align-items: center;
+//       width: 100%;
+//     }
+
+//     &__img {
+//       order: -2;
+//     }
+
+//     &__list {
+//       order: -1;
+//       flex-direction: row;
+//       justify-content: space-around;
+//       width: 100%;
+//       margin-top: 1rem;
+//     }
+
+//     &__titre2 {
+//       order: 1;
+//     }
+
+//     &__fleche {
+//       order: 2;
+//     }
+//   }
+// }
+
 .accueil {
   margin: 10rem 5rem 0 5rem;
   height: 100vh;
+  box-sizing: border-box; /* Inclure le padding et la bordure dans la hauteur totale */
+  overflow: hidden; /* Empêcher le débordement */
 
   @include for-phone-only {
-    margin: 10rem 2rem 0 2rem;
-    height: auto;
+    margin: 7rem 2rem 0 2rem;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    // width: 100%;
+    height: auto; /* Ajuster la hauteur pour le mobile */
   }
 
   &__titre,
@@ -1337,7 +1742,7 @@
     margin-bottom: 2rem;
 
     @include for-phone-only {
-      font-size: 3.5rem;
+      font-size: 2.5rem;
     }
 
     @include for-tablet-portrait-up {
@@ -1366,13 +1771,20 @@
       margin-right: 1rem;
     }
 
+    // @include for-phone-only {
+    //   flex-direction: row; /* Change direction to row */
+    //   align-items: center;
+    //   justify-content: space-between;
+    //   width: 100%;
+    //   border-right: none;
+    //   margin-top: 2rem;
+
+    // }
     @include for-phone-only {
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-      width: 100%;
-      border-right: none;
-      margin-top: 2rem;
+      flex-direction: column;
+      align-items: flex-end;
+
+      // margin-right: 1rem;
     }
   }
 
@@ -1381,8 +1793,9 @@
     height: 500px;
 
     @include for-phone-only {
-      height: auto;
+      // height: auto;
       max-width: 100%;
+      height: 300px;
     }
   }
 
@@ -1416,7 +1829,8 @@
     font-size: 126px;
 
     @include for-phone-only {
-      font-size: 60px;
+      height: 3.75rem;
+      // margin-left: 1rem; /* Add margin to the left to create space */
     }
   }
 
@@ -1424,6 +1838,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap; /* Pour permettre le wrapping des enfants */
 
     @include for-phone-only {
       flex-direction: column;
@@ -1440,8 +1855,9 @@
 
     @include for-phone-only {
       flex-direction: column;
-      align-items: center;
+      // align-items: center;
       width: 100%;
+      align-items: flex-start;
     }
   }
 
@@ -1477,7 +1893,8 @@
     }
 
     &__description {
-      order: -5; // Un nombre négatif élevé pour s'assurer qu'il apparaît en premier
+      order: -5;
+      font-size: 0.8rem;
     }
 
     &__titre {
@@ -1486,9 +1903,6 @@
 
     &__link {
       order: -3;
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
     }
 
     &__img {
@@ -1505,10 +1919,27 @@
 
     &__titre2 {
       order: 1;
+      // flex-direction: row; /* Assurez-vous que le titre secondaire est en ligne */
+    }
+    &__titre2-container {
+      order: 1;
     }
 
     &__fleche {
-      order: 2;
+      // order: 2;
+      // margin-left: 1rem; /* Espace entre le titre secondaire et la flèche */
+    }
+  }
+  &__titre2-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+
+    @include for-phone-only {
+      justify-content: space-between;
+      margin-top: 2rem;
+      align-items: normal;
     }
   }
 }

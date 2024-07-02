@@ -1,13 +1,36 @@
+// .btn {
+//   // margin: 2rem;
+//   margin-right: 2rem;
+//   color: $text;
+//   font-family: "Ethnocentric Rg";
+//   font-size: 2rem;
+//   display: flex;
+//   border: solid $button 2px;
+//   width: auto;
+//   height: 2em;
+// }
+
+// .btn__lg {
+//   flex: 1;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   cursor: pointer;
+//   padding: 10px;
+// }
+
+// .btn__lg.active {
+//   background-color: $button;
+// }
+
 .btn {
-  // margin: 2rem;
-  margin-right: 2rem;
   color: $text;
-  font-family: "Ethnocentric Rg";
-  font-size: 2rem;
+  font-family: "Neue Montreal";
+  font-weight: 500;
+  text-transform: uppercase;
   display: flex;
-  border: solid $button 2px;
+  // border: solid $button 2px;
   width: auto;
-  height: 2em;
 }
 
 .btn__lg {
@@ -17,8 +40,23 @@
   align-items: center;
   cursor: pointer;
   padding: 10px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .btn__lg.active {
-  background-color: $button;
+  // background-color: $button;
+  text-decoration: underline;
+  color: $principal;
 }
+
+// .btn__lg.active {
+//   &.active-fr {
+//     background-color: #ff6347; // Couleur spécifique pour le bouton FR actif
+//   }
+// }
+
+// .btn__lg.active {
+//   &.active-en {
+//     background-color: #4682b4; // Couleur spécifique pour le bouton EN actif
+//   }
+// }
