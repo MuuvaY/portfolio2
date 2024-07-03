@@ -1,0 +1,121 @@
+.carrousel {
+  font-family: "Neue Montreal";
+  font-weight: 500;
+  position: relative;
+
+  &__header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10rem;
+  }
+  &__header-title {
+    font-size: 5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: $title;
+    // margin: 1rem 0 1rem 0;
+  }
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    touch-action: pan-y;
+    user-select: none;
+    -webkit-user-drag: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  &__stats {
+    display: flex;
+    align-items: center;
+    margin: 0 2rem 0 2rem;
+    justify-content: space-between;
+    width: 100%;
+  }
+  &__number {
+    color: $text;
+    font-size: 1.25rem;
+    margin: 0 0 5rem 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &__separator {
+    color: $principal;
+  }
+  &__title {
+    font-size: 6rem;
+    margin-bottom: 2rem;
+
+    a {
+      color: $title;
+      transition: color 0.3s;
+      text-decoration: none;
+    }
+    a:hover {
+      color: $principal;
+    }
+  }
+
+  &__list {
+    display: flex;
+    font-size: 1.25rem;
+    grid-column-gap: 4em;
+  }
+  &__wrapper {
+    display: flex;
+    gap: 1rem;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 0.5em;
+    align-items: flex-start;
+  }
+  &__label {
+    // color: rgba(255, 255, 255, 0.48);
+    color: grey;
+    opacity: 50%;
+  }
+  &__link {
+    color: $text;
+    text-decoration: none;
+  }
+  &__date {
+    color: $text;
+  }
+  &__icon {
+    height: 1.5rem;
+    margin-right: 0.5rem;
+    margin-left: 0.25rem;
+  }
+  &__description {
+    color: $text;
+    font-size: 1.5rem;
+    margin: 2rem 0;
+    width: 30rem;
+  }
+  &__technologies {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    border: 2px solid $principal;
+    border-radius: 5px;
+    gap: 0.5rem;
+    padding: 0.2rem;
+  }
+  &__arrow {
+    cursor: pointer;
+  }
+  &__meter {
+    font-family: "Neue Montreal";
+    font-weight: 500;
+    color: $text;
+    font-size: 1.25rem;
+  }
+  &__button {
+    background: none;
+    border: none;
+  }
+}

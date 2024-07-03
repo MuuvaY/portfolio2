@@ -116,128 +116,7 @@ import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 function Technologies() {
   const { language } = useContext(LanguageContext);
 
-  const technologies = [
-    {
-      title: "React",
-      description: translations[language].reactdescription,
-      icon: faReact,
-      image: [reactLogo],
-    },
-    {
-      title: "Javascript",
-      description: translations[language].jsdescription,
-      icon: faJs,
-      image: [jslogo],
-    },
-    {
-      title: "SCSS",
-      description: translations[language].scssdescription,
-      icon: faSass,
-      image: [scsslogo],
-    },
-    // {
-    //   title: "Backend",
-    //   description: translations[language].backenddescription,
-    //   icon: faDatabase,
-    //   image: [mongodblogo, phplogo, sqllogo, gitlogo],
-    // },
-
-    {
-      title: "WordPress",
-      description: translations[language].wordpressdescription,
-      icon: faWordpress,
-      image: [wordpresslogo],
-    },
-  ];
-
   return (
-    // <section className="technologies">
-    //   <div className="technologies__item">
-    //     <div className="technologies__separator">
-    //       <div className="technologies__wrapper">
-    //         <h1 className="technologies__title">React</h1>
-    //         <FontAwesomeIcon icon={faReact} className="technologies__icon" />
-    //         <p className="technologies__description">
-    //           {/* {translations[language].reactdescription} */}
-    //           Je suis en train d'apprendre React, une bibliothèque JavaScript
-    //           puissante pour construire des interfaces utilisateur. J'ai réalisé
-    //           quelques projets personnels et académiques en React.
-    //         </p>
-    //       </div>
-    //     </div>
-    //     <div className="technologies__images">
-    //       <img src={reactLogo} alt="logo technologie" />
-    //     </div>
-    //   </div>
-    //   <div className="technologies2__item">
-    //     <div className="technologies__images">
-    //       <img src={jslogo} alt="logo technologie" />
-    //     </div>
-    //     <div className="technologies2__separator">
-    //       <div className="technologies2__wrapper">
-    //         <h1 className="technologies__title">Javascript</h1>
-    //         <FontAwesomeIcon icon={faJs} className="technologies__icon" />
-    //         <p className="technologies__description">
-    //           {/* {translations[language].jsdescription} */}
-    //           J'ai des bases solides en JavaScript, ce qui me permet de rendre
-    //           les pages web interactives. J'ai utilisé ce langage dans plusieurs
-    //           projets scolaires pour créer des interfaces dynamiques.
-    //         </p>
-    //       </div>
-    //     </div>
-    //   </div>
-    //   <div className="technologies__item">
-    //     <div className="technologies__separator">
-    //       <div className="technologies__wrapper">
-    //         <h1 className="technologies__title">Scss</h1>
-    //         <FontAwesomeIcon icon={faSass} className="technologies__icon" />
-    //         <p className="technologies__description">
-    //           {/* {translations[language].scssdescription} */}
-    //           Je maîtrise bien CSS et j'ai commencé à utiliser SCSS pour
-    //           améliorer l'organisation et la modularité de mon code.
-    //         </p>
-    //       </div>
-    //     </div>
-    //     <div className="technologies__images">
-    //       <img src={scsslogo} alt="logo technologie" />
-    //     </div>
-    //   </div>
-    //   <div className="technologies2__item">
-    //     <div className="technologies__images">
-    //       <img src={phplogo} alt="logo technologie" />
-    //     </div>
-    //     <div className="technologies2__separator">
-    //       <div className="technologies2__wrapper">
-    //         <h1 className="technologies__title">Php</h1>
-    //         <FontAwesomeIcon icon={faPhp} className="technologies__icon" />
-    //         <p className="technologies__description">
-    //           {/* {translations[language].phpdescription} */}
-    //           En tant qu'étudiant, j'ai acquis des bases solides en PHP, un
-    //           langage essentiel pour le développement backend. J'ai réalisé
-    //           plusieurs projets académiques où j'ai créé des sites web
-    //           dynamiques et des systèmes simples de gestion de contenu.
-    //         </p>
-    //       </div>
-    //     </div>
-    //   </div>
-    //   <div className="technologies__item">
-    //     <div className="technologies__separator">
-    //       <div className="technologies__wrapper">
-    //         <h1 className="technologies__title">Backend</h1>
-    // <FontAwesomeIcon icon={faDatabase} className="technologies__icon" />
-    //         <p className="technologies__description">
-    //           {translations[language].backenddescription}
-    //         </p>
-    //       </div>
-    //     </div>
-    //     <div className="technologies__images">
-    //       <img src={scsslogo} alt="logo technologie" />
-    //       <img src={scsslogo} alt="logo technologie" />
-    //       <img src={scsslogo} alt="logo technologie" />
-    //       <img src={scsslogo} alt="logo technologie" />
-    //     </div>
-    //   </div>
-    // </section>
     <section class="technologies">
       <div className="technologies__header">
         <p className="technologies__number">
@@ -335,13 +214,13 @@ function Technologies() {
           <div class="technologies__wrapper">
             <img
               class="technologies__image"
-              src={reactLogo}
+              src={scsslogo}
               alt="logo technologie"
             />
           </div>
           <div class="technologies__content">
-            <FontAwesomeIcon class="technologies__icon" icon={faReact} />
-            <h1 class="technologies__title">React</h1>
+            <FontAwesomeIcon class="technologies__icon" icon={faSass} />
+            <h1 class="technologies__title">Scss</h1>
             <p class="technologies__description">
               {translations[language].scssdescription}
             </p>

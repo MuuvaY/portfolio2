@@ -402,6 +402,8 @@ import Navbar from "./components/Navbar";
 import Compétences from "./components/Compétences";
 import Technologies from "./components/Technologies";
 import Projets from "./components/Projets";
+import Carrousel from "./components/Carrousel";
+import Testslide from "./components/Testslide";
 
 function App() {
   return (
@@ -412,6 +414,8 @@ function App() {
       <Technologies />
       {/* <Skills /> */}
       <Projets />
+      <Carrousel />
+      <Testslide />
     </LanguageProvider>
   );
 }

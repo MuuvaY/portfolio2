@@ -1,174 +1,239 @@
-// @import "./accueil-responsive.scss";
+.accueil {
+  margin: 10rem 5rem 0 5rem;
+  height: 100vh;
+  box-sizing: border-box; /* Inclure le padding et la bordure dans la hauteur totale */
+  overflow: hidden; /* Empêcher le débordement */
 
-// .circle {
-//   height: 110px;
-//   width: 110px;
-//   border-radius: 55px;
-//   background-color: #172448;
-//   position: fixed;
-//   z-index: 9999;
-//   pointer-events: none;
-//   filter: blur(50px);
-// }
+  @include for-phone-only {
+    margin: 7rem 2rem 0 2rem;
+    display: flex;
+    flex-direction: column;
+    // width: 100%;
+    height: auto; /* Ajuster la hauteur pour le mobile */
+  }
 
-// // .accueil__img {
-// //   position: absolute;
-// //   top: 53%;
-// //   left: 75%;
-// //   transform: translate(-50%, -50%);
-// //   max-width: 100%;
-// //   height: 35rem;
-// // }
+  &__titre,
+  &__titre2 {
+    font-size: 8.125rem;
+    color: $title;
+    font-family: "Neue Montreal";
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
 
-// // .accueil__ligne-svg {
-// //   grid-area: 2 / 1 / 3 / 3;
-// //   width: 100%;
-// //   display: flex;
-// //   align-items: center;
-// //   justify-content: space-between;
-// //   padding-left: 5rem;
-// //   padding-right: 5rem;
-// //   margin-top: 2rem;
-// // }
-// .accueil {
-//   display: grid;
-//   grid-template-columns: 1fr 1fr;
-//   grid-template-rows: 0.3fr 0.3fr 2.4fr;
-//   gap: 28px 28px;
-//   grid-auto-flow: row;
-//   grid-template-areas:
-//     "accueil__haut accueil__haut"
-//     "accueil__ligne-svg accueil__ligne-svg"
-//     "accueil__gauche accueil__droite";
-//   height: 100vh;
-//   margin-bottom: 1.2rem;
-// }
+    @include for-phone-only {
+      font-size: 2.5rem;
+    }
 
-// .accueil__titre {
-//   font-family: "Ethnocentric Rg";
-//   color: $title;
-//   font-size: 3rem;
-//   // margin-bottom: 50%;
-// }
-// .accueil__sous-titre {
-//   font-family: "Monument Extended";
-//   color: $text;
-//   font-size: 1.2rem;
-//   margin-bottom: 1rem;
-// }
+    @include for-tablet-portrait-up {
+      font-size: 5rem;
+    }
 
-// .accueil__p {
-//   color: $text;
-//   font-size: 16px;
-//   font-family: "Monument Extended";
-//   grid-area: accueil__droite;
-//   text-align: justify;
-// }
+    @include for-tablet-landscape-up {
+      font-size: 6.25rem;
+    }
+  }
 
-// .accueil__info {
-//   margin-left: 5rem;
-//   position: relative;
-// }
-// .svg-text {
-//   color: $text;
-//   font-family: "Monument Extended";
-//   font-weight: 400;
-//   font-size: 18px;
-// }
+  &__titre {
+    align-items: flex-start;
+    border-left: solid 2px $principal;
 
-// .accueil__ligne-svg {
-//   grid-area: accueil__ligne-svg;
-//   display: flex;
-//   align-items: center;
-//   justify-content: space-between;
-//   padding-left: 5rem;
-//   padding-right: 5rem;
-//   margin-top: 2rem;
-//   margin-bottom: 2rem;
-// }
+    span {
+      margin-left: 1rem;
+    }
+  }
 
-// .accueil__haut {
-//   grid-area: accueil__haut;
-// }
+  &__titre2 {
+    align-items: flex-end;
+    border-right: solid 2px #0339f9;
 
-// .accueil__gauche {
-//   grid-area: accueil__gauche;
-//   display: flex;
-//   flex: 1;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: flex-end; // Aligne le contenu en bas de la div
-//   padding-bottom: 20px;
-//   margin-left: 5rem;
-//   height: 60vh;
-//   // background-image: url("data:image/svg+xml,%3Csvg%20width%3D%22864%22%20height%3D%22864%22%20viewBox%3D%220%200%20864%20864%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20opacity%3D%220.5%22%20filter%3D%22url(%23filter0_f_29_7)%22%3E%3Ccircle%20cx%3D%22432%22%20cy%3D%22432%22%20r%3D%22293%22%20fill%3D%22%23172448%22%2F%3E%3C%2Fg%3E%3Cdefs%3E%3Cfilter%20id%3D%22filter0_f_29_7%22%20x%3D%220.399994%22%20y%3D%220.399994%22%20width%3D%22863.2%22%20height%3D%22863.2%22%20filterUnits%3D%22userSpaceOnUse%22%20color-interpolation-filters%3D%22sRGB%22%3E%3CfeFlood%20flood-opacity%3D%220%22%20result%3D%22BackgroundImageFix%22%2F%3E%3CfeBlend%20mode%3D%22normal%22%20in%3D%22SourceGraphic%22%20in2%3D%22BackgroundImageFix%22%20result%3D%22shape%22%2F%3E%3CfeGaussianBlur%20stdDeviation%3D%2269.3%22%20result%3D%22effect1_foregroundBlur_29_7%22%2F%3E%3C%2Ffilter%3E%3C%2Fdefs%3E%3C%2Fsvg%3E");
-//   // background-repeat: no-repeat;
-//   // background-position: center;
-//   // background-size: contain;
-// }
-// // .accueil__gauche::before {
-// //   content: "";
-// //   height: 30rem;
-// //   width: 30rem;
-// //   border-radius: 50%;
-// //   background-color: #172448;
-// //   position: absolute;
-// //   top: 50%;
-// //   left: 25%;
-// //   transform: translate(-50%, -50%);
-// //   filter: blur(50px);
-// //   z-index: -10;
-// // }
-// .accueil__droite {
-//   grid-area: accueil__droite;
-//   display: flex;
-//   justify-content: center;
-// }
+    span {
+      margin-right: 1rem;
+    }
 
-// .accueil__content {
-//   flex: 1;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: flex-end;
-// }
-// .accueil__btn {
-//   display: flex;
-//   justify-content: flex-start;
-//   gap: 2rem;
-//   margin-top: 1rem;
-// }
+    // @include for-phone-only {
+    //   flex-direction: row; /* Change direction to row */
+    //   align-items: center;
+    //   justify-content: space-between;
+    //   width: 100%;
+    //   border-right: none;
+    //   margin-top: 2rem;
 
-// .btn__github {
-//   display: flex;
-//   align-items: center;
-//   border-radius: 6px;
-//   background-color: $button;
-//   font-family: "Ethnocentric Rg";
-//   font-size: 16px;
-//   color: $text;
-//   text-decoration: none;
-//   height: 2.5rem;
-//   width: fit-content;
-//   padding-right: 8px;
-// }
+    // }
+    @include for-phone-only {
+      flex-direction: column;
+      align-items: flex-end;
 
-// .btn-svg {
-//   fill: $text;
-//   height: 2rem;
-//   margin-right: 8px;
-//   margin-left: 8px;
-//   background-color: $button;
-//   border-radius: 6px;
-// }
-// .circlebk {
-//   height: 30rem;
-//   width: 30rem;
-//   border-radius: 50%;
-//   background-color: #172448;
-//   position: absolute;
-//   top: 50%;
-//   left: 25%;
-//   transform: translate(-50%, -50%);
-//   filter: blur(50px);
-//   z-index: -10;
-// }
+      // margin-right: 1rem;
+    }
+  }
+
+  &__img {
+    min-height: 270px;
+    height: 500px;
+
+    @include for-phone-only {
+      // height: auto;
+      max-width: 100%;
+      height: 300px;
+    }
+  }
+
+  &__description {
+    font-family: "Neue Montreal";
+    font-weight: 500;
+    color: $text;
+    line-height: 1.18;
+    text-transform: uppercase;
+    width: 30rem;
+    border-left: solid 2px $principal;
+    text-align: justify;
+    display: flex;
+
+    span {
+      margin-left: 0.5rem;
+
+      @include for-phone-only {
+        margin-left: 1rem;
+      }
+    }
+
+    @include for-phone-only {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__fleche {
+    color: $title;
+    font-size: 126px;
+
+    @include for-phone-only {
+      height: 3.75rem;
+      // margin-left: 1rem; /* Add margin to the left to create space */
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Pour permettre le wrapping des enfants */
+
+    @include for-phone-only {
+      flex-direction: column;
+      align-items: flex-start;
+      order: 5;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    color: $principal;
+
+    @include for-phone-only {
+      flex-direction: column;
+      // align-items: center;
+      width: 100%;
+      align-items: flex-start;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    @include for-phone-only {
+      flex-direction: row;
+      justify-content: space-around;
+      width: 100%;
+      margin-top: 1rem;
+    }
+  }
+
+  &__item {
+    font-family: "Neue Montreal";
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    line-height: 1.18;
+
+    @include for-phone-only {
+      font-size: 1.2rem;
+      margin: 0.5rem 0;
+    }
+  }
+
+  @include for-phone-only {
+    &__content {
+      display: contents; // Cela permet aux enfants d'être réorganisés indépendamment
+    }
+
+    &__description {
+      order: -5;
+      font-size: 0.8rem;
+    }
+
+    &__titre {
+      order: -4;
+    }
+
+    &__link {
+      order: -3;
+    }
+
+    &__img {
+      order: -2;
+    }
+
+    &__list {
+      order: -1;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 100%;
+      margin-top: 1rem;
+    }
+
+    &__titre2 {
+      order: 1;
+      // flex-direction: row; /* Assurez-vous que le titre secondaire est en ligne */
+    }
+    &__titre2-container {
+      order: 1;
+    }
+  }
+  &__titre2-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+
+    @include for-phone-only {
+      justify-content: space-between;
+      margin-top: 2rem;
+      align-items: normal;
+    }
+  }
+}
+
+.language-toggle {
+  // position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 5px 10px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.language-toggle:hover {
+  background-color: red;
+  color: #fff;
+}
