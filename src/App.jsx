@@ -404,6 +404,7 @@ import Technologies from "./components/Technologies";
 import Projets from "./components/Projets";
 import Carrousel from "./components/Carrousel";
 import Testslide from "./components/Testslide";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -415,7 +416,8 @@ function App() {
       {/* <Skills /> */}
       <Projets />
       <Carrousel />
-      <Testslide />
+      {/* <Testslide /> */}
+      <Footer />
     </LanguageProvider>
   );
 }

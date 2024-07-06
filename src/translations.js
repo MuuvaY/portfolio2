@@ -24,6 +24,17 @@ export const translations = {
     projetsliens: "Voir mes projets sur GitHub.",
     projetsdescription:
       "Une sélection de mes projets les plus pertinents sur lesquels j’ai travaillé seul ou à plusieurs. L’intégralité de mes projets est sur mon GitHub, vous y retrouverez le code source ainsi qu’une explication du projet dans le README.",
+    technologies: "Technologies",
+    angoulorienteDescription:
+      "Cette application vous propose une course d'orientation interactive à Angoulême. Passez par 8 points dans l'ordre, scannez les QR codes pour obtenir des lettres, et utilisez un chiffre final pour un chiffrement de César. Formez le mot secret pour terminer la course et arrêter le chrono !",
+    beez2beDescription:
+      "Dans le cadre de mon stage, j'ai réalisé une application permettant la mise en relation de professionnels avec des utilisateurs. Elle inclut des fonctionnalités essentielles telles que la modification des fiches, la gestion des avis, ainsi que l'affichage des informations de l'entreprise.",
+    foodtruckDescription:
+      "Le site Fouées du Terroir permet de commander des fouées. Les fonctionnalités du site incluent la possibilité de passer des commandes, de se connecter ou de s'inscrire, et de contacter les propriétaires. Le site présente également des informations sur les fouées et l'histoire du couple charentais qui les prépare avec des ingrédients locaux selon des traditions familiales. ",
+    beeautopDescription:
+      "Beeautop est une application mobile dédiée à la collaboration entre apiculteurs. Elle permet aux utilisateurs de se connecter et de partager des informations pour améliorer la gestion de leurs ruches.",
+    footerText:
+      "Ce site est développé avec React et SCSS, et surtout avec beaucoup d'amour.",
   },
   en: {
     developpeur: "Web",
@@ -49,5 +60,17 @@ export const translations = {
     projetsliens: "See my projects on GitHub.",
     projetsdescription:
       "A selection of my most relevant projects on which I have worked alone or with others. All my projects are on my GitHub, you will find the source code and an explanation of the project in the README.",
+    technologies: "Technologies",
+
+    angoulorienteDescription:
+      "This application offers you an interactive orienteering race in Angoulême. Go through 8 points in order, scan the QR codes to get letters, and use a final number for Caesar's encryption. Form the secret word to finish the race and stop the time!",
+    beez2beDescription:
+      "As part of my internship, I created an application to connect professionals with users. It includes essential features such as modifying cards, managing reviews, as well as displaying company information.",
+    foodtruckDescription:
+      'The "Fouées du Terroir" site allows you to order fouées. The features of the site include the ability to place orders, log in or register, and contact the owners. The site also presents information on the fouées and the history of the Charente couple who prepare them with local ingredients according to family traditions. ',
+    beeautopDescription:
+      "Beeautop is a mobile application dedicated to collaboration between beekeepers. It allows users to connect and share information to improve the management of their hives. ",
+    footerText:
+      "This site is developed with React and SCSS, and especially with a lot of love.",
   },
 };

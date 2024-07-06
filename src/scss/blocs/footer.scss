@@ -1,0 +1,17 @@
+.footer {
+  font-family: "Neue Montreal";
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: $text;
+  margin: 2rem;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+  }
+}

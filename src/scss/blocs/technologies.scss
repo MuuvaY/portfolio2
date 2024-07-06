@@ -117,23 +117,157 @@
 //   }
 // }
 
+// .technologies {
+//   font-family: "Neue Montreal";
+//   font-weight: 500;
+//   position: relative;
+//   margin-bottom: 10rem;
+
+//   &__container {
+//     display: grid;
+//     grid-auto-rows: 1fr;
+//     grid-template-columns: 1fr 1fr 1fr;
+//     grid-template-rows: 1fr 1fr;
+//     gap: 2rem 2rem;
+//     grid-template-areas:
+//       "technologies__container-react technologies__container-js technologies__container-php"
+//       "technologies__container-backend technologies__container-backend technologies__container-scss";
+//     margin: 0 15rem 0 15rem;
+//   }
+//   &__container-react,
+//   &__container-js,
+//   &__container-php,
+//   &__container-backend,
+//   &__container-scss {
+//     display: flex;
+//     flex-direction: column;
+//     // width: 30rem;
+//     border-left: 2px solid $principal;
+//     // margin: 2rem 0 2rem 0;
+//     justify-content: center;
+//   }
+//   &__header {
+//     display: flex;
+//     justify-content: center;
+//     margin-bottom: 10rem;
+//   }
+//   &__header-title {
+//     font-size: 5rem;
+//     font-weight: 500;
+//     text-transform: uppercase;
+//     color: $title;
+//     // margin: 1rem 0 1rem 0;
+//   }
+//   &__number {
+//     color: $text;
+//     font-size: 1.25rem;
+//     margin: 0 0 5rem 10rem;
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//   }
+//   &__separator {
+//     color: $principal;
+//   }
+//   &__wrapper {
+//     display: flex;
+//     justify-content: center;
+//     margin-left: 1rem;
+//   }
+//   &__image-wrapper {
+//     display: flex;
+//     gap: 2rem;
+//     align-items: center;
+//   }
+
+//   &__image {
+//     object-fit: cover;
+//     height: 8vh;
+//     width: auto;
+//   }
+//   &__image-express {
+//     object-fit: cover;
+//     height: 8vh;
+//     width: auto;
+//     background-color: white;
+//     padding: 0.5rem;
+//   }
+//   &__content {
+//     margin-left: 1rem;
+//   }
+
+//   &__icon {
+//     color: white;
+//     height: 1.8rem;
+//     margin-top: 1.2rem;
+//   }
+//   &__title {
+//     font-family: "Neue Montreal";
+//     font-size: 2.5rem;
+//     font-weight: 500;
+//     text-transform: uppercase;
+//     color: $title;
+//     margin: 1rem 0 1rem 0;
+//   }
+//   &__description {
+//     font-family: "Neue Montreal";
+//     // font-size: 1.5rem;
+//     font-weight: 500;
+//     color: $title;
+//     text-align: justify;
+//   }
+
+//   &__container-react {
+//     grid-area: technologies__container-react;
+//   }
+//   &__container-js {
+//     grid-area: technologies__container-js;
+//   }
+//   &__container-php {
+//     grid-area: technologies__container-php;
+//   }
+//   &__container-backend {
+//     grid-area: technologies__container-backend;
+//   }
+//   &__container-scss {
+//     grid-area: technologies__container-scss;
+//   }
+// }
+// #technologies__image {
+//   animation: rotate 5s linear infinite;
+// }
 .technologies {
   font-family: "Neue Montreal";
   font-weight: 500;
   position: relative;
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
+
+  @include for-tablet-landscape-up {
+    margin-bottom: 10rem;
+  }
 
   &__container {
     display: grid;
     grid-auto-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 2rem 2rem;
-    grid-template-areas:
-      "technologies__container-react technologies__container-js technologies__container-php"
-      "technologies__container-backend technologies__container-backend technologies__container-scss";
-    margin: 0 15rem 0 15rem;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin: 0 2rem;
+
+    @include for-tablet-portrait-up {
+      grid-template-columns: 1fr 1fr;
+      margin: 0 5rem;
+    }
+
+    @include for-tablet-landscape-up {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas:
+        "technologies__container-react technologies__container-js technologies__container-php"
+        "technologies__container-backend technologies__container-backend technologies__container-scss";
+      margin: 0 15rem;
+    }
   }
+
   &__container-react,
   &__container-js,
   &__container-php,
@@ -141,98 +275,153 @@
   &__container-scss {
     display: flex;
     flex-direction: column;
-    // width: 30rem;
     border-left: 2px solid $principal;
-    // margin: 2rem 0 2rem 0;
     justify-content: center;
   }
+
   &__header {
     display: flex;
     justify-content: center;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
+
+    @include for-tablet-landscape-up {
+      margin-bottom: 10rem;
+    }
   }
+
   &__header-title {
-    font-size: 5rem;
+    font-size: 2.5rem;
     font-weight: 500;
     text-transform: uppercase;
     color: $title;
-    // margin: 1rem 0 1rem 0;
+
+    @include for-tablet-portrait-up {
+      font-size: 3.5rem;
+    }
+
+    @include for-tablet-landscape-up {
+      font-size: 5rem;
+    }
   }
+
   &__number {
     color: $text;
-    font-size: 1.25rem;
-    margin: 0 0 5rem 10rem;
+    font-size: 1rem;
+    margin: 0 0 2rem 2rem;
     position: absolute;
     top: 0;
     left: 0;
+
+    @include for-tablet-landscape-up {
+      font-size: 1.25rem;
+      margin: 0 0 5rem 10rem;
+    }
   }
+
   &__separator {
     color: $principal;
   }
+
   &__wrapper {
     display: flex;
     justify-content: center;
     margin-left: 1rem;
   }
+
   &__image-wrapper {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     align-items: center;
+    flex-wrap: wrap;
+
+    @include for-tablet-portrait-up {
+      gap: 2rem;
+      flex-wrap: nowrap;
+    }
   }
 
   &__image {
     object-fit: cover;
-    height: 8vh;
+    height: 6vh;
     width: auto;
+
+    @include for-tablet-portrait-up {
+      height: 8vh;
+    }
   }
+
   &__image-express {
     object-fit: cover;
-    height: 8vh;
+    height: 6vh;
     width: auto;
     background-color: white;
     padding: 0.5rem;
+
+    @include for-tablet-portrait-up {
+      height: 8vh;
+    }
   }
+
   &__content {
     margin-left: 1rem;
   }
 
   &__icon {
     color: white;
-    height: 1.8rem;
-    margin-top: 1.2rem;
+    height: 1.5rem;
+    margin-top: 1rem;
+
+    @include for-tablet-portrait-up {
+      height: 1.8rem;
+      margin-top: 1.2rem;
+    }
   }
+
   &__title {
     font-family: "Neue Montreal";
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 500;
     text-transform: uppercase;
     color: $title;
-    margin: 1rem 0 1rem 0;
+    margin: 0.5rem 0;
+
+    @include for-tablet-portrait-up {
+      font-size: 2.5rem;
+      margin: 1rem 0;
+    }
   }
+
   &__description {
     font-family: "Neue Montreal";
-    // font-size: 1.5rem;
     font-weight: 500;
     color: $title;
     text-align: justify;
+    font-size: 0.9rem;
+
+    @include for-tablet-portrait-up {
+      font-size: 1rem;
+    }
   }
 
-  &__container-react {
-    grid-area: technologies__container-react;
-  }
-  &__container-js {
-    grid-area: technologies__container-js;
-  }
-  &__container-php {
-    grid-area: technologies__container-php;
-  }
-  &__container-backend {
-    grid-area: technologies__container-backend;
-  }
-  &__container-scss {
-    grid-area: technologies__container-scss;
+  @include for-tablet-landscape-up {
+    &__container-react {
+      grid-area: technologies__container-react;
+    }
+    &__container-js {
+      grid-area: technologies__container-js;
+    }
+    &__container-php {
+      grid-area: technologies__container-php;
+    }
+    &__container-backend {
+      grid-area: technologies__container-backend;
+    }
+    &__container-scss {
+      grid-area: technologies__container-scss;
+    }
   }
 }
+
 #technologies__image {
   animation: rotate 5s linear infinite;
 }
