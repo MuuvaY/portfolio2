@@ -409,7 +409,7 @@ $hamburger-layer-border-radius: 4px;
       width: $hamburger-layer-width;
       height: $hamburger-layer-height;
       background-color: $hamburger-layer-color;
-      border-radius: $hamburger-layer-border-radius;
+      // border-radius: $hamburger-layer-border-radius;
       position: absolute;
       transition-property: transform;
       transition-duration: 0.15s;
