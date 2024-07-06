@@ -28,7 +28,7 @@ function Compétences() {
   }, []);
 
   return (
-    <section className="competences2">
+    <section className="competences2" id="competences">
       <p className="competences2__number">
         01 <span className="competences2__separator">/</span>
       </p>

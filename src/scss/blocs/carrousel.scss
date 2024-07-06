@@ -336,4 +336,9 @@
     color: $text;
     font-size: 1.25rem;
   }
+  &__title-svg {
+    @include for-phone-only {
+      height: 2rem;
+    }
+  }
 }

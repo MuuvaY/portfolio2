@@ -21,6 +21,44 @@ function Footer() {
           </span>
           <span className="footer__role">{translations[language].web}</span>
         </p>
+        <ul className="footer__list">
+          <li className="footer__item">
+            <a
+              href="https://github.com/MuuvaY"
+              target="_blank"
+              className="footer__link"
+            >
+              Github
+            </a>
+          </li>
+          <li className="footer__item">
+            <a
+              href="https://linkedin.com/in/mariusyvart"
+              target="_blank"
+              className="footer__link"
+            >
+              Linkedin
+            </a>
+          </li>
+          <li className="footer__item">
+            <a
+              href="mailto:mariusyvt@gmail.com"
+              target="_blank"
+              className="footer__link"
+            >
+              Mail
+            </a>
+          </li>
+          <li className="footer__item">
+            <a
+              href="https://github.com/MuuvaY"
+              target="_blank"
+              className="footer__link"
+            >
+              CV
+            </a>
+          </li>{" "}
+        </ul>
       </div>
     </footer>
   );

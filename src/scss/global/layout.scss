@@ -2,6 +2,11 @@
 
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-top: 150px;
+  @include for-phone-only {
+    scroll-padding-top: 100px;
+  }
 }
 body {
   background-color: $background;

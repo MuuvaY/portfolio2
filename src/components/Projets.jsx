@@ -28,7 +28,7 @@ function Projets() {
   }, []);
 
   return (
-    <section className="projets">
+    <section className="projets" id="projets">
       <p className="projets__number">
         02 <span className="projets__separator">/</span>
       </p>

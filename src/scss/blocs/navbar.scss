@@ -1,61 +1,434 @@
-// .navbar {
-//   display: flex;
-//   align-items: center;
-//   justify-content: space-between;
-//   padding: 0 3rem 5rem 3rem;
-//   font-size: 1.5rem;
-//   color: $text;
-//   font-family: "Neue Montreal";
+// // .navbar {
+// //   display: flex;
+// //   align-items: center;
+// //   justify-content: space-between;
+// //   padding: 0 3rem 5rem 3rem;
+// //   font-size: 1.5rem;
+// //   color: $text;
+// //   font-family: "Neue Montreal";
 
-//   position: fixed;
-//   top: 5rem;
-//   left: 0;
-//   right: 0;
-//   z-index: 1000;
+// //   position: fixed;
+// //   top: 5rem;
+// //   left: 0;
+// //   right: 0;
+// //   z-index: 1000;
 
-//   a {
-//     font-family: "Neue Montreal";
-//     text-decoration: none;
-//     font-weight: 500;
-//     font-size: 1.5rem;
-//     color: $text;
-//     transition: color 0.3s ease; // Ajout d'une transition pour un effet plus doux
+// //   a {
+// //     font-family: "Neue Montreal";
+// //     text-decoration: none;
+// //     font-weight: 500;
+// //     font-size: 1.5rem;
+// //     color: $text;
+// //     transition: color 0.3s ease; // Ajout d'une transition pour un effet plus doux
 
-//     &:hover {
-//       color: darken($text, 20%); // Assombrit la couleur du texte au survol
-//     }
-//   }
+// //     &:hover {
+// //       color: darken($text, 20%); // Assombrit la couleur du texte au survol
+// //     }
+// //   }
 
-//   &__brand {
-//     display: flex;
-//     flex-direction: column;
-//   }
+// //   &__brand {
+// //     display: flex;
+// //     flex-direction: column;
+// //   }
 
-//   &__menu {
-//     display: flex;
-//     align-items: center;
+// //   &__menu {
+// //     display: flex;
+// //     align-items: center;
 
-//     &-item {
-//       position: relative;
+// //     &-item {
+// //       position: relative;
 
-//       &::after {
-//         content: "";
-//         position: absolute;
-//         width: 0;
-//         height: 2px;
-//         bottom: -5px;
-//         left: 0;
-//         background-color: $text;
-//         transition: width 0.5s ease;
-//       }
+// //       &::after {
+// //         content: "";
+// //         position: absolute;
+// //         width: 0;
+// //         height: 2px;
+// //         bottom: -5px;
+// //         left: 0;
+// //         background-color: $text;
+// //         transition: width 0.5s ease;
+// //       }
 
-//       &:hover::after {
-//         width: 100%;
-//       }
-//     }
-//   }
-// }
+// //       &:hover::after {
+// //         width: 100%;
+// //       }
+// //     }
+// //   }
+// // }
 
+// // .navbar {
+// //   display: flex;
+// //   align-items: center;
+// //   justify-content: space-between;
+// //   padding: 0 3rem 5rem 3rem;
+// //   font-size: 1.5rem;
+// //   color: $text;
+// //   font-family: "Neue Montreal";
+// //   position: fixed;
+// //   top: 5rem;
+// //   left: 0;
+// //   right: 0;
+// //   z-index: 1000;
+
+// //   @include for-phone-only {
+// //     padding: 0 1rem 2rem 1rem;
+// //     top: 2rem;
+// //   }
+
+// //   a {
+// //     font-family: "Neue Montreal";
+// //     text-decoration: none;
+// //     font-weight: 500;
+// //     font-size: 1.5rem;
+// //     color: $text;
+// //     transition: color 0.3s ease;
+
+// //     &:hover {
+// //       color: darken($text, 20%);
+// //     }
+// //   }
+
+// //   &__brand {
+// //     display: flex;
+// //     flex-direction: column;
+// //   }
+
+// //   &__toggle {
+// //     display: none;
+// //     background: none;
+// //     border: none;
+// //     cursor: pointer;
+
+// //     @include for-phone-only {
+// //       display: block;
+// //     }
+// //   }
+
+// //   &__toggle-icon {
+// //     display: block;
+// //     width: 30px;
+// //     height: 3px;
+// //     background-color: $text;
+// //     position: relative;
+
+// //     &::before,
+// //     &::after {
+// //       content: "";
+// //       position: absolute;
+// //       width: 100%;
+// //       height: 100%;
+// //       background-color: $text;
+// //       transition: all 0.3s ease;
+// //     }
+
+// //     &::before {
+// //       top: -8px;
+// //     }
+
+// //     &::after {
+// //       bottom: -8px;
+// //     }
+// //   }
+
+// //   &__menu {
+// //     display: flex;
+// //     align-items: center;
+
+// //     @include for-phone-only {
+// //       display: none;
+// //       flex-direction: column;
+// //       position: absolute;
+// //       top: 100%;
+// //       left: 0;
+// //       right: 0;
+// //       background-color: rgba(255, 255, 255, 0.9);
+// //       padding: 1rem;
+// //     }
+
+// //     &--open {
+// //       @include for-phone-only {
+// //         display: flex;
+// //       }
+// //     }
+
+// //     &-item {
+// //       position: relative;
+// //       margin: 0 1rem;
+
+// //       @include for-phone-only {
+// //         margin: 1rem 0;
+// //       }
+
+// //       &::after {
+// //         content: "";
+// //         position: absolute;
+// //         width: 0;
+// //         height: 2px;
+// //         bottom: -5px;
+// //         left: 0;
+// //         background-color: $text;
+// //         transition: width 0.5s ease;
+// //       }
+
+// //       &:hover::after {
+// //         width: 100%;
+// //       }
+// //     }
+// //   }
+// // }
+// // .hamburger {
+// //   padding: 15px 15px;
+// //   display: inline-block;
+// //   cursor: pointer;
+// //   transition-property: opacity, filter;
+// //   transition-duration: 0.15s;
+// //   transition-timing-function: linear;
+// //   font: inherit;
+// //   color: inherit;
+// //   text-transform: none;
+// //   background-color: transparent;
+// //   border: 0;
+// //   margin: 0;
+// //   overflow: visible;
+// // }
+
+// // .hamburger:hover {
+// //   opacity: 0.7;
+// // }
+
+// // .hamburger-box {
+// //   width: 40px;
+// //   height: 24px;
+// //   display: inline-block;
+// //   position: relative;
+// // }
+
+// // .hamburger-inner {
+// //   display: block;
+// //   top: 50%;
+// //   margin-top: -2px;
+// // }
+
+// // .hamburger-inner,
+// // .hamburger-inner::before,
+// // .hamburger-inner::after {
+// //   width: 40px;
+// //   height: 4px;
+// //   background-color: $text;
+// //   border-radius: 4px;
+// //   position: absolute;
+// //   transition-property: transform;
+// //   transition-duration: 0.15s;
+// //   transition-timing-function: ease;
+// // }
+
+// // .hamburger-inner::before,
+// // .hamburger-inner::after {
+// //   content: "";
+// //   display: block;
+// // }
+
+// // .hamburger-inner::before {
+// //   top: -10px;
+// // }
+
+// // .hamburger-inner::after {
+// //   bottom: -10px;
+// // }
+
+// // .hamburger--spring .hamburger-inner {
+// //   top: 2px;
+// //   transition: background-color 0s 0.13s linear;
+// // }
+
+// // .hamburger--spring .hamburger-inner::before {
+// //   top: 10px;
+// //   transition: top 0.1s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1),
+// //     transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+// // }
+
+// // .hamburger--spring .hamburger-inner::after {
+// //   top: 20px;
+// //   transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1),
+// //     transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+// // }
+
+// // .hamburger--spring.is-active .hamburger-inner {
+// //   transition-delay: 0.22s;
+// //   background-color: transparent !important;
+// // }
+
+// // .hamburger--spring.is-active .hamburger-inner::before {
+// //   top: 0;
+// //   transition: top 0.1s 0.15s cubic-bezier(0.33333, 0, 0.66667, 0.33333),
+// //     transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
+// //   transform: translate3d(0, 10px, 0) rotate(45deg);
+// // }
+
+// // .hamburger--spring.is-active .hamburger-inner::after {
+// //   top: 0;
+// //   transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333),
+// //     transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
+// //   transform: translate3d(0, 10px, 0) rotate(-45deg);
+// // }
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3rem;
+  font-size: 1.5rem;
+  color: $text;
+  font-family: "Neue Montreal", sans-serif;
+  position: fixed;
+  top: 5rem;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+
+  @include for-phone-only {
+    padding: 0 1rem 2rem 1rem;
+    top: 2rem;
+    // height: 60px;
+  }
+
+  &__brand {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: $text;
+    transition: color 0.3s ease;
+
+    @include for-phone-only {
+      z-index: 1001;
+    }
+  }
+
+  // &__hamburger {
+  //   display: none;
+  //   background: none;
+  //   border: none;
+  //   cursor: pointer;
+  // padding: 15px 15px;
+  //   transition-property: opacity, filter;
+  //   transition-duration: 0.15s;
+  //   transition-timing-function: linear;
+  //   color: inherit;
+  //   text-transform: none;
+  //   margin: 0;
+  //   overflow: visible;
+
+  //   @include for-phone-only {
+  //     display: inline-block;
+  //     position: absolute;
+  //     right: 1rem;
+  //     top: 50%;
+  //     transform: translateY(-50%);
+  //     z-index: 1001;
+  //   }
+  // }
+  &__hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 15px 15px;
+    transition-property: opacity, filter;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    color: inherit;
+    text-transform: none;
+    margin: 0;
+    overflow: visible;
+
+    @include for-phone-only {
+      display: inline-block;
+      position: absolute;
+      right: 1rem;
+      // top: 50%;
+      // transform: translateY(-50%);
+      z-index: 1001;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+
+    @include for-phone-only {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: $principal;
+      padding: 2rem;
+      z-index: 1000;
+
+      &--open {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+      }
+    }
+
+    &-item {
+      margin: 0 1rem;
+      position: relative;
+
+      @include for-phone-only {
+        margin: 1rem 0;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: -5px;
+        left: 0;
+        background-color: $text;
+        transition: width 0.5s ease;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+
+      @include for-phone-only {
+        &::after {
+          display: none;
+        }
+      }
+
+      &--language-toggle {
+        @include for-phone-only {
+          margin-top: 2rem;
+        }
+      }
+    }
+
+    &-link {
+      text-decoration: none;
+      color: $text;
+      transition: color 0.3s ease;
+
+      @include for-phone-only {
+        font-size: 3.5rem;
+      }
+
+      &:hover {
+        color: darken($text, 20%);
+      }
+    }
+  }
+}
 // .navbar {
 //   display: flex;
 //   align-items: center;
@@ -75,60 +448,34 @@
 //     top: 2rem;
 //   }
 
-//   a {
-//     font-family: "Neue Montreal";
+//   &__brand {
+//     display: flex;
+//     flex-direction: column;
 //     text-decoration: none;
 //     font-weight: 500;
 //     font-size: 1.5rem;
 //     color: $text;
 //     transition: color 0.3s ease;
-
-//     &:hover {
-//       color: darken($text, 20%);
-//     }
 //   }
 
-//   &__brand {
-//     display: flex;
-//     flex-direction: column;
+// &__hamburger {
+//   display: none;
+//   background: none;
+//   border: none;
+//   cursor: pointer;
+//   padding: 15px 15px;
+//   transition-property: opacity, filter;
+//   transition-duration: 0.15s;
+//   transition-timing-function: linear;
+//   color: inherit;
+//   text-transform: none;
+//   margin: 0;
+//   overflow: visible;
+
+//   @include for-phone-only {
+//     display: inline-block;
 //   }
-
-//   &__toggle {
-//     display: none;
-//     background: none;
-//     border: none;
-//     cursor: pointer;
-
-//     @include for-phone-only {
-//       display: block;
-//     }
-//   }
-
-//   &__toggle-icon {
-//     display: block;
-//     width: 30px;
-//     height: 3px;
-//     background-color: $text;
-//     position: relative;
-
-//     &::before,
-//     &::after {
-//       content: "";
-//       position: absolute;
-//       width: 100%;
-//       height: 100%;
-//       background-color: $text;
-//       transition: all 0.3s ease;
-//     }
-
-//     &::before {
-//       top: -8px;
-//     }
-
-//     &::after {
-//       bottom: -8px;
-//     }
-//   }
+// }
 
 //   &__menu {
 //     display: flex;
@@ -141,23 +488,18 @@
 //       top: 100%;
 //       left: 0;
 //       right: 0;
-//       background-color: rgba(255, 255, 255, 0.9);
+//       background-color: $principal;
 //       padding: 1rem;
-//     }
 
-//     &--open {
-//       @include for-phone-only {
+//       &--open {
 //         display: flex;
+//         align-items: flex-start;
 //       }
 //     }
 
 //     &-item {
 //       position: relative;
 //       margin: 0 1rem;
-
-//       @include for-phone-only {
-//         margin: 1rem 0;
-//       }
 
 //       &::after {
 //         content: "";
@@ -173,222 +515,48 @@
 //       &:hover::after {
 //         width: 100%;
 //       }
+//       @include for-phone-only {
+//         &::after {
+//           display: none; // Ceci cache le pseudo-élément sur mobile
+//         }
+
+//         &:hover::after {
+//           width: 0; // Ceci empêche l'animation sur mobile
+//         }
+//       }
+//       @include for-tablet-landscape-up {
+//         &::after {
+//           display: none; // Ceci cache le pseudo-élément sur mobile
+//         }
+
+//         &:hover::after {
+//           width: 0; // Ceci empêche l'animation sur mobile
+//         }
+//       }
+
+//       &--language-toggle {
+//         @include for-phone-only {
+//           order: -1; // Affiche le LanguageToggle en haut du menu burger
+//           margin-bottom: 1rem;
+//         }
+//       }
+//     }
+
+//     &-link {
+//       text-decoration: none;
+//       color: $text;
+//       transition: color 0.3s ease;
+
+//       @include for-phone-only {
+//         font-size: 3.5rem;
+//       }
+
+//       &:hover {
+//         color: darken($text, 20%);
+//       }
 //     }
 //   }
 // }
-// .hamburger {
-//   padding: 15px 15px;
-//   display: inline-block;
-//   cursor: pointer;
-//   transition-property: opacity, filter;
-//   transition-duration: 0.15s;
-//   transition-timing-function: linear;
-//   font: inherit;
-//   color: inherit;
-//   text-transform: none;
-//   background-color: transparent;
-//   border: 0;
-//   margin: 0;
-//   overflow: visible;
-// }
-
-// .hamburger:hover {
-//   opacity: 0.7;
-// }
-
-// .hamburger-box {
-//   width: 40px;
-//   height: 24px;
-//   display: inline-block;
-//   position: relative;
-// }
-
-// .hamburger-inner {
-//   display: block;
-//   top: 50%;
-//   margin-top: -2px;
-// }
-
-// .hamburger-inner,
-// .hamburger-inner::before,
-// .hamburger-inner::after {
-//   width: 40px;
-//   height: 4px;
-//   background-color: $text;
-//   border-radius: 4px;
-//   position: absolute;
-//   transition-property: transform;
-//   transition-duration: 0.15s;
-//   transition-timing-function: ease;
-// }
-
-// .hamburger-inner::before,
-// .hamburger-inner::after {
-//   content: "";
-//   display: block;
-// }
-
-// .hamburger-inner::before {
-//   top: -10px;
-// }
-
-// .hamburger-inner::after {
-//   bottom: -10px;
-// }
-
-// .hamburger--spring .hamburger-inner {
-//   top: 2px;
-//   transition: background-color 0s 0.13s linear;
-// }
-
-// .hamburger--spring .hamburger-inner::before {
-//   top: 10px;
-//   transition: top 0.1s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1),
-//     transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-// }
-
-// .hamburger--spring .hamburger-inner::after {
-//   top: 20px;
-//   transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1),
-//     transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-// }
-
-// .hamburger--spring.is-active .hamburger-inner {
-//   transition-delay: 0.22s;
-//   background-color: transparent !important;
-// }
-
-// .hamburger--spring.is-active .hamburger-inner::before {
-//   top: 0;
-//   transition: top 0.1s 0.15s cubic-bezier(0.33333, 0, 0.66667, 0.33333),
-//     transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
-//   transform: translate3d(0, 10px, 0) rotate(45deg);
-// }
-
-// .hamburger--spring.is-active .hamburger-inner::after {
-//   top: 0;
-//   transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333),
-//     transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
-//   transform: translate3d(0, 10px, 0) rotate(-45deg);
-// }
-
-$hamburger-layer-width: 40px;
-$hamburger-layer-height: 4px;
-$hamburger-layer-spacing: 6px;
-$hamburger-layer-color: $text;
-$hamburger-layer-border-radius: 4px;
-
-@mixin for-phone-only {
-  @media (max-width: 599px) {
-    @content;
-  }
-}
-
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 3rem 5rem 3rem;
-  font-size: 1.5rem;
-  color: $text;
-  font-family: "Neue Montreal";
-  position: fixed;
-  top: 5rem;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-
-  @include for-phone-only {
-    padding: 0 1rem 2rem 1rem;
-    top: 2rem;
-  }
-
-  &__brand {
-    display: flex;
-    flex-direction: column;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 1.5rem;
-    color: $text;
-    transition: color 0.3s ease;
-
-    &:hover {
-      color: darken($text, 20%);
-    }
-  }
-
-  &__hamburger {
-    display: none;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 15px 15px;
-    transition-property: opacity, filter;
-    transition-duration: 0.15s;
-    transition-timing-function: linear;
-    color: inherit;
-    text-transform: none;
-    margin: 0;
-    overflow: visible;
-
-    @include for-phone-only {
-      display: inline-block;
-    }
-  }
-
-  &__menu {
-    display: flex;
-    align-items: center;
-
-    @include for-phone-only {
-      display: none;
-      flex-direction: column;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      right: 0;
-      background-color: $principal;
-      padding: 1rem;
-
-      &--open {
-        display: flex;
-        align-items: flex-start;
-      }
-    }
-
-    &-item {
-      position: relative;
-      margin: 0 1rem;
-
-      &::after {
-        content: "";
-        position: absolute;
-        width: 0;
-        height: 2px;
-        bottom: -5px;
-        left: 0;
-        background-color: $text;
-        transition: width 0.5s ease;
-      }
-
-      &:hover::after {
-        width: 100%;
-      }
-    }
-
-    &-link {
-      text-decoration: none;
-      color: $text;
-      transition: color 0.3s ease;
-      @include for-phone-only {
-        font-size: 3.5rem;
-      }
-      &:hover {
-        color: darken($text, 20%);
-      }
-    }
-  }
-}
 
 .hamburger {
   &__box {
@@ -409,7 +577,6 @@ $hamburger-layer-border-radius: 4px;
       width: $hamburger-layer-width;
       height: $hamburger-layer-height;
       background-color: $hamburger-layer-color;
-      // border-radius: $hamburger-layer-border-radius;
       position: absolute;
       transition-property: transform;
       transition-duration: 0.15s;
