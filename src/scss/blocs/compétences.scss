@@ -719,9 +719,10 @@
   }
 
   &__fleche {
-    margin-left: 8rem;
-    position: absolute;
-    bottom: 0;
+    // margin-left: 8rem;
+    // position: absolute;
+    // bottom: 0;
+    margin-top: 8rem;
 
     @include for-phone-only {
       display: none;

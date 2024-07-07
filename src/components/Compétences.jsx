@@ -53,36 +53,36 @@ function Compétences() {
               {translations[language].projetsliens}
             </a>
           </div>
+          <svg
+            width="123"
+            height="123"
+            viewBox="0 0 123 123"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            ref={arrowRef}
+            className="competences2__fleche"
+          >
+            <g clipPath="url(#clip0_263_453)">
+              <path
+                fillRule="evenodd"
+                clipRule="evenodd"
+                d="M66.625 111.694L98.5794 73.1133L102.5 76.4189L63.9549 122.544L25.625 76.4189L29.5405 73.1081L61.5 111.699L61.5 -0.456119L66.625 -0.456118L66.625 111.694Z"
+                fill="#0339F9"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_263_453">
+                <rect
+                  width="123"
+                  height="123"
+                  fill="white"
+                  transform="translate(123 123) rotate(-180)"
+                />
+              </clipPath>
+            </defs>
+          </svg>
         </div>
       </div>
-      <svg
-        width="123"
-        height="123"
-        viewBox="0 0 123 123"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        ref={arrowRef}
-        className="competences2__fleche"
-      >
-        <g clipPath="url(#clip0_263_453)">
-          <path
-            fillRule="evenodd"
-            clipRule="evenodd"
-            d="M66.625 111.694L98.5794 73.1133L102.5 76.4189L63.9549 122.544L25.625 76.4189L29.5405 73.1081L61.5 111.699L61.5 -0.456119L66.625 -0.456118L66.625 111.694Z"
-            fill="#0339F9"
-          />
-        </g>
-        <defs>
-          <clipPath id="clip0_263_453">
-            <rect
-              width="123"
-              height="123"
-              fill="white"
-              transform="translate(123 123) rotate(-180)"
-            />
-          </clipPath>
-        </defs>
-      </svg>
     </section>
   );
 }

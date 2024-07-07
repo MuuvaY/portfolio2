@@ -117,7 +117,7 @@ function Technologies() {
   const { language } = useContext(LanguageContext);
 
   return (
-    <section class="technologies">
+    <section className="technologies">
       <div className="technologies__header">
         <p className="technologies__number">
           01 <span className="technologies__separator">/</span>
@@ -127,101 +127,101 @@ function Technologies() {
           {translations[language].competences}
         </h1>
       </div>
-      <div class="technologies__container">
-        <div class="technologies__container-react">
-          <div class="technologies__wrapper">
+      <div className="technologies__container">
+        <div className="technologies__container-react">
+          <div className="technologies__wrapper">
             <img
-              class="technologies__image"
+              className="technologies__image"
               src={reactLogo}
               alt="logo technologie"
               id="technologies__image"
             />
           </div>
-          <div class="technologies__content">
-            <FontAwesomeIcon class="technologies__icon" icon={faReact} />
-            <h1 class="technologies__title">React</h1>
-            <p class="technologies__description">
+          <div className="technologies__content">
+            <FontAwesomeIcon className="technologies__icon" icon={faReact} />
+            <h1 className="technologies__title">React</h1>
+            <p className="technologies__description">
               {translations[language].reactdescription}
             </p>
           </div>
         </div>
-        <div class="technologies__container-js">
-          <div class="technologies__wrapper">
+        <div className="technologies__container-js">
+          <div className="technologies__wrapper">
             <img
-              class="technologies__image"
+              className="technologies__image"
               src={jslogo}
               alt="logo technologie"
             />
           </div>
-          <div class="technologies__content">
-            <FontAwesomeIcon class="technologies__icon" icon={faJs} />
-            <h1 class="technologies__title">Javascript</h1>
-            <p class="technologies__description">
+          <div className="technologies__content">
+            <FontAwesomeIcon className="technologies__icon" icon={faJs} />
+            <h1 className="technologies__title">Javascript</h1>
+            <p className="technologies__description">
               {translations[language].jsdescription}
             </p>
           </div>
         </div>
-        <div class="technologies__container-php">
-          <div class="technologies__wrapper">
+        <div className="technologies__container-php">
+          <div className="technologies__wrapper">
             <img
-              class="technologies__image"
+              className="technologies__image"
               src={phplogo}
               alt="logo technologie"
             />
           </div>
-          <div class="technologies__content">
-            <FontAwesomeIcon class="technologies__icon" icon={faPhp} />
-            <h1 class="technologies__title">Php</h1>
-            <p class="technologies__description">
+          <div className="technologies__content">
+            <FontAwesomeIcon className="technologies__icon" icon={faPhp} />
+            <h1 className="technologies__title">Php</h1>
+            <p className="technologies__description">
               {translations[language].phpdescription}
             </p>
           </div>
         </div>
-        <div class="technologies__container-backend">
-          <div class="technologies__wrapper">
+        <div className="technologies__container-backend">
+          <div className="technologies__wrapper">
             <div className="technologies__image-wrapper">
               <img
-                class="technologies__image"
+                className="technologies__image"
                 src={sqllogo}
                 alt="logo technologie"
               />
               <img
-                class="technologies__image"
+                className="technologies__image"
                 src={mongodblogo}
                 alt="logo technologie"
               />
               <img
-                class="technologies__image"
+                className="technologies__image"
                 src={gitlogo}
                 alt="logo technologie"
               />
               <img
-                class="technologies__image-express"
+                className="technologies__image-express"
                 src={expresslogo}
                 alt="logo technologie"
               />
             </div>
           </div>
-          <div class="technologies__content">
+          <div className="technologies__content">
             <FontAwesomeIcon className="technologies__icon" icon={faDatabase} />{" "}
-            <h1 class="technologies__title">Backend</h1>
-            <p class="technologies__description">
+            <h1 className="technologies__title">Backend</h1>
+            <p className="technologies__description">
               {translations[language].backenddescription}
             </p>
           </div>
         </div>
-        <div class="technologies__container-scss">
-          <div class="technologies__wrapper">
+        <div className="technologies__container-scss">
+          <div className="technologies__wrapper">
             <img
-              class="technologies__image"
+              className="technologies__image"
               src={scsslogo}
               alt="logo technologie"
             />
           </div>
-          <div class="technologies__content">
-            <FontAwesomeIcon class="technologies__icon" icon={faSass} />
-            <h1 class="technologies__title">Scss</h1>
-            <p class="technologies__description">
+          <div className="technologies__content">
+            <FontAwesomeIcon className="technologies__icon" icon={faSass} />
+            <h1 className="technologies__title">Scss</h1>
+            <p className="technologies__description">
               {translations[language].scssdescription}
             </p>
           </div>
