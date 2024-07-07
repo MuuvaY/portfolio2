@@ -384,7 +384,7 @@
 
     @include for-phone-only {
       margin-bottom: 1rem;
-      // flex: 1 1 30%;
+      flex: 1 1 30%;
       min-width: 150px;
     }
   }
@@ -436,12 +436,15 @@
       margin-bottom: 0.5rem;
     }
   }
-
+  &__img-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+  }
   &__img-container {
     @include for-phone-only {
-      width: 100%;
+      // width: 100%;
       margin-bottom: 2rem;
-      width: 80vw;
+      // width: 80vw;
       height: 40vh;
     }
   }
@@ -480,6 +483,8 @@
     cursor: pointer;
     font-size: 1rem;
     margin-top: 0.5rem;
+    text-transform: uppercase;
+    text-decoration: underline;
 
     @include for-phone-only {
       display: block;
@@ -487,6 +492,15 @@
     @include for-tablet-landscape-up {
       display: none;
     }
+  }
+  &__item-description {
+    font-size: 1.25rem;
+  }
+  &__label-description {
+    margin-bottom: 0.5em;
+    color: grey;
+    opacity: 50%;
+    // grid-row-gap: 0.5em;
   }
 }
 

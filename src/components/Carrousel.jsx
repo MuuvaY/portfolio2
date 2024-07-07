@@ -229,6 +229,10 @@ function Carrousel() {
                 </a>
               </div>
               <div className="carrousel__item">
+                <p className="carrousel__label">Date</p>
+                <p className="carrousel__date">{slides[currentSlide].annee}</p>
+              </div>
+              <div className="carrousel__item">
                 <p className="carrousel__label">
                   {" "}
                   {translations[language].technologies}
@@ -253,31 +257,29 @@ function Carrousel() {
                   ))}
                 </div>
               </div>
-              <div className="carrousel__item">
-                <p className="carrousel__label">Date</p>
-                <p className="carrousel__date">{slides[currentSlide].annee}</p>
-              </div>
             </div>
-            <div>
-              <p className="carrousel__label">Description</p>
+            <div className="carrousel__item-description">
+              <p className="carrousel__label-description">Description</p>
               <p className="carrousel__description">{renderDescription()}</p>
               {translations[language][slides[currentSlide].contentKey].length >
                 MAX_DESCRIPTION_LENGTH && (
-                <button
+                <a
                   onClick={handleToggleDescription}
                   className="carrousel__see-more"
                 >
                   {showFullDescription ? "Voir moins" : "Voir plus"}
-                </button>
+                </a>
               )}
             </div>
           </div>
-          <div className="carrousel__img-container">
-            <img
-              src={slides[currentSlide].img}
-              alt={slides[currentSlide].nom}
-              className="carrousel__img"
-            />
+          <div className="carrousel__img-wrapper">
+            <div className="carrousel__img-container">
+              <img
+                src={slides[currentSlide].img}
+                alt={slides[currentSlide].nom}
+                className="carrousel__img"
+              />
+            </div>
           </div>
           <button onClick={nextSlide} className="carrousel__button">
             <svg
