@@ -357,12 +357,9 @@
     @include for-phone-only {
       display: flex;
       flex-wrap: wrap;
-      gap: 1rem;
-      margin-bottom: 1rem;
+      gap: 0.5rem;
+      // margin-bottom: 1rem;
     }
-    // &__list {
-
-    // }
   }
 
   &__wrapper {
@@ -445,7 +442,7 @@
       // width: 100%;
       margin-bottom: 2rem;
       // width: 80vw;
-      height: 40vh;
+      height: 30vh;
     }
   }
 
