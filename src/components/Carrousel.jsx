@@ -25,6 +25,7 @@ function Carrousel() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [startX, setStartX] = useState(0);
   const [isDragging, setIsDragging] = useState(false);
+  const [showFullDescription, setShowFullDescription] = useState(false);
   const containerRef = useRef(null);
 
   const slides = [
@@ -131,6 +132,18 @@ function Carrousel() {
 
   const handleMouseUp = () => {
     setIsDragging(false);
+  };
+  const MAX_DESCRIPTION_LENGTH = 100; // Nombre maximum de caractères à afficher avant de tronquer
+
+  const handleToggleDescription = () => {
+    setShowFullDescription(!showFullDescription);
+  };
+  const renderDescription = () => {
+    const description = translations[language][slides[currentSlide].contentKey];
+    if (description.length <= MAX_DESCRIPTION_LENGTH || showFullDescription) {
+      return description;
+    }
+    return description.substring(0, MAX_DESCRIPTION_LENGTH) + "...";
   };
 
   return (
@@ -245,9 +258,19 @@ function Carrousel() {
                 <p className="carrousel__date">{slides[currentSlide].annee}</p>
               </div>
             </div>
-            <p className="carrousel__description">
-              {translations[language][slides[currentSlide].contentKey]}
-            </p>
+            <div>
+              <p className="carrousel__label">Description</p>
+              <p className="carrousel__description">{renderDescription()}</p>
+              {translations[language][slides[currentSlide].contentKey].length >
+                MAX_DESCRIPTION_LENGTH && (
+                <button
+                  onClick={handleToggleDescription}
+                  className="carrousel__see-more"
+                >
+                  {showFullDescription ? "Voir moins" : "Voir plus"}
+                </button>
+              )}
+            </div>
           </div>
           <div className="carrousel__img-container">
             <img

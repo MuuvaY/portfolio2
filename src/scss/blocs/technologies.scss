@@ -282,10 +282,13 @@
   &__header {
     display: flex;
     justify-content: center;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 
     @include for-tablet-landscape-up {
       margin-bottom: 10rem;
+    }
+    @include for-phone-only {
+      flex-direction: column;
     }
   }
 
@@ -302,6 +305,9 @@
     @include for-tablet-landscape-up {
       font-size: 5rem;
     }
+    @include for-phone-only {
+      margin: 0 0 0 2rem;
+    }
   }
 
   &__number {
@@ -315,6 +321,9 @@
     @include for-tablet-landscape-up {
       font-size: 1.25rem;
       margin: 0 0 5rem 10rem;
+    }
+    @include for-phone-only {
+      position: static;
     }
   }
 
