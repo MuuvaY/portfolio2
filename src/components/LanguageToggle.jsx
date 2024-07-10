@@ -1,27 +1,7 @@
-// import React, { useContext } from "react";
-// import { LanguageContext } from "./LanguageContext";
-
-// function LanguageToggle() {
-//   const { language, setLanguage } = useContext(LanguageContext);
-
-//   const toggleLanguage = () => {
-//     setLanguage(language === "fr" ? "en" : "fr");
-//   };
-
-//   return (
-//     <button onClick={toggleLanguage} className="language-toggle">
-//       {language === "fr" ? "EN" : "FR"}
-//     </button>
-//   );
-// }
-
-// export default LanguageToggle;
-
 import React, { useContext, useState, useEffect } from "react";
 import { LanguageContext } from "./LanguageContext";
-import "./../scss/style.scss"; // Assurez-vous que les styles sont correctement importés
 
-function LanguageToggle() {
+function LanguageToggle({ onLanguageChange }) {
   const { language, setLanguage } = useContext(LanguageContext);
   const [activeButton, setActiveButton] = useState(language);
 
@@ -31,6 +11,9 @@ function LanguageToggle() {
 
   const toggleLanguage = (lang) => {
     setLanguage(lang);
+    if (onLanguageChange) {
+      onLanguageChange();
+    }
   };
 
   return (

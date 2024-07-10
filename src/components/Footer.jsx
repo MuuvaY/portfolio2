@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { LanguageContext } from "./LanguageContext";
 import { translations } from "./../translations";
+import MariusCV from "./../assets/doc/MariusYvartCV.pdf";
 
 function Footer() {
   const { language } = useContext(LanguageContext);
@@ -50,11 +51,7 @@ function Footer() {
             </a>
           </li>
           <li className="footer__item">
-            <a
-              href="https://github.com/MuuvaY"
-              target="_blank"
-              className="footer__link"
-            >
+            <a href={MariusCV} target="_blank" className="accueil__link">
               CV
             </a>
           </li>{" "}
