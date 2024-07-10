@@ -1,0 +1,96 @@
+.contact {
+  font-family: "Neue Montreal";
+  font-weight: 500;
+  position: relative;
+  padding: 2rem;
+
+  &__number {
+    color: $text;
+    font-size: 1rem;
+    margin: 0 0 2rem 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    @include for-tablet-portrait-up {
+      font-size: 1.25rem;
+      margin: 0 0 5rem 10rem;
+    }
+  }
+
+  &__separator {
+    color: $principal;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    margin-bottom: 5rem;
+
+    @include for-tablet-landscape-up {
+      // min-height: 80vh;
+      margin-bottom: 10rem;
+    }
+    @include for-phone-only {
+      min-height: 40vh;
+      // margin-bottom: 0;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 80rem;
+  }
+
+  &__title {
+    color: $title;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: 5rem;
+
+    @include for-tablet-portrait-up {
+      font-size: 5rem;
+      margin-bottom: 5rem;
+    }
+
+    @include for-tablet-landscape-up {
+      font-size: 8rem;
+      margin-bottom: 10rem;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 5rem;
+
+    @include for-phone-only {
+      grid-row-gap: 2rem;
+    }
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 1rem;
+  }
+  &__label {
+    color: grey;
+    opacity: 50%;
+    font-size: 4rem;
+
+    @include for-phone-only {
+      font-size: 2rem;
+    }
+  }
+  &__link {
+    font-size: 2rem;
+    color: $principal;
+
+    @include for-phone-only {
+      font-size: 1.3rem;
+    }
+  }
+}

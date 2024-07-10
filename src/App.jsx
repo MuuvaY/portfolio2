@@ -405,6 +405,7 @@ import Projets from "./components/Projets";
 import Carrousel from "./components/Carrousel";
 import Testslide from "./components/Testslide";
 import Footer from "./components/Footer";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -417,6 +418,7 @@ function App() {
       <Projets />
       <Carrousel />
       {/* <Testslide /> */}
+      <Contact />
       <Footer />
     </LanguageProvider>
   );
