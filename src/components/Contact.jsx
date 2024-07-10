@@ -9,7 +9,7 @@ function Contact() {
   return (
     <section className="contact" id="contact">
       <p className="contact__number">
-        02 <span className="contact__separator">/</span>
+        03 <span className="contact__separator">/</span>
       </p>
       <div className="contact__container">
         <div className="contact__wrapper">

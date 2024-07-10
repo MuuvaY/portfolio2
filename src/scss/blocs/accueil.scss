@@ -112,7 +112,7 @@
 
     @include for-phone-only {
       height: 3.75rem;
-      // margin-left: 1rem; /* Add margin to the left to create space */
+      display: none;
     }
   }
 

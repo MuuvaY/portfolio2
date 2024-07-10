@@ -1,31 +1,13 @@
-import React, { useContext, useLayoutEffect, useRef } from "react";
+import React, { useContext, useEffect, useRef } from "react";
 import { LanguageContext } from "./LanguageContext";
 import { translations } from "./../translations";
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 function Compétences() {
   const { language } = useContext(LanguageContext);
-  const arrowRef = useRef(null);
-
-  useLayoutEffect(() => {
-    let ctx = gsap.context(() => {
-      // Animation du titre principal et des liens
-      const tl = gsap.timeline();
-
-      // Animation de la flèche
-      gsap.to(arrowRef.current, {
-        y: 20,
-        repeat: -1,
-        yoyo: true,
-        duration: 0.8,
-        ease: "power1.inOut",
-      });
-    });
-
-    return () => {
-      ctx.revert();
-    };
-  }, []);
 
   return (
     <section className="competences2" id="competences">
