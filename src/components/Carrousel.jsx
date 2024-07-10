@@ -1,4 +1,4 @@
-import React, { useState, useContext, useRef } from "react";
+import React, { useState, useContext, useRef, useEffect } from "react";
 import { LanguageContext } from "./LanguageContext";
 import { translations } from "./../translations";
 
@@ -27,6 +27,7 @@ function Carrousel() {
   const [isDragging, setIsDragging] = useState(false);
   const [showFullDescription, setShowFullDescription] = useState(false);
   const containerRef = useRef(null);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 600);
 
   const slides = [
     {
@@ -37,7 +38,9 @@ function Carrousel() {
       img: angouloriente,
       technologies: ["React", "Sass"],
       url: "https://angouloriente.netlify.app/",
-      annee: "Juin 2024",
+      // annee: "Juin 2024",
+      contentDate: "juin",
+      contentYear: "2024",
     },
     {
       id: 2,
@@ -47,7 +50,9 @@ function Carrousel() {
       img: beez2be,
       technologies: ["React", "MongoDb", "Tailwindcss"],
       url: "https://example.com/angouloriente",
-      annee: "Février 2024",
+      // annee: "Février 2024",
+      contentDate: "fevrier",
+      contentYear: "2024",
     },
     {
       id: 3,
@@ -57,7 +62,9 @@ function Carrousel() {
       img: foodtruck,
       technologies: ["PHP", "Html", "Css", "JavaScript"],
       url: "https://rtiphonet.fr/foodtruck/accueil.php",
-      annee: "Janvier 2024",
+      // annee: "Janvier 2024",
+      contentDate: "janvier",
+      contentYear: "2024",
     },
     {
       id: 4,
@@ -67,7 +74,9 @@ function Carrousel() {
       img: beeautop,
       technologies: ["PHP", "Html", "Css", "JavaScript"],
       url: "https://kbelin.alwaysdata.net/beeautop/",
-      annee: "Juin 2023",
+      // annee: "Juin 2023",
+      contentDate: "juin",
+      contentYear: "2023",
     },
   ];
 
@@ -133,14 +142,42 @@ function Carrousel() {
   const handleMouseUp = () => {
     setIsDragging(false);
   };
-  const MAX_DESCRIPTION_LENGTH = 100; // Nombre maximum de caractères à afficher avant de tronquer
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 600);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  // const MAX_DESCRIPTION_LENGTH = 100; // Nombre maximum de caractères à afficher avant de tronquer
+
+  // const handleToggleDescription = () => {
+  //   setShowFullDescription(!showFullDescription);
+  // };
+  // const renderDescription = () => {
+  //   const description = translations[language][slides[currentSlide].contentKey];
+  //   if (description.length <= MAX_DESCRIPTION_LENGTH || showFullDescription) {
+  //     return description;
+  //   }
+  //   return description.substring(0, MAX_DESCRIPTION_LENGTH) + "...";
+  // };
+  const MAX_DESCRIPTION_LENGTH = 100;
 
   const handleToggleDescription = () => {
     setShowFullDescription(!showFullDescription);
   };
+
   const renderDescription = () => {
     const description = translations[language][slides[currentSlide].contentKey];
-    if (description.length <= MAX_DESCRIPTION_LENGTH || showFullDescription) {
+    if (
+      !isMobile ||
+      description.length <= MAX_DESCRIPTION_LENGTH ||
+      showFullDescription
+    ) {
       return description;
     }
     return description.substring(0, MAX_DESCRIPTION_LENGTH) + "...";
@@ -230,7 +267,10 @@ function Carrousel() {
               </div>
               <div className="carrousel__item">
                 <p className="carrousel__label">Date</p>
-                <p className="carrousel__date">{slides[currentSlide].annee}</p>
+                <p className="carrousel__date">
+                  {translations[language][slides[currentSlide].contentDate]}{" "}
+                  {slides[currentSlide].contentYear}
+                </p>
               </div>
               <div className="carrousel__item">
                 <p className="carrousel__label">
@@ -260,16 +300,23 @@ function Carrousel() {
             </div>
             <div className="carrousel__item-description">
               <p className="carrousel__label-description">Description</p>
+
               <p className="carrousel__description">{renderDescription()}</p>
-              {translations[language][slides[currentSlide].contentKey].length >
-                MAX_DESCRIPTION_LENGTH && (
-                <a
-                  onClick={handleToggleDescription}
-                  className="carrousel__see-more"
-                >
-                  {showFullDescription ? "Voir moins" : "Voir plus"}
-                </a>
-              )}
+              {isMobile &&
+                renderDescription().length > MAX_DESCRIPTION_LENGTH && (
+                  <a
+                    onClick={handleToggleDescription}
+                    className="carrousel__see-more"
+                  >
+                    {showFullDescription
+                      ? translations[language].voirMoins
+                      : translations[language].voirPlus}
+
+                    {/* {showFullDescription
+                      ? translations[language].showLess
+                      : translations[language].showMore} */}
+                  </a>
+                )}
             </div>
           </div>
           <div className="carrousel__img-wrapper">

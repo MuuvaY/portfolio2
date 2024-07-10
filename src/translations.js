@@ -35,6 +35,11 @@ export const translations = {
       "Beeautop est une application mobile dédiée à la collaboration entre apiculteurs. Elle permet aux utilisateurs de se connecter et de partager des informations pour améliorer la gestion de leurs ruches.",
     footerText:
       "Ce site est développé avec React et SCSS, et surtout avec beaucoup d'amour.",
+    juin: "Juin",
+    fevrier: "Février",
+    janvier: "Janvier",
+    voirMoins: "Voir moins",
+    voirPlus: "Voir plus",
   },
   en: {
     developpeur: "Web",
@@ -72,5 +77,10 @@ export const translations = {
       "Beeautop is a mobile application dedicated to collaboration between beekeepers. It allows users to connect and share information to improve the management of their hives. ",
     footerText:
       "This site is developed with React and SCSS, and especially with a lot of love.",
+    juin: "June",
+    fevrier: "February",
+    janvier: "January",
+    voirMoins: "See less",
+    voirPlus: "See more",
   },
 };
