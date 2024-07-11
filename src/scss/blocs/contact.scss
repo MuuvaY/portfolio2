@@ -77,8 +77,8 @@
     grid-row-gap: 1rem;
   }
   &__label {
-    color: grey;
-    opacity: 50%;
+    color: $text;
+    // opacity: 50%;
     font-size: 4rem;
 
     @include for-phone-only {
