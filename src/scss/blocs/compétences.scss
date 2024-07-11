@@ -685,6 +685,10 @@
     flex-direction: column;
     width: 100%;
     max-width: 80rem;
+
+    @include for-desktop-up {
+      max-width: 60rem;
+    }
   }
 
   // &__title {
@@ -711,7 +715,7 @@
 
     @include for-tablet-landscape-up {
       font-size: 8rem;
-      margin-bottom: 25rem;
+      margin-bottom: 10rem;
     }
   }
 
@@ -769,6 +773,9 @@
 
     @include for-phone-only {
       font-size: 0.9rem;
+    }
+    @include for-desktop-up {
+      max-width: 20rem;
     }
   }
 
@@ -856,6 +863,10 @@
 
     @include for-phone-only {
       display: none;
+    }
+
+    @include for-desktop-up {
+      margin-top: 0;
     }
   }
 }

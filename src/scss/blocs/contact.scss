@@ -30,7 +30,7 @@
     margin-bottom: 5rem;
 
     @include for-tablet-landscape-up {
-      // min-height: 80vh;
+      min-height: 80vh;
       margin-bottom: 10rem;
     }
     @include for-phone-only {
@@ -44,6 +44,10 @@
     flex-direction: column;
     width: 100%;
     max-width: 80rem;
+
+    @include for-desktop-up {
+      max-width: 60rem;
+    }
   }
 
   &__title {

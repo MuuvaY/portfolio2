@@ -1,6 +1,6 @@
 .accueil {
   margin: 10rem 5rem 0 5rem;
-  height: 100vh;
+  // height: 100vh;
   box-sizing: border-box; /* Inclure le padding et la bordure dans la hauteur totale */
   overflow: hidden; /* Empêcher le débordement */
 
@@ -11,7 +11,9 @@
     // width: 100%;
     height: auto; /* Ajuster la hauteur pour le mobile */
   }
-
+  @include for-desktop-up {
+    margin-bottom: 10rem;
+  }
   &__titre,
   &__titre2 {
     font-size: 8.125rem;

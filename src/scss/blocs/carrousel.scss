@@ -241,7 +241,7 @@
   font-family: "Neue Montreal";
   font-weight: 500;
   position: relative;
-  height: 100vh;
+  // height: 100vh;
 
   @include for-phone-only {
     height: auto;
@@ -280,10 +280,13 @@
     user-select: none;
     -webkit-user-drag: none;
     -webkit-tap-highlight-color: transparent;
-    margin: 0 2rem;
+    margin: 0 0 5rem 2rem;
 
     @include for-phone-only {
       margin: 0 1rem;
+    }
+    @include for-desktop-up {
+      margin-bottom: 10rem;
     }
   }
 
@@ -464,6 +467,8 @@
   &__button {
     background: none;
     border: none;
+    cursor: pointer;
+
     @include for-phone-only {
       display: none;
     }
