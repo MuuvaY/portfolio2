@@ -40,6 +40,7 @@ export const translations = {
     janvier: "Janvier",
     voirMoins: "Voir moins",
     voirPlus: "Voir plus",
+    githubDescription: "Voir le projet sur github",
   },
   en: {
     developpeur: "Web",
@@ -82,5 +83,6 @@ export const translations = {
     janvier: "January",
     voirMoins: "See less",
     voirPlus: "See more",
+    githubDescription: "See the project on github",
   },
 };

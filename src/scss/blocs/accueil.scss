@@ -1,8 +1,6 @@
 .accueil {
   margin: 10rem 5rem 0 5rem;
   // height: 100vh;
-  box-sizing: border-box; /* Inclure le padding et la bordure dans la hauteur totale */
-  overflow: hidden; /* Empêcher le débordement */
 
   @include for-phone-only {
     margin: 7rem 2rem 0 2rem;
@@ -11,9 +9,16 @@
     // width: 100%;
     height: auto; /* Ajuster la hauteur pour le mobile */
   }
+  @include for-tablet-landscape-up {
+    margin-bottom: 5rem;
+  }
   @include for-desktop-up {
     margin-bottom: 10rem;
   }
+  @include for-tablet-portrait-up {
+    margin: 10rem 2rem 5rem 2rem;
+  }
+
   &__titre,
   &__titre2 {
     font-size: 8.125rem;
@@ -34,7 +39,10 @@
     }
 
     @include for-tablet-landscape-up {
-      font-size: 6.25rem;
+      font-size: 6rem;
+    }
+    @include for-big-desktop-up {
+      font-size: 8.125rem;
     }
   }
 
@@ -89,7 +97,6 @@
     color: $text;
     line-height: 1.18;
     text-transform: uppercase;
-    width: 30rem;
     border-left: solid 2px $principal;
     text-align: justify;
     display: flex;
@@ -106,6 +113,15 @@
       width: 100%;
       margin-bottom: 2rem;
     }
+    @include for-tablet-landscape-up {
+      width: 25rem;
+    }
+    @include for-desktop-up {
+      width: 30rem;
+    }
+    @include for-big-desktop-up {
+      width: 35rem;
+    }
   }
 
   &__fleche {
@@ -114,6 +130,9 @@
 
     @include for-phone-only {
       height: 3.75rem;
+      display: none;
+    }
+    @include for-tablet-portrait-up {
       display: none;
     }
   }
@@ -127,6 +146,9 @@
     @include for-phone-only {
       flex-direction: column;
       align-items: flex-start;
+      order: 5;
+    }
+    @include for-tablet-portrait-up {
       order: 5;
     }
   }
@@ -204,6 +226,40 @@
     &__titre2 {
       order: 1;
       // flex-direction: row; /* Assurez-vous que le titre secondaire est en ligne */
+    }
+    &__titre2-container {
+      order: 1;
+    }
+  }
+
+  @include for-tablet-portrait-up {
+    &__description {
+      // order: -5;
+      // font-size: 0.8rem;
+      // margin-top: 2rem;
+      width: 25rem;
+    }
+
+    &__titre {
+      order: -4;
+    }
+
+    &__link {
+      order: -3;
+    }
+
+    &__img {
+      order: -2;
+    }
+
+    &__list {
+      justify-content: space-around;
+      width: 100%;
+      margin-top: 1rem;
+    }
+
+    &__titre2 {
+      order: 1;
     }
     &__titre2-container {
       order: 1;

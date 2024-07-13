@@ -15,7 +15,7 @@ function Footer() {
             {translations[language].portfolioCopyright}
           </span>
         </p>
-        <p className="footer__text">{translations[language].footerText}</p>
+        <p className="footer__textD">{translations[language].footerText}</p>
         <p className="footer__text">
           <span className="footer__developer">
             {translations[language].developpeur}

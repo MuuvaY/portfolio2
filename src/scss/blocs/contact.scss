@@ -12,7 +12,13 @@
     top: 0;
     left: 0;
 
+    @include for-phone-only {
+      position: static;
+    }
     @include for-tablet-portrait-up {
+      font-size: 1.25rem;
+    }
+    @include for-tablet-landscape-up {
       font-size: 1.25rem;
       margin: 0 0 5rem 10rem;
     }
@@ -26,16 +32,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 60vh;
-    margin-bottom: 5rem;
 
+    @include for-phone-only {
+    }
+    @include for-tablet-portrait-up {
+      margin-top: 2rem;
+      margin-bottom: 5rem;
+    }
     @include for-tablet-landscape-up {
+      min-height: 80vh;
+      margin-bottom: 2rem;
+    }
+    @include for-desktop-up {
       min-height: 80vh;
       margin-bottom: 10rem;
     }
-    @include for-phone-only {
-      min-height: 40vh;
-      // margin-bottom: 0;
+    @include for-big-desktop-up {
+      min-height: 80vh;
+      margin-bottom: 5rem;
     }
   }
 
@@ -43,27 +57,48 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 80rem;
-
+    // max-width: 80rem;
+    @include for-phone-only {
+    }
+    @include for-tablet-portrait-up {
+    }
+    @include for-tablet-landscape-up {
+      max-width: 50rem;
+    }
     @include for-desktop-up {
       max-width: 60rem;
     }
+    @include for-big-desktop-up {
+      max-width: 80rem;
+    }
   }
-
   &__title {
     color: $title;
     font-size: 2.5rem;
     text-transform: uppercase;
     margin-bottom: 5rem;
 
-    @include for-tablet-portrait-up {
-      font-size: 5rem;
+    @include for-phone-only {
+      font-size: 2.5rem;
       margin-bottom: 5rem;
     }
 
+    @include for-tablet-portrait-up {
+      font-size: 5rem;
+      margin-bottom: 6.5rem;
+    }
+
     @include for-tablet-landscape-up {
-      font-size: 8rem;
+      font-size: 6rem;
       margin-bottom: 10rem;
+    }
+
+    @include for-desktop-up {
+      font-size: 8rem;
+    }
+
+    @include for-big-desktop-up {
+      font-size: 10rem;
     }
   }
   &__list {

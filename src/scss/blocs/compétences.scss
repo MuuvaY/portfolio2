@@ -631,15 +631,19 @@
 
   &__number {
     color: $text;
-    font-size: 1rem;
-    margin: 0 0 2rem 2rem;
+    font-size: 1.25rem;
+    margin: 0 0 5rem 10rem;
     position: absolute;
     top: 0;
     left: 0;
 
+    @include for-phone-only {
+      margin: 0 0 2rem 2rem;
+      font-size: 1rem;
+    }
     @include for-tablet-portrait-up {
       font-size: 1.25rem;
-      margin: 0 0 5rem 10rem;
+      margin: 0 0 5rem 2rem;
     }
   }
   &__separator {
@@ -662,72 +666,95 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 60vh;
-    margin-bottom: 5rem;
+    // min-height: 60vh;
+    // margin-bottom: 5rem;
 
+    // @include for-big-desktop-up {
+    // }
+    // @include for-desktop-up {
+    // }
+    // @include for-tablet-landscape-up {
+    // }
+    // @include for-tablet-portrait-up {
+    // }
+    // @include for-phone-only {
+    // }
+
+    // @include for-tablet-landscape-up {
+    //   min-height: 80vh;
+    //   margin-bottom: 10rem;
+    // }
+
+    @include for-phone-only {
+    }
+    @include for-tablet-portrait-up {
+      margin-top: 2rem;
+      margin-bottom: 5rem;
+    }
     @include for-tablet-landscape-up {
+      min-height: 80vh;
+      margin-bottom: 2rem;
+    }
+    @include for-desktop-up {
       min-height: 80vh;
       margin-bottom: 10rem;
     }
+    @include for-big-desktop-up {
+      min-height: 80vh;
+      margin-bottom: 5rem;
+    }
   }
 
-  // &__wrapper {
-  //   display: flex;
-  //   flex-direction: column;
-  //   width: 80rem;
-
-  //   @include for-phone-only {
-  //     width: 100%;
-  //   }
-  // }
   &__wrapper {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 80rem;
-
+    // max-width: 80rem;
+    @include for-phone-only {
+    }
+    @include for-tablet-portrait-up {
+      max-width: 50rem;
+    }
+    @include for-tablet-landscape-up {
+      max-width: 50rem;
+    }
     @include for-desktop-up {
       max-width: 60rem;
     }
+    @include for-big-desktop-up {
+      max-width: 80rem;
+    }
   }
 
-  // &__title {
-  //   color: $title;
-  //   font-size: 8rem;
-  //   text-transform: uppercase;
-  //   margin-bottom: 25rem;
-
-  //   @include for-phone-only {
-  //     font-size: 3rem;
-  //     margin-bottom: 3rem;
-  //   }
-  // }
   &__title {
     color: $title;
-    font-size: 2.5rem;
     text-transform: uppercase;
-    margin-bottom: 5rem;
+    // margin-bottom: 5rem;
+
+    @include for-phone-only {
+      font-size: 2.5rem;
+      margin-bottom: 5rem;
+    }
 
     @include for-tablet-portrait-up {
       font-size: 5rem;
-      margin-bottom: 15rem;
+      margin-bottom: 8rem;
     }
 
     @include for-tablet-landscape-up {
-      font-size: 8rem;
+      font-size: 6rem;
       margin-bottom: 10rem;
+    }
+
+    @include for-desktop-up {
+      font-size: 8rem;
+    }
+
+    @include for-big-desktop-up {
+      font-size: 10rem;
     }
   }
 
-  // &__subtitle {
-  //   color: $text;
-  //   font-size: 2rem;
-  //   text-transform: uppercase;
-
-  //   @include for-phone-only {
-  //     font-size: 1.25rem;
-  //   }
-  // }
   &__subtitle {
     color: $text;
     font-size: 1.5rem;
@@ -738,34 +765,14 @@
     }
   }
 
-  // &__description {
-  //   color: $text;
-  //   line-height: 1.18;
-  //   text-transform: uppercase;
-  //   width: 30rem;
-  //   border-left: solid 2px $principal;
-  //   text-align: justify;
-  //   display: flex;
-
-  //   @include for-phone-only {
-  //     width: 100%;
-  //     font-size: 0.875rem;
-  //   }
-
-  //   span {
-  //     margin-left: 0.5rem;
-  //   }
-  // }
   &__description {
     color: $text;
     line-height: 1.18;
     text-transform: uppercase;
     width: 100%;
-    max-width: 30rem;
     border-left: solid 2px $principal;
     text-align: justify;
     display: flex;
-    margin-top: 1rem;
 
     span {
       margin-left: 0.5rem;
@@ -774,410 +781,69 @@
     @include for-phone-only {
       font-size: 0.9rem;
     }
+    @include for-tablet-portrait-up {
+    }
+    @include for-tablet-landscape-up {
+    }
     @include for-desktop-up {
       max-width: 20rem;
     }
+    @include for-big-desktop-up {
+      max-width: 30rem;
+    }
   }
-
-  // &__link {
-  //   font-size: 1.25rem;
-  //   color: $principal;
-  //   text-transform: uppercase;
-
-  //   @include for-phone-only {
-  //     font-size: 1rem;
-  //     margin-top: 1rem;
-  //   }
-  // }
 
   &__link {
     font-size: 1rem;
     color: $principal;
     text-transform: uppercase;
-    margin-top: 1rem;
 
     @include for-tablet-portrait-up {
       font-size: 1.25rem;
     }
   }
 
-  // &__content {
-  //   display: flex;
-  //   justify-content: space-between;
-
-  //   @include for-phone-only {
-  //     flex-direction: column;
-  //     gap: 5rem;
-  //   }
-  // }
-
-  // &__fleche {
-  //   // margin-left: 8rem;
-  //   // position: absolute;
-  //   // bottom: 0;
-  //   margin-top: 8rem;
-
-  //   @include for-phone-only {
-  //     display: none;
-  //   }
-  // }
   &__content {
     display: flex;
-    flex-direction: column;
-
-    @include for-tablet-portrait-up {
-      flex-direction: row;
-      justify-content: space-between;
-    }
+    // flex-direction: column;
+    justify-content: space-between;
 
     @include for-phone-only {
       gap: 3rem;
+      flex-direction: column;
+    }
+    @include for-tablet-portrait-up {
+      gap: 5rem;
+      flex-direction: column;
+      margin-bottom: 3rem;
+    }
+    @include for-tablet-landscape-up {
+      gap: 3rem;
+    }
+    @include for-desktop-up {
+      gap: 0;
+    }
+    @include for-big-desktop-up {
     }
   }
 
-  // &__fleche {
-  //   display: none;
-
-  //   @include for-tablet-portrait-up {
-  //     display: block;
-  //     margin-left: 2rem;
-  //     position: absolute;
-  //     bottom: 0;
-  //     height: 5rem;
-  //   }
-
-  //   @include for-tablet-landscape-up {
-  //     margin-left: 8rem;
-  //     height: auto;
-  //   }
-
-  //   @include for-phone-only {
-  //     height: 3.75rem;
-  //   }
-  // }
   &__fleche {
     // margin-left: 8rem;
     // position: absolute;
     // bottom: 0;
-    margin-top: 8rem;
 
     @include for-phone-only {
       display: none;
     }
-
+    @include for-tablet-portrait-up {
+    }
+    @include for-tablet-landscape-up {
+    }
     @include for-desktop-up {
       margin-top: 0;
     }
+    @include for-big-desktop-up {
+      margin-top: 8rem;
+    }
   }
 }
-// .competences2 {
-//   font-family: "Neue Montreal";
-//   font-weight: 500;
-//   position: relative;
-//   padding: 2rem;
-
-//   &__number {
-//     color: $text;
-//     font-size: 1rem;
-//     margin: 0 0 2rem 2rem;
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-
-//     @include for-tablet-portrait-up {
-//       font-size: 1.25rem;
-//       margin: 0 0 5rem 10rem;
-//     }
-//   }
-
-//   &__separator {
-//     color: $principal;
-//   }
-
-//   &__container {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     min-height: 60vh;
-//     margin-bottom: 5rem;
-
-//     @include for-tablet-landscape-up {
-//       min-height: 80vh;
-//       margin-bottom: 10rem;
-//     }
-//   }
-
-//   &__wrapper {
-//     display: flex;
-//     flex-direction: column;
-//     // width: 100%;
-//     // max-width: 80rem;
-//   }
-
-//   &__title {
-//     color: $title;
-//     font-size: 3rem;
-//     text-transform: uppercase;
-//     margin-bottom: 5rem;
-
-//     @include for-tablet-portrait-up {
-//       font-size: 5rem;
-//       margin-bottom: 15rem;
-//     }
-
-//     @include for-tablet-landscape-up {
-//       font-size: 8rem;
-//       margin-bottom: 25rem;
-//     }
-//   }
-
-//   &__subtitle {
-//     color: $text;
-//     font-size: 1.5rem;
-//     text-transform: uppercase;
-
-//     @include for-tablet-portrait-up {
-//       font-size: 2rem;
-//     }
-//   }
-
-//   &__description {
-//     color: $text;
-//     line-height: 1.18;
-//     text-transform: uppercase;
-//     width: 100%;
-//     max-width: 30rem;
-//     border-left: solid 2px $principal;
-//     text-align: justify;
-//     display: flex;
-//     // margin-top: 1rem;
-
-//     span {
-//       margin-left: 0.5rem;
-//     }
-//   }
-
-//   &__link {
-//     font-size: 1rem;
-//     color: $principal;
-//     text-transform: uppercase;
-//     margin-top: 1rem;
-
-//     @include for-tablet-portrait-up {
-//       font-size: 1.25rem;
-//     }
-//   }
-
-//   &__content {
-//     display: flex;
-//     flex-direction: column;
-//     gap: 10rem;
-
-//     @include for-tablet-portrait-up {
-//       flex-direction: row;
-//       justify-content: space-between;
-//       gap: 5rem;
-//     }
-
-//   }
-
-//   &__fleche {
-//     display: none;
-
-//     @include for-tablet-portrait-up {
-//       display: block;
-//       margin-left: 2rem;
-//       position: absolute;
-//       bottom: 0;
-//       height: 5rem;
-//     }
-
-//     @include for-tablet-landscape-up {
-//       margin-left: 8rem;
-//       height: auto;
-//     }
-//   }
-// }
-// .competences2 {
-//   font-family: "Neue Montreal";
-//   font-weight: 500;
-//   position: relative;
-//   padding: 1rem; // Add padding for better spacing on smaller screens
-
-//   &__number {
-//     color: $text;
-//     font-size: 1.25rem;
-//     margin: 0 0 5rem 10rem;
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     @include for-phone-only {
-//       margin: 0;
-//       position: static;
-//     }
-//   }
-//   &__separator {
-//     color: $principal;
-//   }
-
-//   &__container {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     min-height: 80vh;
-//     margin-bottom: 10rem;
-//     @include for-phone-only {
-//       flex-direction: column;
-//       margin-bottom: 2rem;
-//     }
-//   }
-
-//   &__wrapper {
-//     display: flex;
-//     flex-direction: column;
-//     width: 80rem;
-//     @include for-phone-only {
-//       width: 100%;
-//     }
-//   }
-//   &__title {
-//     color: $title;
-//     font-size: 8rem;
-//     text-transform: uppercase;
-//     margin-bottom: 25rem;
-//     @include for-phone-only {
-//       font-size: 2rem;
-//       margin-bottom: 2rem;
-//     }
-//     @include for-tablet-portrait-up {
-//       // font-size: 4rem;
-//       // margin-bottom: 5rem;
-//     }
-//   }
-//   &__subtitle {
-//     color: $text;
-//     font-size: 2rem;
-//     text-transform: uppercase;
-//     @include for-phone-only {
-//       font-size: 1.5rem;
-//     }
-//   }
-//   &__description {
-//     color: $text;
-//     line-height: 1.18;
-//     text-transform: uppercase;
-//     width: 30rem;
-//     border-left: solid 2px $principal;
-//     text-align: justify;
-//     display: flex;
-
-//     span {
-//       margin-left: 0.5rem;
-//     }
-//     @include for-phone-only {
-//       width: 100%;
-//       font-size: 1rem;
-//     }
-//   }
-//   &__link {
-//     font-size: 1.25rem;
-//     color: $principal;
-//     text-transform: uppercase;
-//     @include for-phone-only {
-//       font-size: 1rem;
-//     }
-//   }
-
-//   &__content {
-//     display: flex;
-//     justify-content: space-between;
-//     @include for-phone-only {
-//       flex-direction: column;
-//     }
-//   }
-//   &__fleche {
-//     margin-left: 8rem;
-//     position: absolute;
-//     bottom: 0;
-//     @include for-phone-only {
-//       height: 3.75rem;
-//       margin-left: 0;
-//       position: static;
-//       margin-top: 1rem;
-//     }
-//   }
-// }
-
-// .competences2 {
-//   font-family: "Neue Montreal";
-//   font-weight: 500;
-//   position: relative;
-
-//   &__number {
-//     color: $text;
-//     font-size: 1.25rem;
-//     margin: 0 0 5rem 10rem;
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//   }
-//   &__separator {
-//     color: $principal;
-//   }
-
-//   &__container {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     min-height: 80vh;
-//     margin-bottom: 10rem;
-//   }
-
-//   &__wrapper {
-//     display: flex;
-//     flex-direction: column;
-//     width: 80rem;
-//   }
-//   &__title {
-//     color: $title;
-//     font-size: 8rem;
-//     text-transform: uppercase;
-//     margin-bottom: 25rem;
-//   }
-//   &__subtitle {
-//     color: $text;
-//     font-size: 2rem;
-//     text-transform: uppercase;
-//   }
-//   &__description {
-//     color: $text;
-//     line-height: 1.18;
-//     text-transform: uppercase;
-//     width: 30rem;
-//     border-left: solid 2px $principal;
-//     text-align: justify;
-//     display: flex;
-
-//     span {
-//       margin-left: 0.5rem;
-//     }
-//   }
-//   &__link {
-//     font-size: 1.25rem;
-//     color: $principal;
-//     text-transform: uppercase;
-//   }
-
-//   &__content {
-//     display: flex;
-//     justify-content: space-between;
-//   }
-//   &__fleche {
-//     margin-left: 8rem;
-//     position: absolute;
-//     bottom: 0;
-//     @include for-phone-only {
-//       height: 3.75rem;
-//     }
-//   }
-// }

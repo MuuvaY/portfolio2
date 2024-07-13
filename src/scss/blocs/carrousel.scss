@@ -1,242 +1,3 @@
-// .carrousel {
-//   font-family: "Neue Montreal";
-//   font-weight: 500;
-//   position: relative;
-//   height: 100vh;
-
-//   @include for-phone-only {
-//     height: auto;
-//     padding: 2rem 0;
-//   }
-
-//   &__header {
-//     display: flex;
-//     justify-content: center;
-//     margin-bottom: 5rem;
-
-//     @include for-phone-only {
-//       margin-bottom: 3rem;
-//       flex-direction: column;
-//     }
-//   }
-
-//   &__header-title {
-//     font-size: 5rem;
-//     font-weight: 500;
-//     text-transform: uppercase;
-//     color: $title;
-
-//     @include for-phone-only {
-//       font-size: 2.5rem;
-//       margin: 0 0 0 2rem;
-//     }
-//   }
-
-//   &__container {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     flex-direction: column;
-//     touch-action: pan-y;
-//     user-select: none;
-//     -webkit-user-drag: none;
-//     -webkit-tap-highlight-color: transparent;
-//     margin: 0 2rem;
-
-//     @include for-phone-only {
-//       margin: 0 1rem;
-//     }
-//   }
-
-//   &__stats {
-//     display: flex;
-//     margin: 0 2rem;
-//     justify-content: space-between;
-//     width: 100%;
-
-//     @include for-phone-only {
-//       flex-direction: column;
-//       margin: 0;
-//     }
-//   }
-
-//   &__stats-item {
-//     width: 50%;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: space-evenly;
-
-//     @include for-phone-only {
-//       width: 100%;
-//       margin-bottom: 2rem;
-//     }
-//   }
-
-//   &__number {
-//     color: $text;
-//     font-size: 1.25rem;
-//     margin: 0 0 5rem 10rem;
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-
-//     @include for-phone-only {
-//       margin: 0 0 2rem 2rem;
-//       position: static;
-//       font-size: 1rem;
-//     }
-//   }
-
-//   &__separator {
-//     color: $principal;
-//   }
-
-//   &__title {
-//     font-size: 6rem;
-
-//     @include for-phone-only {
-//       font-size: 2.5rem;
-//       margin-bottom: 1.5rem;
-//     }
-
-//     a {
-//       color: $title;
-//       transition: color 0.3s;
-//       text-decoration: none;
-
-//       &:hover {
-//         color: $principal;
-//       }
-//     }
-//   }
-
-//   &__list {
-//     display: flex;
-//     font-size: 1.25rem;
-//     grid-column-gap: 4em;
-
-//     @include for-phone-only {
-//       flex-direction: column;
-//       grid-column-gap: 2em;
-//     }
-//   }
-
-//   &__wrapper {
-//     display: flex;
-//     gap: 1rem;
-
-//     @include for-phone-only {
-//       flex-wrap: wrap;
-//     }
-//   }
-
-//   &__item {
-//     display: flex;
-//     flex-direction: column;
-//     grid-row-gap: 0.5em;
-//     align-items: flex-start;
-
-//     @include for-phone-only {
-//       margin-bottom: 1rem;
-//     }
-//   }
-
-//   &__label {
-//     color: grey;
-//     opacity: 50%;
-//   }
-
-//   &__link {
-//     color: $text;
-//     text-decoration: none;
-//   }
-
-//   &__date {
-//     color: $text;
-//   }
-
-//   &__icon {
-//     height: 1.5rem;
-//     margin-right: 0.5rem;
-//     margin-left: 0.25rem;
-//   }
-
-//   &__description {
-//     color: $text;
-//     font-size: 1.5rem;
-//     line-height: 1.18;
-
-//     @include for-phone-only {
-//       font-size: 1.2rem;
-//     }
-//   }
-
-//   &__technologies {
-//     display: flex;
-//     align-items: center;
-//     width: fit-content;
-//     border: 2px solid $principal;
-//     border-radius: 5px;
-//     gap: 0.5rem;
-//     padding: 0.2rem;
-
-//     @include for-phone-only {
-//       margin-bottom: 0.5rem;
-//     }
-//   }
-
-//   &__img-container {
-//     @include for-phone-only {
-//       width: 100%;
-//       margin-bottom: 2rem;
-//       width: 80vw;
-//       height: 20vh;
-//     }
-//   }
-
-//   &__img {
-//     @include for-phone-only {
-//       // width: 100%;
-//       // height: auto;
-//       max-width: 100%;
-//       max-height: 100%;
-//     }
-//   }
-//   &__button {
-//     background: none;
-//     border: none;
-//     @include for-phone-only {
-//       display: none;
-//     }
-//   }
-//   &__meter {
-//     font-family: "Neue Montreal";
-//     font-weight: 500;
-//     color: $text;
-//     font-size: 1.25rem;
-//   }
-//   &__title-svg {
-//     @include for-phone-only {
-//       height: 2rem;
-//     }
-//   }
-
-//   &__see-more {
-//     background: none;
-//     border: none;
-//     color: $principal;
-//     cursor: pointer;
-//     font-size: 1rem;
-//     margin-top: 0.5rem;
-
-//     @include for-phone-only {
-//       display: block;
-//     }
-//     @include for-tablet-landscape-up {
-//       display: none;
-//     }
-//   }
-// }
 .carrousel {
   font-family: "Neue Montreal";
   font-weight: 500;
@@ -269,6 +30,14 @@
       font-size: 2.5rem;
       margin: 0 0 0 2rem;
     }
+
+    @include for-tablet-landscape-up {
+      font-size: 5rem;
+    }
+
+    @include for-desktop-up {
+      font-size: 5rem;
+    }
   }
 
   &__container {
@@ -280,7 +49,7 @@
     user-select: none;
     -webkit-user-drag: none;
     -webkit-tap-highlight-color: transparent;
-    margin: 0 0 5rem 2rem;
+    margin: 0 2rem 5rem 2rem;
 
     @include for-phone-only {
       margin: 0 1rem;
@@ -292,7 +61,7 @@
 
   &__stats {
     display: flex;
-    margin: 0 2rem;
+    margin: 0 2rem 3rem 2rem;
     justify-content: space-between;
     width: 100%;
 
@@ -303,29 +72,47 @@
   }
 
   &__stats-item {
-    width: 50%;
+    width: 60%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    gap: 5rem;
+    justify-content: center;
 
     @include for-phone-only {
       width: 100%;
       margin-bottom: 2rem;
+      gap: 1rem;
+    }
+    @include for-desktop-up {
+      gap: 2rem;
+    }
+    @include for-tablet-landscape-up {
+      gap: 2rem;
+    }
+    @include for-tablet-portrait-up {
+      width: 100%;
+      margin-bottom: 2rem;
+      gap: 1rem;
     }
   }
 
   &__number {
     color: $text;
-    font-size: 1.25rem;
-    margin: 0 0 5rem 10rem;
+    font-size: 1rem;
+    margin: 0 0 2rem 2rem;
     position: absolute;
     top: 0;
     left: 0;
 
     @include for-phone-only {
-      margin: 0 0 2rem 2rem;
       position: static;
-      font-size: 1rem;
+    }
+    @include for-tablet-portrait-up {
+      font-size: 1.25rem;
+    }
+    @include for-tablet-landscape-up {
+      font-size: 1.25rem;
+      margin: 0 0 5rem 10rem;
     }
   }
 
@@ -340,7 +127,13 @@
       font-size: 2.5rem;
       margin-bottom: 1.5rem;
     }
+    @include for-tablet-portrait-up {
+      font-size: 4rem;
+    }
 
+    @include for-desktop-up {
+      font-size: 6rem;
+    }
     a {
       color: $title;
       transition: color 0.3s;
@@ -354,7 +147,6 @@
 
   &__list {
     display: flex;
-    font-size: 1.25rem;
     grid-column-gap: 4em;
 
     @include for-phone-only {
@@ -368,6 +160,8 @@
   &__wrapper {
     display: flex;
     gap: 1rem;
+    flex-wrap: wrap;
+    max-width: 30rem;
 
     @include for-phone-only {
       display: flex;
@@ -381,6 +175,7 @@
     flex-direction: column;
     grid-row-gap: 0.5em;
     align-items: flex-start;
+    font-size: 1.25rem;
 
     @include for-phone-only {
       margin-bottom: 1rem;
@@ -417,9 +212,15 @@
     color: $text;
     font-size: 1.5rem;
     line-height: 1.18;
+    text-align: justify;
+    width: 80%;
 
     @include for-phone-only {
       font-size: 1.2rem;
+      width: 100%;
+    }
+    @include for-tablet-portrait-up {
+      width: 100%;
     }
   }
 
@@ -439,24 +240,30 @@
   &__img-wrapper {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
   }
   &__img-container {
+    @include for-desktop-up {
+      height: 31.25rem;
+    }
+    @include for-tablet-landscape-up {
+      height: 31.25rem;
+    }
+    @include for-big-desktop-up {
+      height: 100%;
+    }
     @include for-phone-only {
-      // width: 100%;
-      // margin-bottom: 2rem;
-      // width: 80vw;
-      // height: 30vh;
-      margin-bottom: 2rem;
-      height: 150px;
-      object-fit: cover;
-      display: flex;
-      /* align-content: flex-start; */
-      align-items: flex-start;
-      overflow: hidden;
+      display: none;
+    }
+    @include for-tablet-portrait-up {
+      display: none;
     }
   }
 
   &__img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
     @include for-phone-only {
       width: 100%;
       // height: auto;
@@ -472,6 +279,9 @@
     @include for-phone-only {
       display: none;
     }
+    @include for-tablet-portrait-up {
+      display: none;
+    }
   }
   &__meter {
     font-family: "Neue Montreal";
@@ -482,6 +292,14 @@
   &__title-svg {
     @include for-phone-only {
       height: 2rem;
+    }
+
+    @include for-tablet-landscape-up {
+      height: 3rem;
+    }
+
+    @include for-desktop-up {
+      height: auto;
     }
   }
 
@@ -512,234 +330,3 @@
     // grid-row-gap: 0.5em;
   }
 }
-
-// .carrousel {
-//   font-family: "Neue Montreal", sans-serif;
-//   font-weight: 500;
-//   position: relative;
-//   height: 100vh;
-//   display: flex;
-//   flex-direction: column;
-//   padding: 1rem;
-
-//   @media (max-width: 768px) {
-//     height: auto;
-//     min-height: 100vh;
-//   }
-
-//   &__header {
-//     display: flex;
-//     justify-content: center;
-//     margin-bottom: 5rem;
-
-//     @include for-phone-only {
-//       margin-bottom: 3rem;
-//       flex-direction: column;
-//     }
-//   }
-
-//   &__header-title {
-//     font-size: 5rem;
-//     font-weight: 500;
-//     text-transform: uppercase;
-//     color: $title;
-
-//     @include for-phone-only {
-//       font-size: 2.5rem;
-//       margin: 0 0 0 2rem;
-//     }
-//   }
-//   &__number {
-//     color: $text;
-//     font-size: 1.25rem;
-//     margin: 0 0 5rem 10rem;
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-
-//     @include for-phone-only {
-//       margin: 0 0 2rem 2rem;
-//       position: static;
-//       font-size: 1rem;
-//     }
-//   }
-
-//   &__header-title {
-//     font-size: 3rem;
-//     color: $title;
-//     text-transform: uppercase;
-
-//     @media (max-width: 768px) {
-//       font-size: 2rem;
-//     }
-//   }
-
-//   &__container {
-//     flex-grow: 1;
-//     display: flex;
-//     flex-direction: column;
-//   }
-
-//   &__stats {
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//     flex-grow: 1;
-
-//     @media (max-width: 768px) {
-//       flex-direction: column;
-//     }
-//   }
-
-//   &__stats-item {
-//     width: 50%;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: space-between;
-
-//     @media (max-width: 768px) {
-//       width: 100%;
-//       margin-bottom: 1rem;
-//     }
-//   }
-
-//   // &__title {
-//   //   font-size: 2.5rem;
-//   //   margin-bottom: 1rem;
-
-//   //   @media (max-width: 768px) {
-//   //     font-size: 2rem;
-//   //   }
-
-//   //   a {
-//   //     color: $title;
-//   //     text-decoration: none;
-//   //     transition: color 0.3s;
-
-//   //     &:hover {
-//   //       color: $principal;
-//   //     }
-//   //   }
-//   // }
-//   &__separator {
-//     color: $principal;
-//   }
-//   &__title {
-//     font-size: 6rem;
-
-//     @include for-phone-only {
-//       font-size: 2.5rem;
-//       margin-bottom: 1.5rem;
-//     }
-
-//     a {
-//       color: $title;
-//       transition: color 0.3s;
-//       text-decoration: none;
-
-//       &:hover {
-//         color: $principal;
-//       }
-//     }
-//   }
-
-// &__list {
-//   display: flex;
-//   flex-wrap: wrap;
-//   gap: 1rem;
-//   margin-bottom: 1rem;
-// }
-
-//   &__item {
-//     flex: 1 1 30%;
-//     min-width: 150px;
-//   }
-
-//   &__label {
-//     color: grey;
-//     opacity: 0.5;
-//     margin-bottom: 0.25rem;
-//   }
-
-//   &__link {
-//     color: $text;
-//     // text-decoration: none;
-//   }
-
-//   &__date {
-//     color: $text;
-//   }
-
-// &__wrapper {
-//   display: flex;
-//   flex-wrap: wrap;
-//   gap: 0.5rem;
-// }
-
-// &__technologies {
-//   display: flex;
-//   align-items: center;
-//   padding: 0.25rem 0.5rem;
-//   border: 1px solid $principal;
-//   border-radius: 4px;
-//   font-size: 0.9rem;
-// }
-
-//   &__icon {
-//     margin-right: 0.25rem;
-//     height: 1.5rem;
-
-//     @include for-phone-only {
-//       height: 1em;
-//     }
-//   }
-
-//   &__description {
-//     font-size: 1rem;
-//     line-height: 1.4;
-//     color: $text;
-//   }
-
-//   &__img-container {
-//     width: 50%;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-
-//     @media (max-width: 768px) {
-//       width: 100%;
-//       margin-top: 1rem;
-//     }
-//   }
-
-//   &__img {
-//     max-width: 100%;
-//     max-height: 100%;
-//     object-fit: contain;
-//   }
-
-//   &__button {
-//     background: none;
-//     border: none;
-//     font-size: 2rem;
-//     color: $principal;
-//     cursor: pointer;
-//     padding: 0 1rem;
-
-//     @media (max-width: 768px) {
-//       display: none;
-//     }
-//   }
-
-//   &__meter {
-//     text-align: center;
-//     margin-top: 1rem;
-//     font-size: 1rem;
-//     color: $text;
-//   }
-//   &__title-svg {
-//     @include for-phone-only {
-//       height: 2rem;
-//     }
-//   }
-// }

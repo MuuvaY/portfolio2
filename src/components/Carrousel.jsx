@@ -38,9 +38,9 @@ function Carrousel() {
       img: angouloriente,
       technologies: ["React", "Sass"],
       url: "https://angouloriente.netlify.app/",
-      // annee: "Juin 2024",
       contentDate: "juin",
       contentYear: "2024",
+      github: "https://github.com/MuuvaY/AngoulOriente",
     },
     {
       id: 2,
@@ -53,6 +53,7 @@ function Carrousel() {
       // annee: "Février 2024",
       contentDate: "fevrier",
       contentYear: "2024",
+      github: "https://github.com/MuuvaY/beez2be",
     },
     {
       id: 3,
@@ -65,6 +66,7 @@ function Carrousel() {
       // annee: "Janvier 2024",
       contentDate: "janvier",
       contentYear: "2024",
+      github: "https://github.com/MuuvaY/foodtruck",
     },
     {
       id: 4,
@@ -77,6 +79,7 @@ function Carrousel() {
       // annee: "Juin 2023",
       contentDate: "juin",
       contentYear: "2023",
+      github: "https://github.com/MuuvaY/BeeAuTop",
     },
   ];
 
@@ -297,6 +300,16 @@ function Carrousel() {
                   ))}
                 </div>
               </div>
+            </div>
+            <div className="carrousel__item">
+              <p className="carrousel__label">Github</p>
+              <a
+                className="carrousel__link"
+                href={slides[currentSlide].github}
+                target="_blank"
+              >
+                {translations[language].githubDescription}{" "}
+              </a>
             </div>
             <div className="carrousel__item-description">
               <p className="carrousel__label-description">Description</p>
