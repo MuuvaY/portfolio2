@@ -75,7 +75,7 @@ function Carrousel() {
       contentKey: "beeautopDescription",
       img: beeautop,
       technologies: ["PHP", "Html", "Css", "JavaScript"],
-      url: "https://kbelin.alwaysdata.net/beeautop/",
+      url: "https://mariusyvt.alwaysdata.net/BeeAuTop/",
       // annee: "Juin 2023",
       contentDate: "juin",
       contentYear: "2023",

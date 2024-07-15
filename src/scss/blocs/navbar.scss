@@ -648,25 +648,3 @@
     }
   }
 }
-.navbar__menu {
-  display: flex; /* Afficher en mode bureau */
-  flex-direction: column;
-}
-
-.navbar__menu--closed {
-  display: none; /* Cacher en mode mobile */
-}
-
-.navbar__menu--open {
-  display: flex; /* Afficher en mode mobile */
-}
-
-@media (min-width: 768px) {
-  .navbar__menu {
-    display: flex; /* Afficher en mode bureau */
-    flex-direction: row;
-  }
-  .navbar__hamburger {
-    display: none; /* Cacher le bouton hamburger en mode bureau */
-  }
-}
