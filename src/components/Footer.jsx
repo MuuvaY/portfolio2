@@ -12,7 +12,10 @@ function Footer() {
         <p className="footer__text">
           <span className="footer__author">Marius YVART</span>{" "}
           <span className="footer__copyright">
-            {translations[language].portfolioCopyright}
+            {/* {translations[language].portfolioCopyright} */}
+            {typeof translations[language].portfolioCopyright === "function"
+              ? translations[language].portfolioCopyright()
+              : translations[language].portfolioCopyright}
           </span>
         </p>
         <p className="footer__textD">{translations[language].footerText}</p>

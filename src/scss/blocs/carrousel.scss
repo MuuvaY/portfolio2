@@ -147,7 +147,8 @@
 
   &__list {
     display: flex;
-    grid-column-gap: 4em;
+    justify-content: space-between;
+    // grid-column-gap: 4em;
 
     @include for-phone-only {
       display: flex;
@@ -213,7 +214,7 @@
     font-size: 1.5rem;
     line-height: 1.18;
     text-align: justify;
-    width: 80%;
+    // width: 80%;
 
     @include for-phone-only {
       font-size: 1.2rem;

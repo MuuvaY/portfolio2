@@ -11,6 +11,7 @@ import {
   faPhp,
   faHtml5,
   faCss3Alt,
+  faNode,
 } from "@fortawesome/free-brands-svg-icons";
 import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 
@@ -33,6 +34,30 @@ function Carrousel() {
     {
       id: 1,
       titre: "01",
+      nom: "AxTrack",
+      contentKey: "axtrackDescription",
+      img: angouloriente,
+      technologies: ["React Native", "Node.js"],
+      url: "https://mariusyvt.alwaysdata.net/s5/frontal/",
+      contentDate: "janvier",
+      contentYear: "2025",
+      github: "https://github.com/MuuvaY/AxTrackApp",
+    },
+    {
+      id: 2,
+      titre: "02",
+      nom: "ArenaFighters",
+      contentKey: "arenafightersDescription",
+      img: angouloriente,
+      technologies: ["JavaScript", "PHP", "Css"],
+      url: "https://mariusyvt.alwaysdata.net/s5/frontal/",
+      contentDate: "novembre",
+      contentYear: "2024",
+      github: "https://github.com/MuuvaY/ArenaFighters",
+    },
+    {
+      id: 3,
+      titre: "03",
       nom: "Angoul'Oriente",
       contentKey: "angoulorienteDescription",
       img: angouloriente,
@@ -43,21 +68,21 @@ function Carrousel() {
       github: "https://github.com/MuuvaY/AngoulOriente",
     },
     {
-      id: 2,
-      titre: "02",
+      id: 4,
+      titre: "04",
       nom: "Beez2Be",
       contentKey: "beez2beDescription",
       img: beez2be,
       technologies: ["React", "MongoDb", "Tailwindcss"],
-      url: "https://example.com/angouloriente",
+      url: "",
       // annee: "Février 2024",
       contentDate: "fevrier",
       contentYear: "2024",
       github: "https://github.com/MuuvaY/beez2be",
     },
     {
-      id: 3,
-      titre: "03",
+      id: 5,
+      titre: "05",
       nom: "Foodtruck",
       contentKey: "foodtruckDescription",
       img: foodtruck,
@@ -69,8 +94,8 @@ function Carrousel() {
       github: "https://github.com/MuuvaY/foodtruck",
     },
     {
-      id: 4,
-      titre: "04",
+      id: 6,
+      titre: "06",
       nom: "BeeAuTop",
       contentKey: "beeautopDescription",
       img: beeautop,
@@ -92,6 +117,8 @@ function Carrousel() {
     { name: "PHP", icon: faPhp, color: "#777BB4" },
     { name: "Html", icon: faHtml5, color: "#E34F26" },
     { name: "Css", icon: faCss3Alt, color: "#1572B6" },
+    { name: "React Native", icon: faReact, color: "#61DAFB" },
+    { name: "Node.js", icon: faNode, color: "#3E3F34" },
   ];
 
   const nextSlide = () => {
@@ -332,7 +359,7 @@ function Carrousel() {
                 )}
             </div>
           </div>
-          <div className="carrousel__img-wrapper">
+          {/* <div className="carrousel__img-wrapper">
             <div className="carrousel__img-container">
               <img
                 src={slides[currentSlide].img}
@@ -340,7 +367,7 @@ function Carrousel() {
                 className="carrousel__img"
               />
             </div>
-          </div>
+          </div> */}
           <button onClick={nextSlide} className="carrousel__button">
             <svg
               width="45"

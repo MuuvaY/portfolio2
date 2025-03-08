@@ -1,10 +1,29 @@
+const calculateAge = (birthDate) => {
+  const today = new Date();
+  const birth = new Date(birthDate);
+  let age = today.getFullYear() - birth.getFullYear();
+
+  // Vérifier si l'anniversaire est déjà passé cette année
+  const hasBirthdayPassed =
+    today.getMonth() > birth.getMonth() ||
+    (today.getMonth() === birth.getMonth() &&
+      today.getDate() >= birth.getDate());
+
+  if (!hasBirthdayPassed) {
+    age--; // Si l'anniversaire n'est pas encore passé cette année, on enlève 1 an
+  }
+
+  return age;
+};
+
 export const translations = {
   fr: {
     developpeur: "Développeur",
     web: "web",
-    descriptionperso:
-      "Je suis étudiant en 2ème année de BUT Métiers du Multimédia et de l'Internet, mais avant, ça laissez-moi me présenter ! J'ai 21 ans et je viens d'Angers. J'étudie à l'IUT d'Angoulême, avant de venir en BUT MMI j'ai fais un BTS Conception des Produits Industriels que j'ai obtenu.",
-    portfolioCopyright: "Portfolio 2024©",
+    descriptionperso: `Je suis étudiant en 3ème année de BUT Métiers du Multimédia et de l'Internet, mais avant, ça laissez-moi me présenter ! J'ai ${calculateAge(
+      "2002-10-11"
+    )} ans et je viens d'Angers. J'étudie à l'IUT d'Angoulême, avant de venir en BUT MMI j'ai fais un BTS Conception des Produits Industriels que j'ai obtenu.`,
+    portfolioCopyright: () => `Portfolio ${new Date().getFullYear()}©`,
     competences: "Compétences",
     projets: "Projets",
     contact: "Contact",
@@ -38,16 +57,22 @@ export const translations = {
     juin: "Juin",
     fevrier: "Février",
     janvier: "Janvier",
+    novembre: "Novembre",
     voirMoins: "Voir moins",
     voirPlus: "Voir plus",
     githubDescription: "Voir le projet sur github",
+    arenafightersDescription:
+      "ArenaFighters est une application qui permet d'enregistrer des combattants et de les faire s'affronter. Elle fonctionne grâce à une API en PHP et un front-end en JavaScript. Les utilisateurs peuvent ajouter, modifier ou supprimer un combat ainsi qu’un combattant. La décision du vainqueur de chaque combat est déterminée de manière aléatoire.",
+    axtrackDescription:
+      "AxTrack est une application mobile conçue pour les pratiquants de musculation, leur permettant d'enregistrer leurs séances complètes. Ils peuvent renseigner les réglages de leurs exercices, les détails de leur séance (comme les séries dégressives ou les supersets) et consulter leur historique d'entraînement. L'application fonctionne grâce à une API REST développée avec Node.js.",
   },
   en: {
     developpeur: "Web",
     web: "Developer",
-    descriptionperso:
-      "I'm a 2nd year student in Bachelor of Technology in Multimedia and Internet Professions, but before that, let me introduce myself! I'm 21 years old and I'm from Angers. I study at the IUT of Angoulême. Before coming to MMI BUT, I completed a BTS in Industrial Product Design.",
-    portfolioCopyright: "Portfolio 2024©",
+    descriptionperso: `I'm a 3rd year student in Bachelor of Technology in Multimedia and Internet Professions, but before that, let me introduce myself! I'm ${calculateAge(
+      "2002-10-11"
+    )} years old and I'm from Angers. I study at the IUT of Angoulême. Before coming to MMI BUT, I completed a BTS in Industrial Product Design.`,
+    portfolioCopyright: () => `Portfolio ${new Date().getFullYear()}©`,
     competences: "Skills",
     projets: "Projects",
     contact: "Contact",
@@ -81,8 +106,13 @@ export const translations = {
     juin: "June",
     fevrier: "February",
     janvier: "January",
+    novembre: "November",
     voirMoins: "See less",
     voirPlus: "See more",
     githubDescription: "See the project on github",
+    arenafightersDescription:
+      "ArenaFighters is an application that allows users to register fighters and make them battle against each other. It operates using a PHP API and a JavaScript front-end. Users can add, modify, or delete a fight as well as a fighter. The winner of each battle is determined randomly.",
+    axtrackDescription:
+      "AxTrack is a mobile application designed for strength training enthusiasts, allowing them to log their complete workout sessions. Users can record exercise settings, session details (such as drop sets or supersets), and review their training history. The application operates through a REST API built with Node.js.",
   },
 };
