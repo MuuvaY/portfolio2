@@ -331,3 +331,22 @@
     // grid-row-gap: 0.5em;
   }
 }
+.carrousel__dots-container {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.carrousel__dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ccc;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.carrousel__dot.active {
+  background-color: $principal; /* Customize the active dot color */
+}

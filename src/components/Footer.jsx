@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { LanguageContext } from "./LanguageContext";
 import { translations } from "./../translations";
-import MariusCV from "./../assets/doc/MariusYvartCV.pdf";
+import MariusCV from "./../assets/doc/Marius_Yvart_CV.pdf";
 
 function Footer() {
   const { language } = useContext(LanguageContext);

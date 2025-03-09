@@ -5,7 +5,7 @@ import marius from "./../assets/img/marius.webp";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Navbar from "./Navbar";
-import MariusCV from "./../assets/doc/MariusYvartCV.pdf";
+import MariusCV from "./../assets/doc/Marius_Yvart_CV.pdf";
 
 gsap.registerPlugin(ScrollTrigger);
 
