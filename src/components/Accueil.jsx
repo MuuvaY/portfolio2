@@ -1,7 +1,7 @@
 import React, { useContext, useLayoutEffect, useRef } from "react";
 import { LanguageContext } from "./LanguageContext";
 import { translations } from "./../translations";
-import marius from "./../assets/img/marius.webp";
+import marius from "./../assets/img/mariusyvt.webp";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Navbar from "./Navbar";
